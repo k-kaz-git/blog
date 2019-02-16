@@ -10,7 +10,7 @@ displayInMenu: false
 displayInList: true
 draft: false
 ---
-## 安定した
+## 安定した・・・気がする
 いくつかのエラーもネットで調べながら、地道に解決していって、GitHub の使い方も勉強し、ようやく安定した感じがする。
 
 ## カテゴリーとタグ
