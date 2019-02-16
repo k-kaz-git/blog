@@ -19,7 +19,5 @@ draft: false
 デフォルトの項目に入っていなくて、付け足しても出てこない。
 
 ## 使用テーマ（2019/02/17  5:44 現在）
-aether
-
-https://themes.gohugo.io/aether/
+aether： https://themes.gohugo.io/aether/
 
