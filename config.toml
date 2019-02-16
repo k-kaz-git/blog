@@ -1,0 +1,12 @@
+baseURL = "https://k-kaz-git.github.io/"
+languageCode = "ja"
+title = "k-kaz"
+theme = "aether"
+googleAnalytics = "Your google analytics tracking ID - optional"
+disqusShortname = "Your shortname for Disqus - optional"
+
+[params]
+brand = "k-kaz が Hugo で遊ぶサイト"
+description = "k-kaz が Hugo で静的サイトジェネレーターを勉強するサイト"
+homeimg = "URL to the image used for the home button at the bottom of each post - optional"
+bgimg = "URL to the image used for the page background - optional"
