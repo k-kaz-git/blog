@@ -8,5 +8,5 @@ disqusShortname = "Your shortname for Disqus - optional"
 [params]
 brand = "k-kaz が Hugo で遊ぶサイト"
 description = "k-kaz が Hugo で静的サイトジェネレーターを勉強するサイト"
-homeimg = "URL to the image used for the home button at the bottom of each post - optional"
+homeimg = "/images/home_640.webp"
 bgimg = "URL to the image used for the page background - optional"
