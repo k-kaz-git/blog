@@ -41,7 +41,7 @@ draft: false
 ### コメント用の外部サービスを外す
 テーマには、個別記事に disqus のサービスが組み込まれていますが、これも使いませんので外します。
 
-`/サイト名/themes/aether/layouts/_default/single.html`
+`/サイト名/themes/新しいテーマ名/layouts/_default/single.html`
 <script src="https://gist.github.com/k-kaz-git/6fbc59bd45e57c5086e3d4e7a87ac63b.js"></script>
 
 ### テンプレートに外部リンクを仕込む
@@ -49,7 +49,7 @@ draft: false
 表示させる場所によって、編集するファイルは変わりますが、今回は最下部（フッター）に入れることにしました。普通に HTML を修正します。  
 footer.html は、`<footer></footer>` と、空っぽなので、その間にタグを入れます。
 
-`/サイト名/themes/aether/layouts/footer.html`
+`/サイト名/themes/新しいテーマ名/layouts/footer.html`
 <script src="https://gist.github.com/k-kaz-git/2dd802712a513a5017593a9d77536aa3.js"></script>
 
 
