@@ -2,7 +2,7 @@ baseURL = "https://k-kaz-git.github.io/"
 languageCode = "ja"
 title = "k-kaz"
 theme = "aether-kaz"
-googleAnalytics = "Your google analytics tracking ID - optional"
+googleAnalytics = "UA-134722453-1"
 disqusShortname = "Your shortname for Disqus - optional"
 
 [params]
