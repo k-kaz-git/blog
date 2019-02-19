@@ -8,6 +8,32 @@
     transition: .4s;
   }
   
-  .btn-link:hover {
+.btn-link:hover {
     background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
   }
+
+p strong {
+    font-weight: bold;
+    background-image: linear-gradient(transparent 70%, #c1e0ff 70%);
+  }
+
+/* gist スタイル調整 */
+.gist * {
+  font-size: 1em !important;
+}
+.gist-meta {
+  display: none; /* フッタ非表示 */
+}
+.gist-file {
+  border-bottom: none !important; /* コード領域の下枠線削除 */
+}
+table.highlight tr:nth-child(2n+1) td {
+  background: #f0f8ff; /* 奇数行だけ色を付ける */
+}
+.gist-data{
+  max-height:400px!important; /* 枠の高さを調整 */
+  padding: 5px;
+}
+table.highlight tr td,table.highlight tr td span {
+  border: none;
+}
