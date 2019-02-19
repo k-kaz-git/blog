@@ -18,6 +18,10 @@
           <img src="{{.Params.featuredimage | absURL }}" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}>
         </picture>
         {{ end }}
+        <aside>
+          <h2>＜目次＞</h2>
+            {{ .TableOfContents }}
+        </aside>
         {{ .Content }}
       </article>
     </main>
