@@ -1,5 +1,5 @@
 ---
-title: "Hugo Tips"
+title: "Hugo の使い方"
 date: 2019-02-20T16:15:13+09:00
 description: "Hugo の Tips 的なものをこちらにまとめます。"
 categories: [ホームページ]
