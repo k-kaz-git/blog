@@ -3,13 +3,17 @@ title: "Hugo Tips"
 date: 2019-02-20T16:15:13+09:00
 description: "Hugo の Tips 的なものをこちらにまとめます。"
 categories: [ホームページ]
-featuredImage: ""
-featuredImageDescription: ""
+featuredImage: "/images/writing-memo-note-pen_640.webp"
+featuredImageDescription: "ノートにメモメモ"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
+## 参考サイト
+[Google先生](https://www.google.co.jp/)  
+もう、検索し過ぎて、どこのサイトを参考にしたのか分からなくなりました。
+
 ## サイト作成
 $ `hugo new site サイト名`
 
@@ -41,7 +45,7 @@ $ `cd サイト名`
 記事は、テンプレートからタイトル、作成時間等は自動で代入されるが、記事本文や下書き状態から公開状態への切り替えなどは自身で行う。
 Markdown 記法となるため、対応したエディタを使うと良い。
 
-ちなみに k-kaz は VSCODE で編集している。
+ちなみに [k-kaz](https://k-kaz.net "k-kaz.net") は [VSCode](https://code.visualstudio.com/ "Visual Studio Code") で編集している。
 
 ## テーマインストール
 テーマサイトの中から、好きなタイプのものを選択する。
@@ -99,3 +103,6 @@ ssh接続用に、公開鍵と秘密鍵を作成する。
 切替用コマンド `$ git remote set-url origin git@github.com:hogehoge.git`  
 確認用コマンド `$ ssh -T github`
 
+
+---
+こちらも随時更新していきます。
