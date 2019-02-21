@@ -9,7 +9,7 @@ hugo
 cd public
 
 # Add changes to git.
-git add -A
+git add .
 
 # Commit changes.
 msg="rebuilding site `date`"
@@ -25,7 +25,7 @@ git push origin master
 cd ..
 
 # Add changes to git.
-git add -A
+git add .
 
 # Commit changes.
 msg="rebuilding site `date`"
