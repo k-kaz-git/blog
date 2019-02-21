@@ -3,8 +3,8 @@ title: "Hugo で使える Markdown の記法"
 date: 2019-02-21T11:43:14+09:00
 description: "自分用によく使う Markdown をまとめます。"
 categories: [ホームページ]
-featuredImage: ""
-featuredImageDescription: ""
+featuredImage: "/images/computer-Programming_640.webp"
+featuredImageDescription: "Programming Markdown"
 dropCap: false
 displayInMenu: false
 displayInList: true
