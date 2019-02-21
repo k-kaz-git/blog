@@ -85,7 +85,7 @@ Markdown 記法となるため、対応したエディタを使うと良い。
 サイト名$ `cd public`  
 サイト名/public$ `git add -A`  
 サイト名/public$ `git commit -m "コミット内容"`  
-サイト名/public$ `git push origin master`
+サイト名/public$ `git push origin master`  
 サイト名/public$ `cd ..`  
 サイト名$ `git add -A`  
 サイト名$ `git commit -m "コミット内容"`  
