@@ -44,8 +44,11 @@ code {
   padding: 0.2em 0;
 }
 
+.post p img {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
 
-/* gist スタイル調整 */
+/* gist スタイル調整 Start */
 .gist * {
   font-size: 1em !important;
 }
@@ -65,3 +68,37 @@ table.highlight tr:nth-child(2n+1) td {
 table.highlight tr td,table.highlight tr td span {
   border: none;
 }
+/* gist スタイル調整 End */
+
+/* 見出し Start */
+article.post > h2 {
+  padding: 0.1em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #ff4f1a;/*左線*/
+}
+h3 {
+  position: relative;
+  padding: 0.25em 0;
+}
+h3:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 80%;
+  background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
+  background: linear-gradient(to right, rgb(230, 90, 90), transparent);
+}
+h4 {
+  position: relative;
+  padding: 0.25em 0;
+}
+h4:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 50%;
+  background: -webkit-linear-gradient(to right, rgb(255, 105, 180), transparent);
+  background: linear-gradient(to right, rgb(255, 105, 180), transparent);
+}
+/* 見出し End */
