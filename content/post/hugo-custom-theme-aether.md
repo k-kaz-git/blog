@@ -122,6 +122,36 @@ css というフォルダも自分で作成し、その中にスタイルシー�
 但し、このやり方だと、400文字以上とか無視して、**どのページにも出現します** ので注意。
 
 
+### 更新日を追加する
+Hugo に用意されている関数 `.Lastmod` を利用します。  
+下準備として、`config.toml` に関数を有効にするための記述を追加します。
+
+`/サイト名/config.toml`  
+`enableGitInfo = true` ← これで有効化されます。
+
+続いて、更新日を出力したい場所に `.Lastmod` を入れます。
+
+`/サイト名/layouts/_default/single.html`
+
+`<header>` だけ抜き出しました。  
+上が元のコードで、下が修正したコードです。
+```html
+<header class="post-header">
+   	<h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-date">Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
+</header>
+```
+```html
+<header class="post-header">
+   	<h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-date">
+        Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+         / Update {{ .Lastmod.Format "2006-01-02" }}</p>
+</header>
+```
+`.Lastmod` だけだと、時間まで表示されて大げさなので、`.Format "2006-01-02"` で書式を設定しました。  
+ついでに初回投稿のほうも、同じ書式に変更しています。
+
 
 ---
 また何かあれば、随時追加します。  
