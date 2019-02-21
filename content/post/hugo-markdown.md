@@ -94,3 +94,7 @@ htmlの部分は、php、md・・・いろいろ入れられるので、ケー�
 
 ---
 またよく使うものが出てきたら追記します。
+
+
+ここに分かりやすく書いてあった。  
+[Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown Cheatsheet")

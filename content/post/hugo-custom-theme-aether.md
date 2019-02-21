@@ -139,13 +139,19 @@ Hugo に用意されている関数 `.Lastmod` を利用します。
 
 `<header>` だけ抜き出しました。  
 上が元のコードで、下が修正したコードです。
+
 ```html
+[single.html 修正前]
+
 <header class="post-header">
    	<h1 class="post-title">{{ .Title }}</h1>
     <p class="post-date">Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
 </header>
 ```
+
 ```html
+[single.html 修正後]
+
 <header class="post-header">
    	<h1 class="post-title">{{ .Title }}</h1>
     <p class="post-date">
@@ -153,7 +159,7 @@ Hugo に用意されている関数 `.Lastmod` を利用します。
          / Update {{ .Lastmod.Format "2006-01-02" }}</p>
 </header>
 ```
-`.Lastmod` だけだと、時間まで表示されて大げさなので、`.Format "2006-01-02"` で書式を設定しました。  
+`.Lastmod` だけだと、時間まで表示されて大げさなので、`.Format "2006-01-02"` で書式を設定しました。
 ついでに初回投稿のほうも、同じ書式に変更しています。
 
 
