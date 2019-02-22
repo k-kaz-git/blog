@@ -17,7 +17,7 @@ draft: false
 > スニペット（英語: snippet）とは、「断片」という意味である。情報処理の分野ではよく使う短いプログラムコードを統合開発環境から呼び出す機能の事である。また、呼び出される短いコードの事をスニペットと呼ぶ場合もある。  Wikipediaより。
 
 ## こんな感じのものです。
-<img src="/images/VSCode-snipet-01.gif" alt="snipet の例をアニメーションで" style="width:640px;">
+<img src="/images/VSCode-snipet-01.gif" alt="snipet の例をアニメーションで" style="max-width:640px;">
 
 ## Markdown でスニペットを使いたい
 なんか初期状態ではスニペットが有効になっていないんですよね。  
@@ -117,7 +117,7 @@ Markdown用のスニペットを登録します。
 そうすると、Markdown での記述の際に  
 img と打った時点（もしくは i を入れた時点）で、上記のスニペットが画面に登場し、`Enter` or `TAB` を押すことで置き換わります。
 
-<img src="/images/VSCode-snipet-01.gif" alt="snipet の例をアニメーションで" style="width:640px;">
+<img src="/images/VSCode-snipet-01.gif" alt="snipet の例をアニメーションで" style="max-width:640px;">
 
 候補が複数出て、2行目以降を選択したいときは、カーソルキーで選択してください。  
 日本語の変換候補と似た感じです。
@@ -140,7 +140,7 @@ img と打った時点（もしくは i を入れた時点）で、上記のス�
 
 こんな感じになります。
 
-<img src="/images/VSCode-snipet-02.gif" alt="snipet の例をアニメーションで" style="width:640px;">
+<img src="/images/VSCode-snipet-02.gif" alt="snipet の例をアニメーションで" style="max-width:640px;">
 
 ”のイメージ画像” は固定ですが、その前は毎回違うという場合。  
 上記のように `$1` を入れてあげると、呼び出し後に `$1` の部分にカーソルが挿入されるため、そのまま文字列の入力が可能です。
@@ -168,7 +168,7 @@ img と打った時点（もしくは i を入れた時点）で、上記のス�
 動作そのものは先程と同じですが、表示の仕方が変わります。  
 とりあえず、画面をみていただきましょう。
 
-<img src="/images/VSCode-snipet-03.gif" alt="snipet の例をアニメーションで" style="width:640px;">
+<img src="/images/VSCode-snipet-03.gif" alt="snipet の例をアニメーションで" style="max-width:640px;">
 
 お分かりになりましたか。
 
