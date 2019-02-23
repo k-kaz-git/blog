@@ -76,6 +76,7 @@ article.post > h2 {
   color: #494949;/*文字色*/
   background: #f4f4f4;/*背景色*/
   border-left: solid 5px #ff4f1a;/*左線*/
+  margin-bottom: 0px;
 }
 h3 {
   position: relative;
