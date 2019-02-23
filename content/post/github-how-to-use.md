@@ -8,7 +8,7 @@ featuredImageDescription: "ネットワークとサーバーのイメージ画�
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## せっかくなので
 GitHub をもう少し活用できないかなと思いまして、こちらにやってみたことを書いていこうと思います。 
