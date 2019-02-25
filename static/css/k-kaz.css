@@ -103,7 +103,7 @@ h4:after {
   content: "";
   display: block;
   height: 2px;
-  width: 50%;
+  width: 60%;
   background: -webkit-linear-gradient(to right, rgb(255, 105, 180), transparent);
   background: linear-gradient(to right, rgb(255, 105, 180), transparent);
 }
