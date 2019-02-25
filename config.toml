@@ -12,4 +12,7 @@ description = "k-kaz が Hugo で静的サイトジェネレーターを勉強�
 homeimg = "/images/home_640.webp"
 
 [frontmatter]
-lastmod = ["lastmod", "date", "publishDate"]
+date = ["date", "publishDate", "lastmod"]
+lastmod = [":git", "lastmod", "date", "publishDate"]
+publishDate = ["publishDate", "date"]
+expiryDate = ["expiryDate"]
