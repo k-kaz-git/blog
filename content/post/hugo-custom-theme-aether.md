@@ -162,6 +162,40 @@ Hugo に用意されている関数 `.Lastmod` を利用します。
 `.Lastmod` だけだと、時間まで表示されて大げさなので、`.Format "2006-01-02"` で書式を設定しました。
 ついでに初回投稿のほうも、同じ書式に変更しています。
 
+#### 更新日がうまく入らない
+プッシュするのにコマンドをいくつも入れるのが面倒なので、ネットで調べて下記のスクリプトを組んであります。
+
+```sh
+#!/bin/bash
+echo -e "\033[0;33mDeploying updates to GitHub...\033[0m"
+# Build the project.
+hugo
+# Go to public folder
+cd public
+# Add changes to git.
+git add .
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+# Push source and build repos.
+git push origin master
+# Come back
+cd ..
+# Add changes to git.
+git add .
+# Commit changes.
+msg="rebuilding site `date`"
+if [ $# -eq 1 ]
+  then msg="$1"
+fi
+git commit -m "$msg"
+# Push source and build repos.
+git push origin master
+```
+手動で同じことをやっていくと反映するんですけど、これを実行したときってうまく反映されないような。手動とスクリプトで何か違うのかな。
 
 ---
 また何かあれば、随時追加します。  
