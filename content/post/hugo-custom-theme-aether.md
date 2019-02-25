@@ -124,7 +124,7 @@ css というフォルダも自分で作成し、その中にスタイルシー�
 但し、このやり方だと、400文字以上とか無視して、**どのページにも出現します** ので注意。
 
 
-### 更新日を追加する
+### 更新日を追加する（記事個別）
 <img src="/images/aether-custom-update_284.webp" style="width:284px;" alt="更新日を追加する">  
 
 Hugo に用意されている関数 `.Lastmod` を利用します。  
@@ -161,6 +161,40 @@ Hugo に用意されている関数 `.Lastmod` を利用します。
 ```
 `.Lastmod` だけだと、時間まで表示されて大げさなので、`.Format "2006-01-02"` で書式を設定しました。
 ついでに初回投稿のほうも、同じ書式に変更しています。
+### 更新日を追加する（トップページのカード）［2019-02-25］
+<img src="/images/aether-custom-card-update_640.webp" alt="トップにも更新日を入れる" style="max-width:640px;">
+
+やり方は個別記事と同じで、編集するファイルが変わるだけです。
+
+`/サイト名/layouts/_default/li.html`  
+※theme の中にあるのでコピーして持ってきます。
+
+ついでに、ポストされた日のフォーマットも合わせておきます。  
+`<div>` のすぐ下にある `<p></p>` の中を修正しています。
+
+
+```html
+[li.html 修正前]
+
+<div class="card-subtext muted-text">
+  <p>Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
+  {{ if (isset .Params "categories") }}<p>{{ range .Params.categories }}#{{ . }} {{ end }}</p>{{ end }}
+</div>
+```
+
+
+```html
+[li.html 修正後]
+
+<div class="card-subtext muted-text">
+  <p>Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+     / Update {{ .Lastmod.Format "2006-01-02" }}</p>
+  {{ if (isset .Params "categories") }}<p>{{ range .Params.categories }}#{{ . }} {{ end }}</p>{{ end }}
+</div>
+```
+
+
+
 
 #### 更新日がうまく入らない ［2019-02-25］
 プッシュするのにコマンドをいくつも入れるのが面倒なので、ネットで調べて下記のスクリプトを組んであります。
