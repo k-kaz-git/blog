@@ -10,4 +10,3 @@ enableGitInfo = true # 最終更新日をgit履歴から自動取得
 brand = "k-kaz が Hugo で遊ぶサイト"
 description = "k-kaz が Hugo で静的サイトジェネレーターを勉強するサイト"
 homeimg = "/images/home_640.webp"
-bgimg = "URL to the image used for the page background - optional"
