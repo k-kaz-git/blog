@@ -37,7 +37,7 @@ draft: false
 ## 標準機能内
 ---
 ### ホームボタンの設定
-<img src="/images/aether-custom-home-btn_400.webp" alt="ホームボタンの設置" style="width:400px;">
+<img src="/images/aether-custom-home-btn_400.webp" alt="ホームボタンの設置" style="max-width:400px;">
 
 個別記事を開いた時に、一番下に真っ白なスペースがあります。  
 ここは、ホーム（トップページ）に戻るためのボタンになっており、Home という白文字が入っています。**実際は白同士で見えないんですけど。**
@@ -193,9 +193,6 @@ Hugo に用意されている関数 `.Lastmod` を利用します。
 </div>
 ```
 
-
-
-
 #### 更新日がうまく入らない ［2019-02-25］
 プッシュするのにコマンドをいくつも入れるのが面倒なので、ネットで調べて下記のスクリプトを組んであります。
 
@@ -230,6 +227,58 @@ git commit -m "$msg"
 git push origin master
 ```
 手動で同じことをやっていくと反映するんですけど、これを実行したときってうまく反映されないような。気のせいかな。手動とスクリプトで何か違うのかな。
+
+### Webフォントを使う［2019-02-25］
+フォントが汚いので、Webフォントで有名な [Google Fonts](https://fonts.google.com "Google Fonts") を使ってみました。（本家でも使っている）  
+PageSpeed Insights のモバイルの点数が **15点落ちました** ので、一瞬で戻しました（笑）  
+Webフォントじゃなくてもきれいに表示することはできるのかしら。調べてみよう。
+
+尚、使うときは、以下のファイルを修正します。  
+
+`/サイト名/layouts/partials/head.html`  
+`/サイト名/static/css/hoge.css`  
+
+尚、この後に書いている内容は、うちの本家で使っているものを若干修正したサンプルです。  
+使うフォントによってタグの内容も変わりますので、[Google Fonts](https://fonts.google.com "Google Fonts") で好きなフォントを選んで、それ用のタグを入手してください。
+
+```html
+［head.html に下記を貼り付ける］
+
+<!-- webfontloader -->
+<script>
+window.WebFontConfig = {
+  google: { families: ['Roboto:400,700', 'Noto+Sans+JP:400,700'] },
+  active: function() {
+    sessionStorage.fonts = true;
+  }
+};
+(function() {
+  var wf = document.createElement('script');
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+  wf.type = 'text/javascript';
+  wf.async = 'true';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+</script>
+<!-- webfontloader ここまで-->
+```
+
+```css
+［hoge.css に下記を貼り付ける］
+
+body * {font-family: 'Roboto', 'Noto Sans CJK JP', 'Noto Sans JP', sans-serif !important;}
+```
+スタイルシートのほうは、かなり乱暴な書き方をしていますけど、テストということで許してください（笑）
+
+### ローカルフォントを指定する［2019-02-25］
+とりあえず、最近は **游ゴシック体** が良いみたいなので、下記のように指定しました。  
+游ゴシックに Medium が入っているのは、**標準の太さだとかすれちゃう問題** が発生するからだそうです。
+
+```css
+font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+```
+
 
 ---
 また何かあれば、随時追加します。  
