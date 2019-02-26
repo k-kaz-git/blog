@@ -1,7 +1,7 @@
 baseURL = "https://k-kaz-git.github.io/"
 languageCode = "ja"
 title = "k-kaz"
-theme = "aether-kaz"
+theme = "aether"
 googleAnalytics = "UA-134722453-1"
 disqusShortname = "Your shortname for Disqus - optional"
 enableGitInfo = true # 最終更新日をgit履歴から自動取得
@@ -16,3 +16,8 @@ date = ["date", "publishDate", "lastmod"]
 lastmod = [":git", "lastmod", "date", "publishDate"]
 publishDate = ["publishDate", "date"]
 expiryDate = ["expiryDate"]
+
+[taxonomies]
+tag = "tags"
+category = "Categories"
+

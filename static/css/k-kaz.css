@@ -120,3 +120,8 @@ h4:after {
   border-bottom: solid 2px rgb(230, 90, 90);
   background: rgb(230, 90, 90,0.2);
 }
+
+/* list style で Category と Tag を入れるところは日付と少しスペースを設ける*/
+.li-line {
+  line-height: 200%;
+}
