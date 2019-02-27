@@ -18,6 +18,7 @@ publishDate = ["publishDate", "date"]
 expiryDate = ["expiryDate"]
 
 [taxonomies]
+category = "categories"
 tag = "tags"
-category = "Categories"
+
 
