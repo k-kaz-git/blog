@@ -2,7 +2,8 @@
 title: "Oh!"
 date: 2019-02-16T17:31:37+09:00
 description: "とりあえず、いくつか記事をアップする練習"
-categories: ["ホームページ"]
+categories: ["homepage"]
+tags: ["hugo"]
 featuredImage: "/images/tea-pot_640.webp"
 featuredImageDescription: "紅茶で休憩"
 dropCap: false

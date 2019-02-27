@@ -2,7 +2,8 @@
 title: "Hugo 安定してきたかな"
 date: 2019-02-17T04:50:58+09:00
 description: "そろそろいい感じかな"
-categories: ["ホームページ"]
+categories: ["homepage"]
+tags: ["hugo"]
 featuredImage: "/images/sky-stable-hugo_640.webp"
 featuredImageDescription: "安心だ"
 dropCap: false

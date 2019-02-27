@@ -1,7 +1,8 @@
 <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
   href="{{ .Permalink }}" class="card blog-card" rel="bookmark" >
-    {{ if isset .Params "featuredimage" -}}
+    {{ if isset .Params "featuredimage" }}
     <div class="card-img-container">
+      <p class="card-img-overlay">Next Article</p>
       <picture>
         {{ if (fileExists (printf "%s/%s" "static" (replace (.Params.featuredimage) (path.Ext .Params.featuredimage) ".webp"))) -}}
           <source srcset="{{ replace (.Params.featuredimage) (path.Ext (.Params.featuredimage)) ".webp" | absURL }}" type="image/webp">
@@ -10,17 +11,17 @@
         <img src="{{.Params.featuredimage | absURL }}" class="card-img" {{ if isset .Params "featuredimagedescription" }}alt="{{.Params.featuredimagedescription}}"{{end}}>
       </picture>
     </div>
-    {{- end }}
+    {{ end }}
   <article class="card-body">
     <h2 class="card-title">{{ .Title }}</h2>
     <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }}</p>
     <div class="card-subtext muted-text">
-      <p>Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
-        / Updated {{ .Lastmod.Format "2006-01-02" }}</p>
+      <p>Posted <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "2006-01-02" }}</time>
+      / Updated {{ .Lastmod.Format "2006-01-02" }}</p>
     </div>
     <div class="card-subtext muted-text li-line">
-        {{ if (isset .Params "categories") }}{{ range .Params.categories }}<span class="box-gray">{{ . }}</span> {{ end }}{{ end }}
-        {{ if (isset .Params "tags") }} {{ range .Params.tags }}<span class="box-gray"># {{ . }}</span> {{ end }}{{ end }}
-    </div>
+      {{ if (isset .Params "categories") }}{{ range .Params.categories }}<span class="box-gray">{{ . }}</span> {{ end }}{{ end }}
+      {{ if (isset .Params "tags") }}{{ range .Params.tags }}<span class="box-gray"># {{ . }}</span> {{ end }}{{ end }}
+  </div>
   </article>
 </a>

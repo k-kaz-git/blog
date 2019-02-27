@@ -1,9 +1,9 @@
 ---
 title: "Test"
 date: 2019-02-26T11:28:06+09:00
-description: ""
-categories: ["ホームページ"]
-tags: ["Hugo","WordPress"]
+description: "aaaaaa"
+categories: ["homepage"]
+tags: ["hugo"]
 featuredImage: ""
 featuredImageDescription: ""
 dropCap: false

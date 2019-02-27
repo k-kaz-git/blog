@@ -10,6 +10,10 @@
           <p class="post-date">
             Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
              / Update {{ .Lastmod.Format "2006-01-02" }}</p>
+             <div class="card-subtext muted-text li-line">
+              {{ if (isset .Params "categories") }}{{ range .Params.categories }} <a class="cat" href="/categories/{{ . }}">{{ . }}</a>{{ end }}{{ end }}
+              {{ if (isset .Params "tags") }}{{ range .Params.tags }} <a class="tag" href="/tags/{{ . }}"># {{ . }}</a> {{ end }}{{ end }}
+             </div>
         </header>
         {{ if isset .Params "featuredimage" }}
         <picture class="post-figure">
@@ -21,11 +25,19 @@
         </picture>
         {{ end }}
         <aside>
-          <h2>＜目次＞</h2>
+          <h2>目次</h2>
             {{ .TableOfContents }}
         </aside>
         {{ .Content }}
       </article>
+      <hr>
+      <p class="post-date">
+        Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+         / Update {{ .Lastmod.Format "2006-01-02" }}</p>
+         <div class="card-subtext muted-text li-line">
+          {{ if (isset .Params "categories") }}{{ range .Params.categories }} <a class="cat" href="/categories/{{ . }}">{{ . }}</a>{{ end }}{{ end }}
+          {{ if (isset .Params "tags") }}{{ range .Params.tags }} <a class="tag" href="/tags/{{ . }}"># {{ . }}</a> {{ end }}{{ end }}
+         </div>
     </main>
     <nav class="end-nav side-padding">
       {{ with .PrevInSection }}

@@ -2,7 +2,8 @@
 title: "GitHub を使ってみる"
 date: 2019-02-22T15:49:24+09:00
 description: "GitHub を有効活用しようと思います。"
-categories: [ホームページ]
+categories: ["coding"]
+tags: ["github"]
 featuredImage: "/images/network-server_640.webp"
 featuredImageDescription: "ネットワークとサーバーのイメージ画像"
 dropCap: false
