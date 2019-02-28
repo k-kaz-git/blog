@@ -136,6 +136,9 @@ git から情報を消し、改めて add → commit → push します。
 
 で、解決したことにしちゃった（笑）
 
+## VSCode の設定ファイルを共通で使う［2019-02-28］
+上のほうにやり方を長々と書きましたけど、プラグインがあるらしいぞ。  
 
+[VSCode(Visual Studio Code)の設定を同期させる拡張機能「Setting Sync」が便利](https://www.karelie.net/vscode-setting-sync/)
 
 
