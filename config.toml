@@ -13,7 +13,7 @@ homeimg = "/images/home_640.webp"
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
-lastmod = [":git", "lastmod", "date", "publishDate"]
+lastmod = [":fileModTime", ":git", "lastmod", "date", "publishDate"]
 publishDate = ["publishDate", "date"]
 expiryDate = ["expiryDate"]
 
