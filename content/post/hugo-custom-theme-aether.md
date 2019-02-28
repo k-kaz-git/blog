@@ -337,6 +337,184 @@ body * {font-family: 'Roboto', 'Noto Sans CJK JP', 'Noto Sans JP', sans-serif !i
 font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 ```
 
+## タグ問題を解決する
+aether は、カテゴリーのみの運用で、タグの使用は意図されていません。  
+タグを使いたい場合は、自力で頑張ることになります。
+
+### タグを使えるようにする
+2つのファイルを修正してあげます。
+#### 設定ファイルの修正
+設定ファイル `config.toml` に `tag = "tags"` を追加します。  
+カテゴリーとまとめて書いておくと見やすいかと思います。
+
+```toml
+[taxonomies]
+category = "categories"
+tag = "tags"
+```
+#### 記事テンプレートの修正
+もう1つ。  
+記事データに `tags: [""]` を追加しますが、毎回手動で入れるのは大変なので、テンプレートの方を直しておきます。  
+投稿の仕方によって変わりますが、私は `post` というフォルダの中に記事を入れているので、下記のファイルを修正します。
+
+`サイト名\archetypes\post.md`
+
+私のファイルはこんな感じになっています。
+```post.md
+---
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
+date: {{ .Date }}
+description: ""
+categories: [""]
+tags: [""]
+featuredImage: ""
+featuredImageDescription: ""
+dropCap: false
+displayInMenu: false
+displayInList: true
+draft: true
+---
+```
+こうしておけば、`hugo new post/hoge.md` としたときに `post` に属する記事ということで、この `post.md` をテンプレートとして読み込んでくれ、ちょっとだけ楽になるのと、タグの付け忘れがなくなります。
+
+尚、記事のほうで `tag` が複数ある時は `tags: ["aaa","bbb","ccc"]` と書いてください。
+
+### タグを表示する
+ここまでの作業で、記事にタグ付けが出来ています。  
+ただ、残念なことにそのタグを表示する術がありません。  
+ここから HTML のテンプレートを修正し、好きな場所にタグを表示させるようにします。
+
+#### トップページ
+
+`サイト名\layouts\_default\li.html`
+
+一部分だけ抜き出しています。
+```html
+<article class="card-body">
+  <h2 class="card-title">{{ .Title }}</h2>
+  <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }}</p>
+  <div class="card-subtext muted-text">
+    <p>Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      / Updated {{ .Lastmod.Format "2006-01-02" }}</p>
+  </div>
+  <div class="card-subtext muted-text li-line">
+      {{ if (isset .Params "categories") }}{{ range .Params.categories }}<span class="box-gray">{{ . }}</span> {{ end }}{{ end }}
+      {{ if (isset .Params "tags") }} {{ range .Params.tags }}<span class="box-gray"># {{ . }}</span> {{ end }}{{ end }}
+  </div>
+</article>
+```
+先日、更新日を追加した修正のとき、カテゴリーも同じ `<div></div>` の中に入っていましたが、外側に出しています。  
+もう1つ `<div></div>` を用意して、その中にカテゴリーと、今回追加のタグを入れています。
+
+**よく分かっていませんが、`categories` を `tags` にしたら動くだろう**と思ってやったら、その通り動きました。  
+私が凄いのではなくて、感覚的にできちゃうという分かりやすい設計の Hugo が凄いのでしょう。
+
+ついでに、カテゴリーに `#` が付いていましたが、タグのほうに持ってきました。  
+あと、`class` を入れていますが、これは見た目の装飾だけで、動きには影響していません。
+
+#### 個別記事
+`サイト名\layouts\_default\single.html`
+
+一部分だけ抜き出しています。
+```html
+<header class="post-header">
+ 	<h1 class="post-title">{{ .Title }}</h1>
+    <p class="post-date">
+      Posted <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+      / Update {{ .Lastmod.Format "2006-01-02" }}</p>
+    <div class="card-subtext muted-text li-line">
+      {{ if (isset .Params "categories") }}{{ range .Params.categories }} <a class="cat" href="/categories/{{ . }}">{{ . }}</a>{{ end }}{{ end }}
+      {{ if (isset .Params "tags") }}{{ range .Params.tags }} <a class="tag" href="/tags/{{ . }}"># {{ . }}</a> {{ end }}{{ end }}
+    </div>
+</header>
+```
+こちらもトップとほぼ同じですが、リンクの設定をしてあります。  
+表示されたカテゴリーやタグをクリックすると、同一グループが一覧表示されるようになります。  
+アドレスだけ気を付けてあげれば、一覧表示はテーマ側が自動でやってくれます。
+
+if文の中で、該当する文字列が見付かれば、リンクに展開するって感じかな。（知らんけど）  
+複数見付かれば、その回数分、リンクを展開してくれます。
+
+カテゴリーのアドレス指定  
+`<a class="cat" href="/categories/{{ . }}">{{ . }}</a>`
+
+タグのアドレス指定  
+`<a class="tag" href="/tags/{{ . }}"># {{ . }}</a>`
+
+それぞれ `{{ . }}` の中に、読み込まれたカテゴリーやタグが自動で入力されます。  
+カテゴリーが `homepage` なら `/categories/homepage` と展開されます。
+
+私のサイトでは、このタグを上部と下部の2ヶ所に入れてみました。
+
+#### 次の記事
+個別記事の最下部に次の記事が表示されます。  
+そこにも入れておきます。
+
+`サイト名\layouts\_default\li-next.html`
+
+一部分だけ抜き出しています。
+```html
+<article class="card-body">
+  <h2 class="card-title">{{ .Title }}</h2>
+  <p class="card-text">{{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }}</p>
+  <div class="card-subtext muted-text">
+    <p>Posted <time datetime="{{ .PublishDate.Format "2006-01-02" }}">{{ .PublishDate.Format "2006-01-02" }}</time>
+    / Updated {{ .Lastmod.Format "2006-01-02" }}</p>
+  </div>
+  <div class="card-subtext muted-text li-line">
+    {{ if (isset .Params "categories") }}{{ range .Params.categories }}<span class="box-gray">{{ . }}</span> {{ end }}{{ end }}
+    {{ if (isset .Params "tags") }}{{ range .Params.tags }}<span class="box-gray"># {{ . }}</span> {{ end }}{{ end }}
+  </div>
+</article>
+```
+トップページと同じかな。
+
+#### メニューボタン
+右上にある 三 みたいなボタンですけど、これを押すとカテゴリーを表示することができます。  
+ここはもう趣味なんですけど、この中にタグまで表示したい場合は下記を修正します。
+
+`サイト名\layouts\partials\nav-bar.html`
+
+一部分だけ抜き出しています。
+```html
+<div class="hamburger-menu">
+  <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+    <span></span>
+    <span></span>
+  </button>
+  <ul id="menu" class="hamburger-menu-overlay">
+    <li><a href="{{ .Site.BaseURL }}" class="hamburger-menu-overlay-link">Home</a></li>
+    {{ range where .Site.Pages "Params.displayinmenu" true -}}
+      <li><a href="{{ .Permalink }}" class="hamburger-menu-overlay-link">{{ .Title }}</a></li>
+    {{ end -}}
+    <li class="navi-menu">- Categories -</li>
+    {{ range $key, $value := .Site.Taxonomies.categories -}}
+    <li style="font-size: 0.7em;"><a href="{{ (printf "%s%s" "categories/" ($key | urlize)) | absURL }}" class="hamburger-menu-overlay-link">{{ $key | humanize }}</a></li>
+    {{- end }}
+    <li class="navi-menu">- Tags -</li>
+    {{ range $key, $value := .Site.Taxonomies.tags -}}
+    <li style="font-size: 0.5em;"><a href="{{ (printf "%s%s" "tags/" ($key | urlize)) | absURL }}" class="hamburger-menu-overlay-link">{{ $key | humanize }}</a></li>
+    {{- end }}
+  </ul>
+</div>
+```
+すでにカテゴリーは記載済みですので、そこをコピペしてタグ用の行を追加しています。  
+`categories` = `tags` で置換してあげれば良いです。  
+
+ついでにカテゴリーとタグの区切りを入れたかったので、`<li class="navi-menu">- Categories -</li>` と `<li class="navi-menu">- Tags -</li>` を追加しました。
+
+`class` は例のごとく見栄えだけです。
+
+メニューボタンの隣に並べることも考えたんですが、モバイルでレイアウトが崩れたので、メニューに入れてしまうという安易なやり方にしております。数が増えたらえらいことになるんだろうなと思いつつ（笑）
+
+最近は、ブラウザの検証機能を使って、パソコンとモバイルの両方で表示して確認するというクセがついてきました。（良いことです）
+
+トップページと次の記事のカテゴリー、タグも数が増えると表示が崩れます。  
+（縦に伸びて文字全てを表示するようになるので、格好悪い）
+
+ここもとりあえず `@media screen` で、幅の小さい端末の場合は、フォントサイズを小さくして誤魔化していますが、
+数が増えてレイアウトが崩れるまえに改行表示するように、根本的な修正をしたいんですけどね。それはまた・・・。
+
 
 ---
 また何かあれば、随時追加します。  
