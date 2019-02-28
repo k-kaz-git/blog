@@ -20,7 +20,7 @@
     </div>
     <div class="card-subtext muted-text li-line">
         {{ if (isset .Params "categories") }}{{ range .Params.categories }}<span class="box-gray">{{ . }}</span> {{ end }}{{ end }}
-        {{ if (isset .Params "tags") }} {{ range .Params.tags }}<span class="box-gray"># {{ . }}</span> {{ end }}{{ end }}
+        {{ if (isset .Params "tags") }} {{ range .Params.tags }}<span class="box-gray">#{{ . }}</span> {{ end }}{{ end }}
     </div>
   </article>
 </a>

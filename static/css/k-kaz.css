@@ -132,6 +132,7 @@ h4:after {
 @media screen and (max-width: 481px) {
   .li-line {
     display: block;
+    overflow-wrap: break-word;
   }
 }
 
