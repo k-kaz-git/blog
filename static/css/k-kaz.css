@@ -130,14 +130,11 @@ h4:after {
 /* タクソノミーの表示関連 */
 
 @media screen and (max-width: 481px) {
-  .cat,.tag {
-    font-size: 60%;
-  }
-  
-  .box-gray {
-    font-size: 60%;
+  .li-line {
+    display: block;
   }
 }
+
 a.cat {
   background-color: #dee5e9;
   border: 1px solid #7b9cb0;
