@@ -337,7 +337,7 @@ body * {font-family: 'Roboto', 'Noto Sans CJK JP', 'Noto Sans JP', sans-serif !i
 font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 ```
 
-## タグ問題を解決する
+## タグ問題を解決する［2019-02-28］
 aether は、カテゴリーのみの運用で、タグの使用は意図されていません。  
 タグを使いたい場合は、自力で頑張ることになります。
 
