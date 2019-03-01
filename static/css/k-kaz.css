@@ -1,47 +1,105 @@
+/* ========================================
+    全体
+======================================== */
+
 body * {
   font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
 
+.min-08 {
+  font-size: 0.8em;
+}
+
+.navi-menu {
+  color: gray;
+  margin: 1em 0em;
+}
+
+/* ========================================
+    ボタン設定
+======================================== */
+
+/* 姉妹リンク */
 .btn-link {
-    display: inline-block;
-    padding: 7px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    color: #FFF;
-    background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
-    transition: .4s;
-  }
-  
+  display: inline-block;
+  padding: 7px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: #FFF;
+  background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+  transition: .4s;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
 .btn-link:hover {
-    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
-  }
+  background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
 
+/* ========================================
+    記事内
+======================================== */
+
+/* 強調部分にマーカーを引く */
 p strong {
-    font-weight: bold;
-    background-image: linear-gradient(transparent 70%, #c1e0ff 70%);
-  }
+  font-weight: bold;
+  background-image: linear-gradient(transparent 70%, #c1e0ff 70%);
+}
 
+/* code の書式設定 */
 code {
-  color:#ff4500;
+  color: #ff4500;
   background-color: #dfe2e5 !important;
   font-size: 80%;
 }
 
-.post aside {
-  box-shadow :0px 0px 5px silver;
-  border-radius :8px;
-  background: #fffcf4; /*灰色に*/
-}
-.post aside h2 {
-  font-size: 1.2em;
+/* 記事内の画像は影を付ける */
+.post p img {
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
+/* リンク装飾 */
+.content p a {
+  text-decoration: none;
+  border-bottom: dashed 1px rgb(230, 90, 90);
+  color: rgb(230, 90, 90);
+  font-weight: bold;
+}
+
+.content p a:hover {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: solid 2px rgb(230, 90, 90);
+  background: rgb(230, 90, 90, 0.2);
+}
+
+/* ========================================
+    目次
+======================================== */
+
 .post aside {
+  box-shadow: 0px 0px 5px silver;
+  border-radius: 8px;
+  background: #fffcf4;
   font-size: 0.8em;
   padding: 0.1em 1em;
 }
 
-#TableOfContents > ul > li {
+.post aside h2 {
+  font-size: 1.2em;
+}
+
+.post aside a {
+  text-decoration: none;
+  border-bottom: solid 1px rgb(230, 90, 90, 0.3);
+}
+
+.post aside a:hover {
+  font-weight: bold;
+  background: rgb(230, 90, 90, 0.2);
+}
+
+
+#TableOfContents>ul>li {
   list-style: none;
 }
 
@@ -49,44 +107,53 @@ code {
   padding: 0.2em 0;
 }
 
-.post p img {
-  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
-}
+/* ========================================
+    gist
+======================================== */
 
-/* gist スタイル調整 Start */
 .gist * {
   font-size: 1em !important;
 }
+
 .gist-meta {
-  display: none; /* フッタ非表示 */
+  display: none;
 }
+
 .gist-file {
-  border-bottom: none !important; /* コード領域の下枠線削除 */
+  border-bottom: none !important;
 }
+
 table.highlight tr:nth-child(2n+1) td {
-  background: #f0f8ff; /* 奇数行だけ色を付ける */
+  background: #f0f8ff;
 }
-.gist-data{
-  max-height:400px!important; /* 枠の高さを調整 */
+
+.gist-data {
+  max-height: 400px !important;
   padding: 5px;
 }
-table.highlight tr td,table.highlight tr td span {
+
+table.highlight tr td,
+table.highlight tr td span {
   border: none;
 }
-/* gist スタイル調整 End */
 
-/* 見出し Start */
-article.post > h2 {
-  padding: 0.1em 0.5em;/*文字の上下 左右の余白*/
-  color: #494949;/*文字色*/
-  background: #f4f4f4;/*背景色*/
-  border-left: solid 5px #ff4f1a;/*左線*/
+/* ========================================
+    見出し
+======================================== */
+
+article.post>h2 {
+  padding: 0.1em 0.5em;
+  color: #494949;
+  background: #f4f4f4;
+  border-left: solid 5px #ff4f1a;
   margin-bottom: 0px;
 }
+
 h3 {
   position: relative;
   padding: 0.25em 0;
 }
+
 h3:after {
   content: "";
   display: block;
@@ -95,10 +162,12 @@ h3:after {
   background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
   background: linear-gradient(to right, rgb(230, 90, 90), transparent);
 }
+
 h4 {
   position: relative;
   padding: 0.25em 0;
 }
+
 h4:after {
   content: "";
   display: block;
@@ -107,27 +176,10 @@ h4:after {
   background: -webkit-linear-gradient(to right, rgb(255, 105, 180), transparent);
   background: linear-gradient(to right, rgb(255, 105, 180), transparent);
 }
-/* 見出し End */
 
-.content p a {
-  text-decoration: none;
-  border-bottom: dashed 1px rgb(230, 90, 90);
-  color: rgb(230, 90, 90);
-  font-weight: bold;
-}
-.content p a:hover {
-  font-size: 1.2em;
-  font-weight: bold;
-  border-bottom: solid 2px rgb(230, 90, 90);
-  background: rgb(230, 90, 90,0.2);
-}
-
-/* list style で Category と Tag を入れるところは日付と少しスペースを設ける*/
-.li-line {
-  line-height: 200%;
-}
-
-/* タクソノミーの表示関連 */
+/* ========================================
+    タクソノミー（カテゴリー、タグ）
+======================================== */
 
 @media screen and (max-width: 481px) {
   .li-line {
@@ -141,25 +193,31 @@ a.cat {
   border: 1px solid #7b9cb0;
   color: #316586;
 }
+
 a.cat:hover {
   background-color: #bad8e8;
   font-weight: bold;
 }
+
 a.tag {
   background-color: #ffdead;
   border: 1px solid #ff6347;
   color: #ff4500;
 }
+
 a.tag:hover {
   background-color: #ffb380;
   font-weight: bold;
 }
-.cat,.tag {
+
+.cat,
+.tag {
   text-transform: uppercase;
   margin: 0.5em 0.5em 0em 0em;
   border-radius: 5px;
   text-decoration: none;
   padding: 0em 0.5em;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 .box-gray {
@@ -170,10 +228,7 @@ a.tag:hover {
   margin: 0.5em 0.5em 0em 0em;
   border-radius: 5px;
 }
-.min-08 {
-  font-size: 0.8em;
-}
-.navi-menu {
-  color: gray;
-  margin: 1em 0em;
+
+.li-line {
+  line-height: 200%;
 }
