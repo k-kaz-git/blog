@@ -114,7 +114,7 @@ VSCode の設定ファイルをリポジトリに入れて共通使用とした�
 この中にリポジトリから除外するファイルやフォルダを書き込むと、そのあたりを考慮してリポジトリを作成してくれます。  
 
 VSCode で不要なディレクトリを書き込みました。
-```.gitignore
+```html
 [.gitignore]
 
 VSCode/User/globalStorage/
