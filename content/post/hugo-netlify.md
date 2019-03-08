@@ -9,7 +9,7 @@ featuredImageDescription: "地球とネットワークのイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## Hugo を Netlify で動かす
 ネットでは簡単に出来ると書いてありましたけど、けっこうハマったので、そのあたりも書こうと思います。
