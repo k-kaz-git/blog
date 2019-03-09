@@ -57,6 +57,17 @@ Windows の場合は、環境変数のところを弄ります。
 テーマの中に .git というフォルダがあります。  
 あとで面倒なので、削除します。
 
+##### 補足［2019-03-10］
+他のテーマを使ったときに気付いたんですが、サブモジュール化すれば削除しなくて良いみたいです。  
+というか、そのほうが良いみたいですね。テーマのアップデートできるし。  
+
+別テーマですけど、こんな感じです。
+
+```git
+git submodule add https://github.com/zwbetz-gh/cupper-hugo-theme.git themes/cupper-hugo-theme
+git submodule update --remote --merge
+```
+
 ### 設定ファイルの修正
 ルートにある `config.toml` が設定ファイルです。  
 エディタで開いて、最低限これらを書いてください。  
