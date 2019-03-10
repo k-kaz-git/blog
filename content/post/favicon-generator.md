@@ -32,7 +32,7 @@ draft: false
 ### 作成手順
 * [Favicon Generator. For all platforms](https://realfavicongenerator.net/) に行きます。
 * 「Select your Favicon picture」というボタンをクリックします。
-* ファビコンとした画像を選択してアップします。
+* ファビコンとしたい画像を選択してアップします。
 * OS や ブラウザごとにいくつか設定がありますので、自分好みにします。
 * 「Generate your Favicons and HTML code」というボタンをクリックします。
 * 作成されたファビコン（zip形式）をダウンロードして完了です。
