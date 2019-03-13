@@ -1,27 +1,27 @@
 ---
-title: "テーマ cupper のカスタマイズ"
+title: "テーマ Cupper のカスタマイズ"
 date: 2019-03-12T16:02:29+09:00
 description: "テーマ Cupper のカスタマイズをこちらにまとめます。"
-categories: [""]
-tags: [""]
-featuredImage: ""
-featuredImageDescription: ""
+categories: ["homepage"]
+tags: ["hugo" , "theme" , "cupper"]
+featuredImage: "/images/cupper-org-logo.png"
+featuredImageDescription: "cupper のオリジナルロゴ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## Cupper のカスタマイズをこちらにまとめます。
-### 全然スタイルが適用されないんですけど（怒）
+### 全然スタイルが適用されないんですけど（泣）
 aether は、簡単にスタイルの変更が出来たんですけど、Cupper は全然適用されない。  
-何でだろうと調べていたら、テーマによっては `config.toml` に手を入れなければいけないものがあることを知ったおじさん。
+何でだろうと調べていたら、テーマによっては `config.toml` に手を入れなければいけないものがあることを知ったおじさんです。
 
 ```toml
 [params]
   customCSS = ["/css/hoge.css"]
 ```
 
-こうすることで、`/static/css/hoge.css` が元のスタイルシートの上に被さるようになるんだって。  
+こうすることで、`static/css/hoge.css` が元のスタイルシートの上に被さるようになるんだって。  
 もちろん `<head></head>` に読み込み用の追記が必要です。
 
 ```html
@@ -33,17 +33,33 @@ aether は、簡単にスタイルの変更が出来たんですけど、Cupper 
 スタイルを弄る前段階で躓きましたよ・・・。
 
 ## 標準機能内
-## 標準機能外
-### h2 に付くリンクアイコンを消したい
-スタイルシートで設定しているのかと思いましたけど、完全に外していました（笑）  
+### ロゴ画像を差し替える
+SVG形式のロゴ画像が必要になります。  
+私は [Inkscape](https://inkscape.org/ja/) で作りました。
 
-`\themes\cupper-hugo-theme\layouts\partials\svg.html`
+<img src="/images/cupper-custom-logo.svg" alt="cupper のロゴ画像" style="width:auto;">
+
+logo.svg というファイル名で保存して、下記に保存すると適用されます。
+
+`static/images/logo.svg`
+
+
+## 標準機能外
+### h2 に付くリンクアイコンを消す
+before: <img src="/images/cupper-custom-h2-icon-before.webp" alt="h2アイコンにリンクが付いちゃう" style="width:auto;" >
+after: <img src="/images/cupper-custom-h2-icon-after.webp" alt="h2アイコンにリンクが付いちゃう" style="width:auto;" >
+
+WordPress では、[Font Awesome](https://fontawesome.com)  を使って、スタイルシートで設定していたので、これも同じかと思いきや、完全に外していました（笑）  
+
+画像ファイルで指定していましたので、そのファイルを修正します。
+
+`themes\cupper-hugo-theme\layouts\partials\svg.html`
 
 ↓ にコピーします。
 
-`\layouts\partials\svg.html`
+`layouts\partials\svg.html`
 
-この中にある `<symbol id="link"></symbol>` というのが、`h2` のところで使われているリンクアイコンなので、該当行を丸ごと削除します。  
+この中にある `<symbol id="link"> ～ </symbol>` というのが、`h2` のところで使われているリンクアイコンなので、該当行を丸ごと削除すれば、きれいに消えます。
 
 ```html
 <symbol id="link" viewBox="0 0 50 50">
@@ -56,4 +72,135 @@ aether は、簡単にスタイルの変更が出来たんですけど、Cupper 
   </g>
 </symbol>
 ```
+### カテゴリーを追加する
+本テーマでは、タグは自動で出てきますが、カテゴリーは出てきません。  
+必要があれば下記の設定をしていきます。
 
+#### 設定ファイルに追加
+`config.toml` に `tag` の行があるので、その前後に `category` を入れます。  
+右側に入るのは複数形になるので注意！！
+
+```toml
+[taxonomies]
+  tag = "tags"
+  category = "categories"   # ここに追加しました
+```
+
+#### メニューに追加
+before: <img src="/images/cupper-custom-menu-before.webp" alt="メニューにカテゴリーが無い" style="width:auto;" >
+
+after: <img src="/images/cupper-custom-menu-after.webp" alt="メニューにカテゴリーを追加" style="width:auto;" >
+
+
+これも設定ファイル `config.toml` の中です。  
+`[menu]` というセクションがありますので、表示したい位置に入れてあげます。  
+
+```toml
+[menu]
+  ＜中略＞
+  [[menu.nav]]
+    name = "Categories"   # 表示される名称
+    url = "/categories/"    # 参照するアドレス
+    weight = 3                  # 表示する順番？
+  ＜中略＞
+```
+
+ついでに about も要らないので消しました。
+
+#### 記事のタイトル下に追加
+before: <img src="/images/cupper-custom-post-title-before.webp" alt="記事にカテゴリーが無い" style="width:auto;" >
+
+after: <img src="/images/cupper-custom-post-title-after.webp" alt="記事にカテゴリーを追加" style="width:auto;" >
+
+
+記事を表示するテンプレートを修正します。
+
+`themes\cupper-hugo-theme\layouts\post\single.html`
+
+↓ にコピーします。
+
+`layouts\post\single.html`
+
+ファイルを開くと、`{{ with .Params.tags }} ～ {{ end }}` という、タグ情報を表示する部分があります。  
+丸ごとコピーして、`tags` を `categories` に変更して貼り付ければおしまい。  
+スタイルは同じで良いかなと思ったので、手を抜いてそのままにしました。
+
+```html
+<div class="date">
+  {{ $dateFormat := $.Site.Params.dateFormat | default "2006-01-02" }}
+  <strong aria-hidden="true">Post: </strong>{{ .PublishDate.Format $dateFormat }}
+</div>
+
+<!-- ここから下を追加 -->
+{{ with .Params.categories }}
+<div class="tags">
+  <strong aria-hidden="true">Categories: </strong>
+  <ul aria-label="tags">
+    {{ range . }}
+      <li>
+        {{ $href := print ("categories/" | absLangURL) (. | urlize) "/" }}
+        <a href="{{ $href }}">{{ . }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
+<!-- ここまで -->
+```
+### 更新日を追加する
+このテーマも更新日がないので追加します。
+
+#### 設定の有効化
+`config.toml` に以下を追加します。
+
+```toml
+enableGitInfo = true
+```
+
+#### 記事一覧に追加
+before: <img src="/images/cupper-custom-list-before.webp" alt="記事一覧にカテゴリーが無い" style="width:auto;" >
+
+after: <img src="/images/cupper-custom-list-after.webp" alt="記事一覧にカテゴリーを追加" style="width:auto;" >
+
+記事一覧を表示するテンプレートを修正します。
+
+`themes\cupper-hugo-theme\layouts\_default\list.html`
+
+↓ にコピーします。
+
+`layouts\_default\list.html`
+
+公開日の下に `/ Up: {{ .Lastmod.Format "2006-01-02" }}` を追加します。  
+日付のフォーマットも自分好みに変えておきました。
+
+```html
+{{ $dateFormat := $.Site.Params.dateFormat | default "2006-01-02" }}
+Post: {{ .PublishDate.Format $dateFormat }}
+/ Up: {{ .Lastmod.Format "2006-01-02" }}    <!-- ここに追加 -->
+```
+
+#### 記事のタイトル下に追加
+`layouts\post\single.html` を修正しますが、上とまったく同じなので省略。
+
+### 記事の概要を表示する
+日付の下に書いてある文章が概要です。  
+
+after: <img src="/images/cupper-custom-list-after.webp" alt="記事一覧にカテゴリーを追加" style="width:auto;" >
+
+#### 記事に概要を書く（下準備）
+記事 `hoge.md` に以下を追加します。
+
+```md
+description: "ここに記事の概要を書きます。"
+```
+
+テンプレート（例えば `archetypes\post.md` ）に予め `description: ""` を追加しておくと、毎回書かなくて良いので楽です。
+
+#### 記事一覧に概要を追加
+`layouts\_default\list.html`
+
+表示したい場所に下記を追加します。
+
+```html
+{{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }}
+```
