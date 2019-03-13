@@ -20,5 +20,3 @@ expiryDate = ["expiryDate"]
 [taxonomies]
 category = "categories"
 tag = "tags"
-
-
