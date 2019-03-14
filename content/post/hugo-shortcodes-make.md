@@ -9,7 +9,7 @@ featuredImageDescription: "収穫したものをいただきましょう"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## Shortcodes を作りましょう
 少し前に勉強しましたので、実際に作ってみましょう。  

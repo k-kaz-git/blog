@@ -277,3 +277,96 @@ a {
     font-size: 0.8em;
   }
 }
+
+/* ========================================
+    コードのハイライト
+======================================== */
+
+code[class*="language-"] {
+  background: #000 !important;
+  color: #fffaf0;
+  }
+
+
+.hljs-comment,
+.hljs-quote {
+  color: #90ee90;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal {
+  color: #ffff00;
+}
+
+.hljs-name {
+  color: #4682b4;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #660;
+}
+
+.hljs-string {
+  color: #ff7f50;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #080;
+}
+
+.hljs-title,
+.hljs-tag,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-meta {
+  color: #c0c0c0;
+}
+
+.hljs-number {
+  color: #7cfc00;
+}
+
+.hljs-section,
+.hljs-class .hljs-title,
+.hljs-type,
+.hljs-attr,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-params {
+  color: #87ceeb;
+}
+
+.hljs-attribute,
+.hljs-subst {
+  color: #87ceeb;
+}
+
+.hljs-formula {
+  background-color: #eee;
+  font-style: italic;
+}
+
+.hljs-addition {
+  background-color: #baeeba;
+}
+
+.hljs-deletion {
+  background-color: #ffc8bd;
+}
+
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #ff8c00;
+}
+
+.hljs-doctag,
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
