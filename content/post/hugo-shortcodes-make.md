@@ -1,5 +1,5 @@
 ---
-title: "自作の Hugo用 Shortcodese"
+title: "自作の Hugo用 Shortcodes"
 date: 2019-03-14T12:42:21+09:00
 description: "自作の Shortcodes をテストしたり、思い出すための場所"
 categories: ["homepage"]
