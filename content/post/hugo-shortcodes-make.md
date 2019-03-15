@@ -87,7 +87,7 @@ draft: false
 
 {{% gist k-kaz-git fdf4888a89f20ee6238ea56de99e8524 %}}
 
-## 引用を挿入する
+## 引用を挿入する ［2019-03-15］
 ### 完成形
 {{% blockquote author="Wikipedia" link="https://ja.wikipedia.org/wiki/引用" %}}
 引用（いんよう、英語：citation, quotation）とは、広義には、自己のオリジナル作品のなかで他人の著作を副次的に紹介する行為、先人の芸術作品やその要素を副次的に自己の作品に取り入れること。

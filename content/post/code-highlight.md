@@ -9,7 +9,7 @@ featuredImageDescription: "カラフルな風船"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## シンタックスハイライトの色を変更したい
 グレーの背景でやさしい表現も良いんですが、**やっぱり背景は黒** ですよね。  
