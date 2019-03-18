@@ -388,3 +388,8 @@ code[class*="language-"] {
 .hljs-emphasis {
   font-style: italic;
 }
+
+/* iframely の横幅を少し小さく */
+.iframely-embed {
+  padding: 0 20%;
+}

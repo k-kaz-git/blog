@@ -14,13 +14,6 @@ draft: false
 ## Hugo のテーマを自作する
 [本家のほうでも書きました](https://k-kaz.net/2019/03/16/あずさ2号と-hugo-の-theme/) けど、Hugo のテーマを弄っていたら、次は自作かなと思って、手を付けてみました。  
 
-<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;"><a href="https://k-kaz.net/2019/03/16/azusa2-hugo-theme/" data-iframely-url="//cdn.iframe.ly/A1E0IvI"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
-
-↑ これ、[iframely](URLhttps://iframely.com) というサービスを使っています。  
-最初、情報取得の際にエラーを起こしていたんですが、URL に日本語が含まれていたからでした。
-使用される方はご注意あれ。
-
-あと、超でっかく表示されているので、スタイルシートで調整しようかな。
 
 **結果として、途中でやめました。**  
 
@@ -28,6 +21,17 @@ draft: false
 スタイルシートをコピペしたりしてたから、当然だけど。
 
 まぁ、このテーマを気に入っているということですよ。
+
+
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;"><a href="https://k-kaz.net/2019/03/16/azusa2-hugo-theme/" data-iframely-url="//cdn.iframe.ly/A1E0IvI"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+{{% memo memo %}}
+↑ これ、[iframely](URLhttps://iframely.com) というサービスを使っています。  
+最初、情報取得の際にエラーを起こしていたんですが、URL に日本語が含まれていたからでした。
+使用される方はご注意あれ。
+
+あと、超でっかく表示されているので、スタイルシートで調整しました。
+{{% /memo %}}
 
 ### 一から作って、こんな感じのところまで出来ました
 素人のわりには、それっぽくなっているでしょ。
