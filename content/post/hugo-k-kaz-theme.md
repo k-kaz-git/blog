@@ -1,7 +1,7 @@
 ---
 title: "Hugo のテーマを作ったよ。"
 date: 2019-03-18T12:31:49+09:00
-description: "Hugo のテーマを自作してみました。"
+description: "Hugo のテーマを自作してみました。途中で放り投げたけど（笑）"
 categories: ["homepage"]
 tags: ["hugo" , "theme" , "aether" , "cupper"]
 featuredImage: "/images/horse-colorful_640.webp"
@@ -14,6 +14,13 @@ draft: false
 ## Hugo のテーマを自作する
 [本家のほうでも書きました](https://k-kaz.net/2019/03/16/あずさ2号と-hugo-の-theme/) けど、Hugo のテーマを弄っていたら、次は自作かなと思って、手を付けてみました。  
 
+<div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 56.25%; padding-top: 120px;"><a href="https://k-kaz.net/2019/03/16/azusa2-hugo-theme/" data-iframely-url="//cdn.iframe.ly/A1E0IvI"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+↑ これ、[iframely](URLhttps://iframely.com) というサービスを使っています。  
+最初、情報取得の際にエラーを起こしていたんですが、URL に日本語が含まれていたからでした。
+使用される方はご注意あれ。
+
+あと、超でっかく表示されているので、スタイルシートで調整しようかな。
 
 **結果として、途中でやめました。**  
 
