@@ -1,6 +1,6 @@
 ---
 title: "Hugo のテーマを作ったよ。"
-date: 2019-03-18T15:31:49+09:00
+date: 2019-03-18T12:31:49+09:00
 description: "Hugo のテーマを自作してみました。"
 categories: ["homepage"]
 tags: ["hugo" , "theme" , "aether" , "cupper"]
@@ -9,7 +9,7 @@ featuredImageDescription: "カラフルな馬"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## Hugo のテーマを自作する
 [本家のほうでも書きました](https://k-kaz.net/2019/03/16/あずさ2号と-hugo-の-theme/) けど、Hugo のテーマを弄っていたら、次は自作かなと思って、手を付けてみました。  
