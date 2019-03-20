@@ -205,7 +205,7 @@ description: "ここに記事の概要を書きます。"
 {{ if (isset .Params "description") }}{{ index .Params "description" }}{{ else }}{{ .Summary }}{{ end }}
 ```
 
-### トップページを記事一覧ページにする
+### トップページを記事一覧ページにする［2019-03-19］
 テーマ内にある `_index.html` を削除すると、次に見に行くのが `list.html` になるので、それで完了・・・のはずが、うまくいかず。  
 最終的には **姑息な手段** で、`layouts\_default\list.html` をコピーして `layouts\_index.html` としました。  
 たぶん、どっか見落としているんだろうけど、とりあえず出来た（笑）
