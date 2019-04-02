@@ -1,18 +1,19 @@
 ---
 title: "Hugo の目次について考える"
-date: 2019-04-02T13:26:27+09:00
+date: 2019-04-02T19:26:27+09:00
 description: "Hugo に目次を入れようと思ったのです。"
 categories: ["homepage"]
 tags: ["hugo" , "tableofcontents"]
-featuredImage: ""
-featuredImageDescription: ""
+featuredImage: "/images/hugo-tableofcontents-menu.webp"
+featuredImageDescription: "メニュー、目次のイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## Hugo の目次について
 Hugo には、コンテンツ内に登場する見出しタグ（H）を自動的にリスト化してくれる機能 `TableOfContents` が用意されています。  
+
 **それすなわち、目次ですね。**
 
 ### 使い方
