@@ -1,6 +1,6 @@
 ---
 title: "Deploy でエラーが出たんですけど。"
-date: 2020-10-14T14:51:11+09:00
+date: 2020-10-14T18:51:11+09:00
 description: "1年半振りの Deploy で・・・。"
 categories: ["homepage"]
 tags: ["hugo" , "github" , "Netlify"]
