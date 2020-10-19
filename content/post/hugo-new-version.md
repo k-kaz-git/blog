@@ -12,7 +12,7 @@ displayInList: true
 draft: false
 ---
 ## Hugo ってバージョンアップしてるの？
-まずは現在のバージョンを確認。
+まずは、私が使っている現在のバージョンを確認。
 
 ```html
 $ hugo version

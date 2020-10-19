@@ -19,7 +19,7 @@ Netlify に記事を上げようと思って、`./deploy.sh` （※スクリプ�
 
 `ssh -T git@github.com` で、ssh が通るか試してみたら、`git@github.com: Permission denied (publickey).` って怒られました。
 
-```
+```html
 $ ssh -T git@github.com     /* ssh が通るか試すコマンド */
 $ git@github.com: Permission denied (publickey).
 ```
