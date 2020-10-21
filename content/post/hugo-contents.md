@@ -24,7 +24,7 @@ Hugo で同一フォルダに記事と画像等のファイルを置ける **ペ
 
 [k-kaz が好きなことを書くサイト](https://k-kaz.netlify.app) では、その仕組みを利用しています。
 
-詳しくはこちらで。
+詳しくはこちらで。  
 [Page Bundles | Hugo](https://gohugo.io/content-management/page-bundles)
 
 
@@ -59,7 +59,7 @@ url: "hoge"
 
 `\archetypes\post.md`
 
-こんな感じになっています。
+こんな感じにしました。
 
 ```toml
 ---
