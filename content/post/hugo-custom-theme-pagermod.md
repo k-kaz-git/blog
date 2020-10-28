@@ -71,7 +71,7 @@ Pagermod の場合、`theme-vars.css` の中で、ライトモードが `.root` 
 定義したものを使うには、
 ```css
 a {
-    color: var(--entry); //リンクの色を定義
+    color: var(--entry);    /* リンクの色を定義 */
 }
 ```
 とします。  
@@ -99,7 +99,7 @@ Pagermod では画面サイズに関係無く、**フォントサイズは決め
 ちなみにこのテーマの初期値は `config.yml` なので、以下こちらで統一します。
 
 ```yml
-  ShowShareButtons: false # True にすれば表示するよ。
+  ShowShareButtons: false     # True にすれば表示するよ。
 ```
 #### トップページのソーシャル系アイコンを消す。
 これも簡単ですが、ファイルを持ってくる必要があります。
