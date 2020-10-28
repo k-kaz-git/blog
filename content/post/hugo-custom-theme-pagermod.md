@@ -205,4 +205,11 @@ markup:
 ```
 
 参考 → [Link WordsConfigure Markup | Hugo](https://gohugo.io/getting-started/configuration-markup/)
+### トップページに記事のサマリーを表示する。
+何も設定しない場合は、記事本文の先頭から何文字かがサマリーとして表示されます。
+意図的に表示したい文言があるときは記事上部の設定部分に `summary` を入れます。
+```md
+summary: "意図的に表示したい文言を書く。"
+```
+
 
