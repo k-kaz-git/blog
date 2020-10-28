@@ -188,3 +188,21 @@ summary: "links"
 ```
 
 これで画面右上に `Archives` `Tags` `Link` が並び、クリックするとその中身が表示されます。
+### html を表示する。
+Hugo v0.60.0 からの仕様で、記事に直接書いた html が表示されなくなった問題への対応です。  
+ちなみに表示されない部分は `<!-- raw HTML omitted -->` と置き換わっています。
+#### config.toml
+```toml
+[markup.goldmark.renderer]
+unsafe= true
+```
+#### config.yml
+```yml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+```
+
+参考 → [Link WordsConfigure Markup | Hugo](https://gohugo.io/getting-started/configuration-markup/)
+
