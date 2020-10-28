@@ -146,3 +146,45 @@ Pagermod では画面サイズに関係無く、**フォントサイズは決め
 </article>
 {{- end}}
 ```
+### 右上のメニューをカスタマイズしたい。
+2段階の修正が必要です。  
+まずはメニューの文字列を表示する。  
+次にその内容を表示する。
+
+#### メニューの文字列を表示する。
+`config.yml` を開いて、表示したい文字列、優先順位等を記述します。  
+
+```yml
+menu:
+  main:
+    - name: Archives    # 表示される文字列
+      url: /archives/   # url
+      weight: 5         # 表示順（小さいほど先に表示）
+    - name: Tags
+      url: /tags/
+      weight: 10
+    - name: Link        # 今回追加
+      url: /links/      # 今回追加
+      weight: 12        # 今回追加
+```
+
+今回は `Link` というメニューを追加してみました。
+
+#### Link の中身を作ります。
+下記の場所に `links.md` を設置します。  
+`サイト名\content\links.md`
+```bash
+$ hugo new links.md
+```
+ファイルを作ったら、その中身を編集します。
+```md
+---
+title: "Link"
+url: "/links"
+summary: "links"
+---
+[k-kaz ブログ](https://k-kaz.net)  
+[k-kaz が Hugo で遊ぶサイト](https://k-kaz-git.github.io)
+```
+
+これで画面右上に `Archives` `Tags` `Link` が並び、クリックするとその中身が表示されます。
