@@ -9,7 +9,7 @@ featuredImageDescription: "雑誌とコーヒー"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## 次に目を付けたテーマは Pagermod です。
 不定期でお送りしているテーマのカスタマイズコーナー。  
