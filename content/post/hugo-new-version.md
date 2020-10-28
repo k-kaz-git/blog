@@ -99,7 +99,7 @@ home.Pagesはトップレベルセクションのページのみを返すよう�
 
 これだ。
 
-`\themes\xxxx\layouts\_default\list.html` の中に `.Pages` を使っていたので、そこを `Site.RegularPages` に直すことで解決しました。
+`\themes\xxxx\layouts\_default\list.html` の中に `.Pages` を使っていたので、そこを `.Site.RegularPages` に直すことで解決しました。
 
 半日近くかかったよ。
 
