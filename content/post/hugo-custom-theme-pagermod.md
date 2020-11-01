@@ -217,7 +217,49 @@ markup:
     renderer:
       unsafe: true
 ```
-
 参考 → [Link WordsConfigure Markup | Hugo](https://gohugo.io/getting-started/configuration-markup/)  
 参考 → [あれ、引用がごっそり消えている](https://k-kaz-git.github.io/post/hugo-new-version/#%E3%81%82%E3%82%8C%E5%BC%95%E7%94%A8%E3%81%8C%E3%81%94%E3%81%A3%E3%81%9D%E3%82%8A%E6%B6%88%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B)
 
+### 日本語化
+i18n 対応ですので、言語ファイルが用意されています。  
+いつものごとく、テーマ内のファイルは直接触らず、コピペします。
+
+`/home/k-kaz/data/git/k/themes/hugo-PaperMod/i18n` → `/home/k-kaz/data/git/k/i18n`
+
+今回、日本語用のファイルを直したかったので、`ja.yaml` というものをコピペしました。
+
+元のファイル（こんだけしか無い)
+```yml
+- id: prev_page
+  translation: "前のページ"
+
+- id: next_page
+  translation: "次のページ"
+```
+
+こう直しました。
+```yml
+- id: prev_page
+  translation: "前のページ"
+
+- id: next_page
+  translation: "次のページ"
+
+- id: read_time               # ここから下を追記しました。
+  translation:
+    one : "1 分"
+    other: "{{ .Count }} 分"
+
+- id: toc
+  translation: "目次"
+
+- id: translations
+  translation: "Translations"
+```
+参考にしたのは、`en.yaml` のファイルです。
+
+実際に言語切り替えするときは、[exampleSite](https://adityatelange.github.io/hugo-PaperMod/) のようにサイト上にスイッチを付けるのが良いのでしょうが、**うちのサイトに日本語を読めない人は来ない** という決め付けで、横着して `config.yml` で日本語を直指定しました。
+
+```yml
+defaultContentLanguage : ja   # この行を追加です。
+```
