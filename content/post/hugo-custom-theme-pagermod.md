@@ -88,6 +88,17 @@ Pagermod では画面サイズに関係無く、**フォントサイズは決め
 タイトルタグとか、かなり文字サイズが大きいので、スマホで見ると見やすいんだけど文字数が溢れて改行しちゃうのよね。  
 やっぱりここは手を入れて可変にしようかなと悩んでいます。
 
+## 現在の PageSpeed Insights はこんな感じ。
+![PageSpeed Insights の結果](/images/pagermod-pagespeed-insights.webp)
+
+**100点は気持ち良いね！！**
+
+現状、99点～100点のところで、ほぼ安定しています。  
+100点で安定させるには、記事のカバー画像をやめることかな。（データ量を減らす）  
+
+でも、トップページが寂しくなっちゃうので、カバー画像ありで運用します。  
+90点台後半が出ていれば十分でしょうしね。
+
 ## Pagermod のカスタマイズをしていきます。
 ### アイコンを消したい。
 記事内に共有アイコン、トップページにソーシャル系アイコンが搭載されています。  
@@ -195,31 +206,6 @@ summary: "links"
 ```md
 summary: "意図的に表示したい文言を書く。"
 ```
-
-## Hugo のカスタマイズをします。（他テーマでも共通）
-この記事に載せなくても良いのですが、せっかくなので一緒に書いておきましょう。
-
-### 外部サイトを新しいタブで開く
-[Hugo で外部サイトを新しいタブで開きたい。](https://k-kaz-git.github.io/post/hugo-alink/) を参照あれ。
-
-### 記事内の html を表示する。
-Hugo v0.60.0 からの仕様で、記事に直接書いた html が表示されなくなった問題への対応です。  
-ちなみに表示されない部分は `<!-- raw HTML omitted -->` と置き換わっています。
-#### config.toml
-```toml
-[markup.goldmark.renderer]
-unsafe= true
-```
-#### config.yml
-```yml
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-```
-参考 → [Link WordsConfigure Markup | Hugo](https://gohugo.io/getting-started/configuration-markup/)  
-参考 → [あれ、引用がごっそり消えている](https://k-kaz-git.github.io/post/hugo-new-version/#%E3%81%82%E3%82%8C%E5%BC%95%E7%94%A8%E3%81%8C%E3%81%94%E3%81%A3%E3%81%9D%E3%82%8A%E6%B6%88%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B)
-
 ### 日本語化
 i18n 対応ですので、言語ファイルが用意されています。  
 いつものごとく、テーマ内のファイルは直接触らず、コピペします。
@@ -305,13 +291,27 @@ enableGitInfo: true
 
 これで更新日時が正しく反映されるようになります。
 
-### 現在の PageSpeed Insights はこんな感じ。
-![PageSpeed Insights の結果](/images/pagermod-pagespeed-insights.webp)
+## Hugo のカスタマイズをします。（他テーマでも共通）
+この記事に載せなくても良いのですが、せっかくなので一緒に書いておきましょう。
 
-**100点は気持ち良いね！！**
+### 外部サイトを新しいタブで開く
+[Hugo で外部サイトを新しいタブで開きたい。](https://k-kaz-git.github.io/post/hugo-alink/) を参照あれ。
 
-現状、99点～100点のところで、ほぼ安定しています。  
-100点で安定させるには、記事のカバー画像をやめることかな。（データ量を減らす）  
+### 記事内の html を表示する。
+Hugo v0.60.0 からの仕様で、記事に直接書いた html が表示されなくなった問題への対応です。  
+ちなみに表示されない部分は `<!-- raw HTML omitted -->` と置き換わっています。
+#### config.toml
+```toml
+[markup.goldmark.renderer]
+unsafe= true
+```
+#### config.yml
+```yml
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+```
+参考 → [Link WordsConfigure Markup | Hugo](https://gohugo.io/getting-started/configuration-markup/)  
+参考 → [あれ、引用がごっそり消えている](https://k-kaz-git.github.io/post/hugo-new-version/#%E3%81%82%E3%82%8C%E5%BC%95%E7%94%A8%E3%81%8C%E3%81%94%E3%81%A3%E3%81%9D%E3%82%8A%E6%B6%88%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B)
 
-でも、トップページが寂しくなっちゃうので、カバー画像ありで運用します。  
-90点台後半が出ていれば十分でしょうしね。
