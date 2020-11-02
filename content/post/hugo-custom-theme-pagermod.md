@@ -248,7 +248,7 @@ i18n 対応ですので、言語ファイルが用意されています。
 - id: read_time               # ここから下を追記しました。
   translation:
     one : "1 分"
-    other: "{{ .Count }} 分"
+    other: "約 {{ .Count }} 分"
 
 - id: toc
   translation: "目次"
@@ -263,6 +263,48 @@ i18n 対応ですので、言語ファイルが用意されています。
 ```yml
 defaultContentLanguage : ja   # この行を追加です。
 ```
+
+### 投稿日と更新日を表示したい。
+初期状態だと投稿日のみが表示されています。  
+また、並びが「月、日、年」と、日本人の私には馴染みのないものなので一緒に直しましょう。
+
+#### テンプレートファイルをコピペします。
+いつものようにテンプレート内から該当ファイルをコピペします。
+
+`サイト名\themes\hugo-PaperMod\layouts\partials\post_meta.html` → `"サイト名\layouts\partials\post_meta.html`
+
+元のファイル（該当部分だけ抜き出し）
+```html
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "meta" (slice (.Date.Format (default "January 2, 2006" .Site.Params.DateFormat))) }}
+{{- end -}}
+```
+
+修正後のファイル（2行目を修正しています）
+```html
+{{- if not .Date.IsZero -}}
+{{- $scratch.Add "meta" (slice "Posted" (.Date.Format (default "2006-01-02" .Site.Params.DateFormat)) "Updated" (.Lastmod.Format (default "2006-01-02"))) }}
+{{- end -}}
+```
+
+2行目のところで、日付の表示方法 `default "2006-01-02"` を決めてあげ、さらに最終更新日を取得する `.Lastmod.Format` を追加しました。
+
+日時の前に書く言葉はお好みでどうぞ。  
+ここでは `Posted` と `Updated` にしてあります。  
+もちろん日本語でも良いですよ。
+
+ただ、これだけだと、更新日時は正しく反映されません。  
+もう1つ修正が必要です。
+
+#### config.yml も直します。
+最終更新日時を Git の履歴から自動取得するには、`config.yml` に、1行追記が必要です。
+
+```yml
+enableGitInfo: true
+```
+
+これで更新日時が正しく反映されるようになります。
+
 ### 現在の PageSpeed Insights はこんな感じ。
 ![PageSpeed Insights の結果](/images/pagermod-pagespeed-insights.webp)
 
