@@ -2,8 +2,16 @@
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
 description: ""
-categories: [""]
-tags: [""]
+categories: [
+    "homepage",
+    "coding",
+    "linux"
+    ]
+tags: [
+    "hugo",
+    "theme",
+    "css",
+    ]
 featuredImage: ""
 featuredImageDescription: ""
 dropCap: false
