@@ -13,7 +13,7 @@ featuredImageDescription: "k-kaz SVG"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## こんなに便利な物だったとは！
 SVGって、昔からある画像形式なんで、存在はもちろん知っていたんですけど、使うことは無かったんですよね。  
