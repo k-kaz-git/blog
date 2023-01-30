@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags - </title>
+    <link>https://k-kaz-git.github.io/tags/</link>
+    <description>Recent content in Tags on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Nov 2021 19:07:07 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>aether</title>
+      <link>https://k-kaz-git.github.io/tags/aether/</link>
+      <pubDate>Mon, 18 Mar 2019 12:31:49 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/aether/</guid>
+      <description></description>
+    </item><item>
+      <title>cupper</title>
+      <link>https://k-kaz-git.github.io/tags/cupper/</link>
+      <pubDate>Mon, 18 Mar 2019 12:31:49 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/cupper/</guid>
+      <description></description>
+    </item><item>
+      <title>css</title>
+      <link>https://k-kaz-git.github.io/tags/css/</link>
+      <pubDate>Thu, 14 Mar 2019 17:44:58 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/css/</guid>
+      <description></description>
+    </item><item>
+      <title>saas</title>
+      <link>https://k-kaz-git.github.io/tags/saas/</link>
+      <pubDate>Thu, 14 Mar 2019 17:44:58 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/saas/</guid>
+      <description></description>
+    </item><item>
+      <title>shortcodes</title>
+      <link>https://k-kaz-git.github.io/tags/shortcodes/</link>
+      <pubDate>Thu, 14 Mar 2019 12:42:21 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/shortcodes/</guid>
+      <description></description>
+    </item><item>
+      <title>favicon</title>
+      <link>https://k-kaz-git.github.io/tags/favicon/</link>
+      <pubDate>Sun, 10 Mar 2019 06:37:26 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/favicon/</guid>
+      <description></description>
+    </item><item>
+      <title>sass</title>
+      <link>https://k-kaz-git.github.io/tags/sass/</link>
+      <pubDate>Mon, 04 Mar 2019 10:05:17 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/sass/</guid>
+      <description></description>
+    </item><item>
+      <title>stylesheet</title>
+      <link>https://k-kaz-git.github.io/tags/stylesheet/</link>
+      <pubDate>Mon, 04 Mar 2019 10:05:17 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/stylesheet/</guid>
+      <description></description>
+    </item><item>
+      <title>snippet</title>
+      <link>https://k-kaz-git.github.io/tags/snippet/</link>
+      <pubDate>Fri, 22 Feb 2019 08:44:41 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/snippet/</guid>
+      <description></description>
+    </item><item>
+      <title>vscode</title>
+      <link>https://k-kaz-git.github.io/tags/vscode/</link>
+      <pubDate>Fri, 22 Feb 2019 08:44:41 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/tags/vscode/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hugo で Sass を使ってみる &middot; </title>
+  <meta name="description" content="Hugo で Sass を利用するのに少し設定が必要ですので、こちらにまとめます。" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://k-kaz-git.github.io/css/katex.css" rel="stylesheet">
+  
+  
+  
+  
+  <link href="https://k-kaz-git.github.io/css/concated.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://k-kaz-git.github.io/sass/main.fcdea0c4becd73f2e3b2312b85bcd7ba626d441c1cde1e1b8046a6afcc4e22b8.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-134722453-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+  
+</head>
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://k-kaz-git.github.io/" class="nav-text">k-kaz が Hugo で遊ぶサイト</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://k-kaz-git.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li class="navi-menu">- Categories -</li>
+      <li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/coding" class="hamburger-menu-overlay-link">Coding</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/homepage" class="hamburger-menu-overlay-link">Homepage</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li>
+      <li class="navi-menu">- Tags -</li>
+      <li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/aether" class="hamburger-menu-overlay-link">Aether</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/categories" class="hamburger-menu-overlay-link">Categories</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/css" class="hamburger-menu-overlay-link">Css</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/cupper" class="hamburger-menu-overlay-link">Cupper</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/favicon" class="hamburger-menu-overlay-link">Favicon</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/github" class="hamburger-menu-overlay-link">Github</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/hugo" class="hamburger-menu-overlay-link">Hugo</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/markdown" class="hamburger-menu-overlay-link">Markdown</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/mozc" class="hamburger-menu-overlay-link">Mozc</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/netlify" class="hamburger-menu-overlay-link">Netlify</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/pagermod" class="hamburger-menu-overlay-link">Pagermod</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/saas" class="hamburger-menu-overlay-link">Saas</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/sass" class="hamburger-menu-overlay-link">Sass</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/shortcodes" class="hamburger-menu-overlay-link">Shortcodes</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/snippet" class="hamburger-menu-overlay-link">Snippet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/stylesheet" class="hamburger-menu-overlay-link">Stylesheet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/svg" class="hamburger-menu-overlay-link">Svg</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tableofcontents" class="hamburger-menu-overlay-link">Tableofcontents</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tags" class="hamburger-menu-overlay-link">Tags</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/theme" class="hamburger-menu-overlay-link">Theme</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/vscode" class="hamburger-menu-overlay-link">Vscode</a></li>
+    </ul>
+  </div>
+</nav>
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">Hugo で Sass を使ってみる</h1>
+          <p class="post-date">
+            Posted <time datetime="2019-03-04">2019-03-04</time>
+             / Update 2019-03-04</p>
+             <div class="card-subtext muted-text li-line">
+               <a class="cat" href="/categories/homepage">homepage</a>
+               <a class="tag" href="/tags/stylesheet">#stylesheet</a>  <a class="tag" href="/tags/css">#css</a>  <a class="tag" href="/tags/sass">#sass</a> 
+             </div>
+        </header>
+        
+        <picture class="post-figure">
+            <source srcset="https://k-kaz-git.github.io/images/computer-Programming_640.webp" type="image/webp">
+            <source srcset="https://k-kaz-git.github.io/images/computer-Programming_640.webp">
+          <img src="https://k-kaz-git.github.io/images/computer-Programming_640.webp" alt="プログラミングをするイメージ画像">
+        </picture>
+        
+        <aside>
+          <h2>目次</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#余談ですがいつもお世話になっているサイト様">余談ですが、いつもお世話になっているサイト様</a></li>
+    <li><a href="#hugo-で-sass-を使ってみる">Hugo で Sass を使ってみる。</a>
+      <ul>
+        <li><a href="#hugo-のバージョンを確認する">Hugo のバージョンを確認する。</a></li>
+        <li><a href="#hugo-の-extended版-をダウンロードする必要あれば">Hugo の extended版 をダウンロードする。（必要あれば）</a></li>
+        <li><a href="#sass-のファイルを用意する">Sass のファイルを用意する。</a></li>
+        <li><a href="#スタイルシートを読み込む-html-の編集をする">スタイルシートを読み込む html の編集をする。</a></li>
+        <li><a href="#あとはお好きにスタイルシートを弄ってください">あとはお好きにスタイルシートを弄ってください。</a></li>
+      </ul>
+    </li>
+    <li><a href="#怒られたのはmainscss-の中身">怒られたのは、main.scss の中身</a>
+      <ul>
+        <li><a href="#何か問題でも">何か問題でも？</a></li>
+        <li><a href="#その前に色の指定について">その前に、色の指定について</a></li>
+        <li><a href="#今回の間違いは">今回の間違いは・・・</a></li>
+      </ul>
+    </li>
+    <li><a href="#同じ-sass-だけど-sass-か-scss-か">同じ Sass だけど .sass か .scss か</a></li>
+  </ul>
+</nav>
+        </aside>
+        <h2 id="余談ですがいつもお世話になっているサイト様">余談ですが、いつもお世話になっているサイト様</h2>
+<p>スタイルシートの記述で迷ったとき、こちらのサイトを参考にすることが多いです。<br>
+いつもお世話になっております。</p>
+<p><a href="https://saruwakakun.com/html-css" target="_blank">サルワカ: HTML&amp;amp;CSS</a>
+<br>
+<a href="https://developer.mozilla.org/ja/docs/Web/CSS" target="_blank">MDN: CSS リファレンス</a>
+</p>
+<h2 id="hugo-で-sass-を使ってみる">Hugo で Sass を使ってみる。</h2>
+<p>本題へ。<br>
+昨年、Hugo も Sass に対応したようですが、標準のモジュールでは使えず、extended版 が必要になります。</p>
+<h3 id="hugo-のバージョンを確認する">Hugo のバージョンを確認する。</h3>
+<p><code>hugo version</code> で現在のバージョンが確認できます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>hugo version
+</span></span><span style="display:flex;"><span>Hugo Static Site Generator v0.54.0/extended hogehoge...
+</span></span></code></pre></div><p><code>extended</code> の文字があった方はおめでとうございます。
+無かった方はダウロードを行ってください。</p>
+<h3 id="hugo-の-extended版-をダウンロードする必要あれば">Hugo の extended版 をダウンロードする。（必要あれば）</h3>
+<p>extended版 では無かった方。<br>
+こちらから、extended ってファイル名に付与されているものをダウンロードしてください。<br>
+下のほうにあるはず。</p>
+<p><a href="https://github.com/gohugoio/hugo/releases" target="_blank">Releases · gohugoio/hugo</a>
+</p>
+<p>ダウンロード後、入れ替えをします。</p>
+<h3 id="sass-のファイルを用意する">Sass のファイルを用意する。</h3>
+<p>現在使っているスタイルシートで良いので、下記に配置します。<br>
+また、この後の作業をスムーズにするため、ファイル名も変更しています。</p>
+<p><code>サイト名\assets\sass\main.scss</code></p>
+<p><code>assets\sass</code> がない場合は作っちゃってください。<br>
+また、<code>Sass</code> には <code>.sass</code> と <code>.scss</code> の2種類が存在しますが、元の <code>css</code> と互換性のある <code>.scss</code> としています。ここは好きな方にして良いですが、<code>.sass</code> の場合は、中身の編集もあわせてお願いします。</p>
+<h3 id="スタイルシートを読み込む-html-の編集をする">スタイルシートを読み込む html の編集をする。</h3>
+<p>テーマによってファイルが異なると思いますが、ここでは aether の場合で書いていきます。</p>
+<p><code>サイト名\layouts\partials\head.html</code> を開きます。<br>
+ファイルが無い方は、テーマの中 <code>テーマ名\themes\aether\layouts\partials\head.html</code> から、コピーして持ってきてください。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ &#34;</span><span style="color:#a6e22e">css</span><span style="color:#960050;background-color:#1e0010">/</span><span style="color:#a6e22e">main</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">min</span><span style="color:#960050;background-color:#1e0010">.</span><span style="color:#a6e22e">css</span><span style="color:#960050;background-color:#1e0010">&#34;</span> <span style="color:#960050;background-color:#1e0010">|</span> <span style="color:#a6e22e">absURL</span><span style="color:#960050;background-color:#1e0010">}}&#34;</span> /&gt;
+</span></span><span style="display:flex;"><span>{{ $style := resources.Get &#34;sass/main.scss&#34; | toCSS | minify | fingerprint }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;{{ $style.Permalink }}&#34;</span>&gt;
+</span></span></code></pre></div><p>1行目が元々入っている全体のスタイルシートの読み込み部分です。<br>
+今回は2行目と3行目を追加します。</p>
+<p>2行目<br>
+先程用意した <code>main.scss</code> を読み込み、パイプ <code>|</code> を使って、CSS 形式に変更したり、圧縮したりしています。<br>
+パイプを使うと、どんどん右の作業工程へ材料を渡していけますので、1行だけでいくつかの加工が可能です。</p>
+<p>3行目<br>
+2行目で加工したスタイルシートが <code>$style</code> に入っているので、それを通常通りの書式でスタイルシートとして読み込みます。</p>
+<p>※別途、スタイルシートを用意して読み込んでいた場合、置き換えるのであれば、その行を消してください。</p>
+<h3 id="あとはお好きにスタイルシートを弄ってください">あとはお好きにスタイルシートを弄ってください。</h3>
+<p>以上で、<code>Sass</code> を使うための準備は完了です。<br>
+ミスっていると、<code>hugo server</code> でローカルサーバーを立ち上げたときに怒られます。<br>
+ちなみに私は、事前準備は出来ていましたが、スタイルシートの中身で怒られました。</p>
+<p>それは次の項で。</p>
+<h2 id="怒られたのはmainscss-の中身">怒られたのは、main.scss の中身</h2>
+<p>ローカルサーバーを立ち上げたときに、エラーが出て起動しませんでした。<br>
+メッセージには、ご丁寧に</p>
+<ul>
+<li>スタイルシートの読み込みでエラーがあった</li>
+<li>何行目の何文字目がおかしい</li>
+</ul>
+<p>と書かれています。</p>
+<h3 id="何か問題でも">何か問題でも？</h3>
+<p>該当する箇所の確認をすると、背景色の指定をしているところでした。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">background</span><span style="color:#f92672">:</span> <span style="color:#f92672">rgb</span><span style="color:#f92672">(</span><span style="color:#f92672">230</span><span style="color:#f92672">,</span> <span style="color:#f92672">90</span><span style="color:#f92672">,</span> <span style="color:#f92672">90</span><span style="color:#f92672">,</span> <span style="color:#f92672">0</span>.<span style="color:#a6e22e">2</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><p><strong>何か問題でも？</strong></p>
+<p>しばらく気付かなかったんですけど、落ち着いて見たらようやく答えが分かりました。<br>
+というか、そもそもこの透過処理のことを私がよく分かっていなかったのが問題です。</p>
+<h3 id="その前に色の指定について">その前に、色の指定について</h3>
+<p>色の指定については、いくつかの方法があります。<br>
+”赤” という色を表す場合、</p>
+<ul>
+<li>red</li>
+<li>#ff0000</li>
+<li>rgb（255,0,0）</li>
+</ul>
+<p>こんな風に、何通りか指定方法があります。（実はまだ他にも・・・）</p>
+<h3 id="今回の間違いは">今回の間違いは・・・</h3>
+<p>で、今回の件なんですけど、<strong>背景色を透過させたい</strong>ということで指定をしています。</p>
+<p>透過させるときは、色指定に <code>rgb</code> を使ってあげるんです。<br>
+通常は、<code>rgb(red,green,blue)</code> の三原色で指定するんですが、そのあとに <code>alpha</code> というチャネルが入り、ここで透過具合を数値で入れると反映されます。</p>
+<p>私もそこまでは知っていたんですけど、<code>alpha</code> が入るときに <code>rgb</code> が <code>rgba</code> になることを知らなかったんですね。</p>
+<p>ということで、私の知識不足により、元々の <code>.css</code> からおかしかったというオチでした。</p>
+<p>下記のように書き直したところ、きちんとスタイルシートの変換がされ、サーバーが起動しました。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-css" data-lang="css"><span style="display:flex;"><span><span style="color:#f92672">background</span><span style="color:#f92672">:</span> <span style="color:#f92672">rgba</span><span style="color:#f92672">(</span><span style="color:#f92672">230</span><span style="color:#f92672">,</span> <span style="color:#f92672">90</span><span style="color:#f92672">,</span> <span style="color:#f92672">90</span><span style="color:#f92672">,</span> <span style="color:#f92672">0</span>.<span style="color:#a6e22e">2</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><h2 id="同じ-sass-だけど-sass-か-scss-か">同じ Sass だけど .sass か .scss か</h2>
+<p>Sass と言っても、記述方式が2通りあり、好きなほうを使えます。<br>
+<code>.sass</code> は、<code>{}</code> や <code>;</code> が不要なので、すっきり、そして少ない文字数でコーディングが可能。<br>
+<code>.css</code> から拡張されている、いくつかの機能はどちらも同様に使えます。</p>
+<p><code>.sass</code> と <code>.scss</code> のどちらが良いのかというのは、ネット上でも議論されていますが、私の結論としては <strong>「好きな方をどうぞ」</strong> です。</p>
+<p>ちなみに私は、<code>.scss</code> にしました。</p>
+<p>最初は <code>.sass</code> のほうが絶対に良いだろうと思って、<code>.css</code> を書き直していたんですけど、<code>{}</code> が無いと、どこからどこまでが今書いている範囲なのか、パッと分かりませんでした。</p>
+<p>ということで、<strong>私の頭の都合で <code>.scss</code> を選んだ次第です。</strong><br>
+そのような制限がなければ <code>.sass</code> を選んでいたかな。</p>
+<p>まぁ、最終的にはどちらも <code>.css</code> に変換されますので、サイトの表示速度に有利なのはこちらだとか無いはず。（私の理解では・・・）</p>
+
+      </article>
+      <hr>
+      <p class="post-date">
+        Posted <time datetime="2019-03-04">2019-03-04</time>
+         / Update 2019-03-04</p>
+         <div class="card-subtext muted-text li-line">
+           <a class="cat" href="/categories/homepage">homepage</a>
+           <a class="tag" href="/tags/stylesheet">#stylesheet</a>  <a class="tag" href="/tags/css">#css</a>  <a class="tag" href="/tags/sass">#sass</a> 
+         </div>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/post/github-how-to-use/" class="card blog-card" rel="bookmark" >
+    
+    <div class="card-img-container">
+      <p class="card-img-overlay">Next Article</p>
+      <picture>
+        <source srcset="https://k-kaz-git.github.io/images/network-server_640.webp" type="image/webp">
+        <source srcset="https://k-kaz-git.github.io/images/network-server_640.webp">
+        <img src="https://k-kaz-git.github.io/images/network-server_640.webp" class="card-img" alt="ネットワークとサーバーのイメージ画像">
+      </picture>
+    </div>
+    
+  <article class="card-body">
+    <h2 class="card-title">GitHub を使ってみる</h2>
+    <p class="card-text">GitHub を有効活用しようと思います。</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-02-22">2019-02-22</time>
+      / Updated 2019-03-06</p>
+    </div>
+    <div class="card-subtext muted-text li-line">
+      <span class="box-gray">coding</span> 
+      <span class="box-gray">#github</span> 
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/" class="card home-card" style="background-image: url( https://k-kaz-git.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <footer>
+    <p style="text-align: center">姉妹サイト<br><a class="btn-link" href="https://k-kaz.net/" target="_blank">k-kaz ブログ</a></p>
+</footer>
+    
+  <script defer src="https://k-kaz-git.github.io/js/katex.js"></script>
+
+
+  <script defer src="https://k-kaz-git.github.io/js/auto-render.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script src="https://k-kaz-git.github.io/js/core.min.js"></script>
+
+  </body>
+</html>

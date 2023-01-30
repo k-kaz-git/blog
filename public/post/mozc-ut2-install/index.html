@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Mozc Ut2 を Install したよ。 &middot; </title>
+  <meta name="description" content="Linux Mint に Mozc Ut2 をインストールしました。" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://k-kaz-git.github.io/css/katex.css" rel="stylesheet">
+  
+  
+  
+  
+  <link href="https://k-kaz-git.github.io/css/concated.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://k-kaz-git.github.io/sass/main.fcdea0c4becd73f2e3b2312b85bcd7ba626d441c1cde1e1b8046a6afcc4e22b8.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-134722453-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+  
+</head>
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://k-kaz-git.github.io/" class="nav-text">k-kaz が Hugo で遊ぶサイト</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://k-kaz-git.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li class="navi-menu">- Categories -</li>
+      <li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/coding" class="hamburger-menu-overlay-link">Coding</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/homepage" class="hamburger-menu-overlay-link">Homepage</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li>
+      <li class="navi-menu">- Tags -</li>
+      <li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/aether" class="hamburger-menu-overlay-link">Aether</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/categories" class="hamburger-menu-overlay-link">Categories</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/css" class="hamburger-menu-overlay-link">Css</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/cupper" class="hamburger-menu-overlay-link">Cupper</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/favicon" class="hamburger-menu-overlay-link">Favicon</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/github" class="hamburger-menu-overlay-link">Github</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/hugo" class="hamburger-menu-overlay-link">Hugo</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/markdown" class="hamburger-menu-overlay-link">Markdown</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/mozc" class="hamburger-menu-overlay-link">Mozc</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/netlify" class="hamburger-menu-overlay-link">Netlify</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/pagermod" class="hamburger-menu-overlay-link">Pagermod</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/saas" class="hamburger-menu-overlay-link">Saas</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/sass" class="hamburger-menu-overlay-link">Sass</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/shortcodes" class="hamburger-menu-overlay-link">Shortcodes</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/snippet" class="hamburger-menu-overlay-link">Snippet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/stylesheet" class="hamburger-menu-overlay-link">Stylesheet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/svg" class="hamburger-menu-overlay-link">Svg</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tableofcontents" class="hamburger-menu-overlay-link">Tableofcontents</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tags" class="hamburger-menu-overlay-link">Tags</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/theme" class="hamburger-menu-overlay-link">Theme</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/vscode" class="hamburger-menu-overlay-link">Vscode</a></li>
+    </ul>
+  </div>
+</nav>
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">Mozc Ut2 を Install したよ。</h1>
+          <p class="post-date">
+            Posted <time datetime="2019-03-31">2019-03-31</time>
+             / Update 2019-03-31</p>
+             <div class="card-subtext muted-text li-line">
+               <a class="cat" href="/categories/linux">linux</a>
+               <a class="tag" href="/tags/mozc">#mozc</a> 
+             </div>
+        </header>
+        
+        <picture class="post-figure">
+            <source srcset="https://k-kaz-git.github.io/images/origami-japan_640.webp" type="image/webp">
+            <source srcset="https://k-kaz-git.github.io/images/origami-japan_640.webp">
+          <img src="https://k-kaz-git.github.io/images/origami-japan_640.webp" alt="鶴の折り紙">
+        </picture>
+        
+        <aside>
+          <h2>目次</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#これまでと急に内容変わりますが">これまでと急に内容変わりますが・・・</a>
+      <ul>
+        <li><a href="#そもそも-mozc-って何">そもそも Mozc って何？</a></li>
+        <li><a href="#最新版-mozc-のインストール">最新版 Mozc のインストール</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </aside>
+        <h2 id="これまでと急に内容変わりますが">これまでと急に内容変わりますが・・・</h2>
+<p>Hugo に関連しませんけど、技術的な話ということでこちらに書いていきます。</p>
+<h3 id="そもそも-mozc-って何">そもそも Mozc って何？</h3>
+<blockquote>
+    <p>
+Mozcとは、Google 日本語入力のオープンソース版である。これは2010年5月11日にGoogle日本語入力をGoogle Chrome OSに移植するために必要な部分をオープンソースしたものである。
+</p><br>
+    <cite><a class="author" href="https://ja.wikipedia.org/wiki/Google_%e6%97%a5%e6%9c%ac%e8%aa%9e%e5%85%a5%e5%8a%9b">Wikipedia</a></cite>
+</blockquote>
+<p>まぁ、簡単に言うと Linux で使える Google 日本語入力 です。<br>
+この便利な Mozc ですが、Linux で普通にインストールされるものって、バージョンが古かったり、カタカナ辞書が付いていなかったりするんですよ。</p>
+<p>元々インストールされていたのは、Ver.2.20 で、新たに入れるのは Ver.2.23 です。そして、追加辞書も付いています。</p>
+<p>自分で、カタカナ辞書を用意してユーザー辞書に追加もしていましたが、変換時はユーザー辞書が優先されるので、普通にカタカナを入れたいのに、いちいち英語になったりして、面倒だったりね。</p>
+<p>なんか、Windows に比べて変換効率も悪いので、なんとかならないかとネットで調べていたところ、最新の Mozc を Linux にインストールする方法が見付かったので、やってみました。</p>
+<p>ちなみに、昔は KAKASI（KAnji KAna Simple Inverter）とか使っていましたよ。</p>
+<h3 id="最新版-mozc-のインストール">最新版 Mozc のインストール</h3>
+<p>先程書きました通り、普通にインストールするとバージョンが古いので、「ソフトウェアの管理」（Linux Mint）は使いません。</p>
+<p><strong>ソースを持ってきまして、それをビルドして使えるようにします。</strong></p>
+<p><strong>いきなり難しそうだ（笑）</strong></p>
+<h4 id="ソースをゲット">ソースをゲット</h4>
+<p>ソースはこちらにありますよ。<br>
+<a href="https://ja.osdn.net/users/sicklylife/pf/mozc_ut_for_ubuntu/wiki/FrontPage" target="_blank">mozc ut for ubuntu</a>
+</p>
+<p>今回は <code>mozc-2.23.2815.102+dfsg~ut2-20171008d+20181201.tar.xz</code> を利用しました。</p>
+<p>ダウンロード後、解凍しておきます。</p>
+<h4 id="ビルド">ビルド</h4>
+<p>解凍したところに <code>build_mozc_plus_utdict</code> というファイルができますので、これを実行します。<br>
+でも、足りないパッケージなどがあるので、事前に入れておきます。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>$ sudo apt update
+</span></span><span style="display:flex;"><span>$ sudo apt upgrade -y
+</span></span><span style="display:flex;"><span>$ sudo apt install -y devscripts debhelper libibus-1.0-dev pkg-config libxcb-xfixes0-dev libgtk2.0-dev python-dev gyp protobuf-compiler libprotobuf-dev qtbase5-dev libqwt-qt5-dev libgwengui-qt5-dev libuim-dev libzinnia-dev fcitx-libs-dev gettext desktop-file-utils ninja-build
+</span></span></code></pre></div><p>入れ終わったら、ビルドします。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>$ sudo ./build_mozc_plus_utdict
+</span></span></code></pre></div><p>しばらく、ハードディスクがカリカリと頑張ってくれます。</p>
+<p>運悪くビルドに失敗したら、ログに理由が書いてあると思いますので、<strong>ネットで頑張って調べます（笑）</strong></p>
+<h4 id="事後処理">事後処理</h4>
+<p>無事にビルドが終了したら、インストール済みのパッケージを削除します。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>$ sudo apt-get remove mozc-server mozc-utils-gui
+</span></span></code></pre></div><p>fcitx-mozc を使っているので、関連ファイルをインストール。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cmd" data-lang="cmd"><span style="display:flex;"><span>$ sudo dpkg -i mozc*.deb fcitx-mozc*.deb
+</span></span></code></pre></div><p>結果、こうなります。
+<img src="/images/mozc-ver223.webp" alt="Mozc について" style="width:auto;"></p>
+<p>以上です。</p>
+<h4 id="参考サイト">参考サイト</h4>
+<p>今回の作業は、下記、2サイト様を参考にさせていただきました。<br>
+ありがとうございます。</p>
+<p><a href="http://baker-street.jugem.jp/?day=20170407" target="_blank">Linux Mint 18 : 「Mozc UT2 Dictionary」「郵便番号」「ニコニコ大百科」「顔文字」で辞書を強化する</a>
+</p>
+<p><a href="https://sicklylife.jp/ubuntu/1804/mozc_ut2.html" target="_blank">Mozc UT2をインストールする - Ubuntu 18.04編</a>
+</p>
+
+      </article>
+      <hr>
+      <p class="post-date">
+        Posted <time datetime="2019-03-31">2019-03-31</time>
+         / Update 2019-03-31</p>
+         <div class="card-subtext muted-text li-line">
+           <a class="cat" href="/categories/linux">linux</a>
+           <a class="tag" href="/tags/mozc">#mozc</a> 
+         </div>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/post/hugo-k-kaz-theme/" class="card blog-card" rel="bookmark" >
+    
+    <div class="card-img-container">
+      <p class="card-img-overlay">Next Article</p>
+      <picture>
+        <source srcset="https://k-kaz-git.github.io/images/horse-colorful_640.webp" type="image/webp">
+        <source srcset="https://k-kaz-git.github.io/images/horse-colorful_640.webp">
+        <img src="https://k-kaz-git.github.io/images/horse-colorful_640.webp" class="card-img" alt="カラフルな馬">
+      </picture>
+    </div>
+    
+  <article class="card-body">
+    <h2 class="card-title">Hugo のテーマを作ったよ。</h2>
+    <p class="card-text">Hugo のテーマを自作してみました。途中で放り投げたけど（笑）</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-03-18">2019-03-18</time>
+      / Updated 2019-03-27</p>
+    </div>
+    <div class="card-subtext muted-text li-line">
+      <span class="box-gray">homepage</span> 
+      <span class="box-gray">#hugo</span> <span class="box-gray">#theme</span> <span class="box-gray">#aether</span> <span class="box-gray">#cupper</span> 
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/" class="card home-card" style="background-image: url( https://k-kaz-git.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <footer>
+    <p style="text-align: center">姉妹サイト<br><a class="btn-link" href="https://k-kaz.net/" target="_blank">k-kaz ブログ</a></p>
+</footer>
+    
+  <script defer src="https://k-kaz-git.github.io/js/katex.js"></script>
+
+
+  <script defer src="https://k-kaz-git.github.io/js/auto-render.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script src="https://k-kaz-git.github.io/js/core.min.js"></script>
+
+  </body>
+</html>

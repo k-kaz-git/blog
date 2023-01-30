@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <link>https://k-kaz-git.github.io/</link>
+    <description>Recent content on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Nov 2021 19:07:07 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Posts</title>
+      <link>https://k-kaz-git.github.io/post/</link>
+      <pubDate>Tue, 23 Nov 2021 19:07:07 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

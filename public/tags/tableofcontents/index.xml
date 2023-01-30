@@ -1,0 +1,21 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tableofcontents - </title>
+    <link>https://k-kaz-git.github.io/tags/tableofcontents/</link>
+    <description>Recent content in tableofcontents on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 02 Apr 2019 19:26:27 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/tags/tableofcontents/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo の目次について考える</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-tableofcontents/</link>
+      <pubDate>Tue, 02 Apr 2019 19:26:27 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-tableofcontents/</guid>
+      <description>Hugo に目次を入れようと思ったのです。</description>
+    </item>
+  </channel>
+</rss>

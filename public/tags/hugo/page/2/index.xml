@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo - </title>
+    <link>https://k-kaz-git.github.io/tags/hugo/</link>
+    <description>Recent content in hugo on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 11 Nov 2020 09:12:59 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>テーマ Cupper のカスタマイズ</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-theme-cupper/</link>
+      <pubDate>Tue, 12 Mar 2019 16:02:29 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-theme-cupper/</guid>
+      <description>テーマ Cupper のカスタマイズをこちらにまとめます。</description>
+    </item><item>
+      <title>Hugo の Shortcodes を使ってみる。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-shortcodes/</link>
+      <pubDate>Mon, 11 Mar 2019 17:40:19 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-shortcodes/</guid>
+      <description>Shortcodes を使うと便利そうなので、ちょっと勉強します。</description>
+    </item><item>
+      <title>Hugo を Netlify で動かすよ。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-netlify/</link>
+      <pubDate>Thu, 07 Mar 2019 14:44:55 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-netlify/</guid>
+      <description>Hugo を Netlify で動かしてみたときの記録です。</description>
+    </item><item>
+      <title>Hugo で使える Markdown の記法</title>
+      <link>https://k-kaz-git.github.io/post/hugo-markdown/</link>
+      <pubDate>Thu, 21 Feb 2019 11:43:14 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-markdown/</guid>
+      <description>自分用によく使う Markdown をまとめます。</description>
+    </item><item>
+      <title>Hugo の使い方</title>
+      <link>https://k-kaz-git.github.io/post/hugo-how-to-use/</link>
+      <pubDate>Wed, 20 Feb 2019 16:15:13 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-how-to-use/</guid>
+      <description>Hugo の Tips 的なものをこちらにまとめます。</description>
+    </item><item>
+      <title>テーマ aether のカスタマイズ</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-theme-aether/</link>
+      <pubDate>Mon, 18 Feb 2019 21:30:02 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-theme-aether/</guid>
+      <description>テーマ aether のカスタマイズをこちらにまとめます。</description>
+    </item><item>
+      <title>コメント欄を削除</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-comment/</link>
+      <pubDate>Mon, 18 Feb 2019 12:23:37 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-comment/</guid>
+      <description>使わないので、コメント欄を消しました。</description>
+    </item><item>
+      <title>カスタマイズしてみたいな</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom/</link>
+      <pubDate>Sun, 17 Feb 2019 20:14:15 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom/</guid>
+      <description>欲が出てきて、ホームページのカスタマイズをしたくなってきた。</description>
+    </item><item>
+      <title>Hugo 安定してきたかな</title>
+      <link>https://k-kaz-git.github.io/post/hugo-stable/</link>
+      <pubDate>Sun, 17 Feb 2019 04:50:58 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-stable/</guid>
+      <description>そろそろいい感じかな</description>
+    </item><item>
+      <title>Hello4</title>
+      <link>https://k-kaz-git.github.io/post/hello4/</link>
+      <pubDate>Sat, 16 Feb 2019 19:41:01 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello4/</guid>
+      <description>次はスクリプトで更新だ</description>
+    </item>
+  </channel>
+</rss>

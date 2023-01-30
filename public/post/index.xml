@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts - </title>
+    <link>https://k-kaz-git.github.io/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Nov 2021 19:07:07 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SVG、それは魔法の画像形式</title>
+      <link>https://k-kaz-git.github.io/post/svg/</link>
+      <pubDate>Tue, 23 Nov 2021 19:07:07 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/svg/</guid>
+      <description>便利な画像形式です。</description>
+    </item><item>
+      <title>Hugo Section</title>
+      <link>https://k-kaz-git.github.io/post/hugo-section/</link>
+      <pubDate>Wed, 11 Nov 2020 09:12:59 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-section/</guid>
+      <description>いまいち分からんセクションの話</description>
+    </item><item>
+      <title>Hugo のタグとかカテゴリとか</title>
+      <link>https://k-kaz-git.github.io/post/hugo-taxonomy/</link>
+      <pubDate>Thu, 05 Nov 2020 12:57:30 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-taxonomy/</guid>
+      <description>タグとかカテゴリとかの一覧を表示したい</description>
+    </item><item>
+      <title>テーマ Pagermod のカスタマイズ</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-theme-pagermod/</link>
+      <pubDate>Wed, 28 Oct 2020 12:32:55 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-theme-pagermod/</guid>
+      <description>Pagermod を自分好みにしていくよ。</description>
+    </item><item>
+      <title>コンテンツ（画像とか）を同一フォルダにする場合</title>
+      <link>https://k-kaz-git.github.io/post/hugo-contents/</link>
+      <pubDate>Wed, 21 Oct 2020 12:45:27 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-contents/</guid>
+      <description>それ用のルールがあるのね。</description>
+    </item><item>
+      <title>Hugo で外部サイトを新しいタブで開きたい。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-alink/</link>
+      <pubDate>Mon, 19 Oct 2020 12:28:18 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-alink/</guid>
+      <description>さっと出来ちゃうよ。</description>
+    </item><item>
+      <title>そうだ Hugo の最新版を使おう！</title>
+      <link>https://k-kaz-git.github.io/post/hugo-new-version/</link>
+      <pubDate>Sun, 18 Oct 2020 20:00:29 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-new-version/</guid>
+      <description>そんなときは大体ハマる。</description>
+    </item><item>
+      <title>Deploy でエラーが出たんですけど。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-deploy-error/</link>
+      <pubDate>Wed, 14 Oct 2020 18:51:11 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-deploy-error/</guid>
+      <description>1年半振りの Deploy で・・・。</description>
+    </item><item>
+      <title>Hugo の目次について考える</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-tableofcontents/</link>
+      <pubDate>Tue, 02 Apr 2019 19:26:27 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-tableofcontents/</guid>
+      <description>Hugo に目次を入れようと思ったのです。</description>
+    </item><item>
+      <title>Mozc Ut2 を Install したよ。</title>
+      <link>https://k-kaz-git.github.io/post/mozc-ut2-install/</link>
+      <pubDate>Sun, 31 Mar 2019 17:45:32 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/mozc-ut2-install/</guid>
+      <description>Linux Mint に Mozc Ut2 をインストールしました。</description>
+    </item>
+  </channel>
+</rss>

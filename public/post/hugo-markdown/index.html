@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hugo で使える Markdown の記法 &middot; </title>
+  <meta name="description" content="自分用によく使う Markdown をまとめます。" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://k-kaz-git.github.io/css/katex.css" rel="stylesheet">
+  
+  
+  
+  
+  <link href="https://k-kaz-git.github.io/css/concated.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://k-kaz-git.github.io/sass/main.fcdea0c4becd73f2e3b2312b85bcd7ba626d441c1cde1e1b8046a6afcc4e22b8.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-134722453-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+  
+</head>
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://k-kaz-git.github.io/" class="nav-text">k-kaz が Hugo で遊ぶサイト</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://k-kaz-git.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li class="navi-menu">- Categories -</li>
+      <li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/coding" class="hamburger-menu-overlay-link">Coding</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/homepage" class="hamburger-menu-overlay-link">Homepage</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li>
+      <li class="navi-menu">- Tags -</li>
+      <li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/aether" class="hamburger-menu-overlay-link">Aether</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/categories" class="hamburger-menu-overlay-link">Categories</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/css" class="hamburger-menu-overlay-link">Css</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/cupper" class="hamburger-menu-overlay-link">Cupper</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/favicon" class="hamburger-menu-overlay-link">Favicon</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/github" class="hamburger-menu-overlay-link">Github</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/hugo" class="hamburger-menu-overlay-link">Hugo</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/markdown" class="hamburger-menu-overlay-link">Markdown</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/mozc" class="hamburger-menu-overlay-link">Mozc</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/netlify" class="hamburger-menu-overlay-link">Netlify</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/pagermod" class="hamburger-menu-overlay-link">Pagermod</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/saas" class="hamburger-menu-overlay-link">Saas</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/sass" class="hamburger-menu-overlay-link">Sass</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/shortcodes" class="hamburger-menu-overlay-link">Shortcodes</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/snippet" class="hamburger-menu-overlay-link">Snippet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/stylesheet" class="hamburger-menu-overlay-link">Stylesheet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/svg" class="hamburger-menu-overlay-link">Svg</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tableofcontents" class="hamburger-menu-overlay-link">Tableofcontents</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tags" class="hamburger-menu-overlay-link">Tags</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/theme" class="hamburger-menu-overlay-link">Theme</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/vscode" class="hamburger-menu-overlay-link">Vscode</a></li>
+    </ul>
+  </div>
+</nav>
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">Hugo で使える Markdown の記法</h1>
+          <p class="post-date">
+            Posted <time datetime="2019-02-21">2019-02-21</time>
+             / Update 2019-03-06</p>
+             <div class="card-subtext muted-text li-line">
+               <a class="cat" href="/categories/coding">coding</a>
+               <a class="tag" href="/tags/hugo">#hugo</a>  <a class="tag" href="/tags/markdown">#markdown</a> 
+             </div>
+        </header>
+        
+        <picture class="post-figure">
+            <source srcset="https://k-kaz-git.github.io/images/computer-Programming_640.webp" type="image/webp">
+            <source srcset="https://k-kaz-git.github.io/images/computer-Programming_640.webp">
+          <img src="https://k-kaz-git.github.io/images/computer-Programming_640.webp" alt="Programming Markdown">
+        </picture>
+        
+        <aside>
+          <h2>目次</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#はじめに">はじめに</a></li>
+    <li><a href="#hugo-で使える-markdown-記法">Hugo で使える Markdown 記法</a>
+      <ul>
+        <li><a href="#見出しh">見出し（h）</a></li>
+        <li><a href="#改行br">改行（br）</a></li>
+        <li><a href="#強調strong">強調（strong）</a></li>
+        <li><a href="#画像挿入img">画像挿入（img）</a></li>
+        <li><a href="#リンクa-href">リンク（a href）</a></li>
+        <li><a href="#コードcode">コード（code）</a></li>
+        <li><a href="#整形済みテキストpre">整形済みテキスト（pre）</a></li>
+        <li><a href="#水平線hr">水平線（hr）</a></li>
+        <li><a href="#取り消し線s">取り消し線（s）</a></li>
+      </ul>
+    </li>
+    <li><a href="#wordpress-でも使えるよ2019-03-06">WordPress でも使えるよ［2019-03-06］</a>
+      <ul>
+        <li><a href="#注意点">注意点</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+        </aside>
+        <h2 id="はじめに">はじめに</h2>
+<p>Markdown には、基本となるものから、機能拡張されたものまであり、使用する環境によって微妙に使えるコマンド、使えないコマンドがあるようです。<br>
+この前、外部リンクを開くための記述をネットで探して入れてみましたが、残念ながらココでは動かず・・・。</p>
+<p>ということで、<strong>Hugo で使える Markdown を、自分のためにまとめておきます。</strong></p>
+<p>Markdown の中で HTML を書いちゃえばなんとでもなりますが（笑）</p>
+<h2 id="hugo-で使える-markdown-記法">Hugo で使える Markdown 記法</h2>
+<p>普段、よく使うものだけ。<br>
+正式な記法であったり、もっと辞書的なものをお求めの方は、<a href="https://www.google.co.jp" target="_blank">Google先生</a>
+にお尋ねください。m(_ _)m</p>
+<h3 id="見出しh">見出し（h）</h3>
+<p><code>#</code> の数で <code>h1 ～ h5</code> を表し、その右に見出しの文字列。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-txt" data-lang="txt"><span style="display:flex;"><span># 見出し（h1）
+</span></span><span style="display:flex;"><span>## 見出し（h2）
+</span></span><span style="display:flex;"><span>### 見出し（h3）
+</span></span><span style="display:flex;"><span>#### 見出し（h4）
+</span></span><span style="display:flex;"><span>##### 見出し（h5）
+</span></span></code></pre></div><h3 id="改行br">改行（br）</h3>
+<p>行末にスペースを2つ付けます。<br>
+見えませんけど、想像してください（笑）<br>
+実際に改行していなくても、スペース2つが間に入っていれば、続けて書いていてもそこで改行されます。まぁ、<code>&lt;br&gt;</code> と同じです。</p>
+<pre><code>改行前の文章  
+改行後の文章
+</code></pre>
+<h3 id="強調strong">強調（strong）</h3>
+<p><code>**</code> で文字列を挟む。</p>
+<pre><code>** hoge **
+</code></pre>
+<h3 id="画像挿入img">画像挿入（img）</h3>
+<p>タイトルは省略可能。</p>
+<pre><code>![代替えテキスト](/iamges/hoge.webp)
+![代替えテキスト](/iamges/hoge.webp &quot;タイトル&quot;)
+</code></pre>
+<h3 id="リンクa-href">リンク（a href）</h3>
+<p>残念ながら、<code>target</code> は指定できない。<br>
+どうしてもやりたい場合は、HTML で書く。</p>
+<h4 id="テキストリンク">テキストリンク</h4>
+<p>タイトルは省略可能。</p>
+<pre><code>[hoge](https://hoge.com)
+[hoge](https://hoge.com &quot;タイトル&quot;)
+</code></pre>
+<h4 id="画像リンク">画像リンク</h4>
+<p>タイトルは省略可能。</p>
+<pre><code>[![代替えテキスト](/iamges/hoge.webp &quot;タイトル&quot;)](https://hoge.com)
+[![代替えテキスト](/iamges/hoge.webp)](https://hoge.com)
+</code></pre>
+<h3 id="コードcode">コード（code）</h3>
+<p>文中に差し込むコードは ` （バッククォート）で挟む。</p>
+<pre><code>文字列 `コード` 文字列
+</code></pre>
+<h3 id="整形済みテキストpre">整形済みテキスト（pre）</h3>
+<p>単純にコードを記述する場合は、タブで行頭を開ける。<br>
+コードの前後にあたる行は空行でないとうまく読み取れないことあり。<br>
+また、特定のフォーマットでシンタックスハイライトを付ける場合は、```html とかにする。<br>
+htmlの部分は、php、md・・・いろいろ入れられるので、ケースに合わせて使用する。</p>
+<pre><code>[hoge](https://hoge.com)
+[hoge](https://hoge.com)
+</code></pre>
+<h3 id="水平線hr">水平線（hr）</h3>
+<p><code>***</code> もしくは <code>---</code> で水平線が書けます。<br>
+前後に文字列が入ってはいけません。</p>
+<pre><code>***
+</code></pre>
+<h3 id="取り消し線s">取り消し線（s）</h3>
+<p><code>~~</code> で取り消す文字列を挟みます。</p>
+<pre><code>~~取り消す文字列~~
+</code></pre>
+<h2 id="wordpress-でも使えるよ2019-03-06">WordPress でも使えるよ［2019-03-06］</h2>
+<p>余談ですが・・・。<br>
+WordPress 5.0 でお目見えしたブロックエディタ（旧呼称 Gutenberg）は、Markdown に対応しています。
+エディタで書いてから、ブロックエディタに貼り付けるとうまい具合に変換してくれました。</p>
+<h3 id="注意点">注意点</h3>
+<p>VSCode のように、Markdown の書式にあわせて文字色を変えてくれる優秀なエディタの場合、コピーした際にその情報まで持っていってしまい、うまく反映ができません。<br>
+面倒ですが、以下のような方法をとってください。</p>
+<ul>
+<li>Markdownモードで作成 → テキストモード or メモ帳 に貼り付け＆コピー → ブロックエディタに貼り付け</li>
+<li>最初からテキストモード or メモ帳みたいなシンプル機能のエディタを使う</li>
+</ul>
+<hr>
+<p>またよく使うものが出てきたら追記します。</p>
+<p>ここに分かりやすく書いてあった。<br>
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" title="Markdown Cheatsheet" target="_blank">Markdown Cheatsheet</a>
+</p>
+
+      </article>
+      <hr>
+      <p class="post-date">
+        Posted <time datetime="2019-02-21">2019-02-21</time>
+         / Update 2019-03-06</p>
+         <div class="card-subtext muted-text li-line">
+           <a class="cat" href="/categories/coding">coding</a>
+           <a class="tag" href="/tags/hugo">#hugo</a>  <a class="tag" href="/tags/markdown">#markdown</a> 
+         </div>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/post/hugo-how-to-use/" class="card blog-card" rel="bookmark" >
+    
+    <div class="card-img-container">
+      <p class="card-img-overlay">Next Article</p>
+      <picture>
+        <source srcset="https://k-kaz-git.github.io/images/writing-memo-note-pen_640.webp" type="image/webp">
+        <source srcset="https://k-kaz-git.github.io/images/writing-memo-note-pen_640.webp">
+        <img src="https://k-kaz-git.github.io/images/writing-memo-note-pen_640.webp" class="card-img" alt="ノートにメモメモ">
+      </picture>
+    </div>
+    
+  <article class="card-body">
+    <h2 class="card-title">Hugo の使い方</h2>
+    <p class="card-text">Hugo の Tips 的なものをこちらにまとめます。</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-02-20">2019-02-20</time>
+      / Updated 2019-03-02</p>
+    </div>
+    <div class="card-subtext muted-text li-line">
+      <span class="box-gray">homepage</span> 
+      <span class="box-gray">#hugo</span> 
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/" class="card home-card" style="background-image: url( https://k-kaz-git.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <footer>
+    <p style="text-align: center">姉妹サイト<br><a class="btn-link" href="https://k-kaz.net/" target="_blank">k-kaz ブログ</a></p>
+</footer>
+    
+  <script defer src="https://k-kaz-git.github.io/js/katex.js"></script>
+
+
+  <script defer src="https://k-kaz-git.github.io/js/auto-render.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script src="https://k-kaz-git.github.io/js/core.min.js"></script>
+
+  </body>
+</html>

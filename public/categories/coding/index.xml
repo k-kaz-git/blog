@@ -1,0 +1,56 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>coding - </title>
+    <link>https://k-kaz-git.github.io/categories/coding/</link>
+    <description>Recent content in coding on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 21 Oct 2020 12:45:27 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>コンテンツ（画像とか）を同一フォルダにする場合</title>
+      <link>https://k-kaz-git.github.io/post/hugo-contents/</link>
+      <pubDate>Wed, 21 Oct 2020 12:45:27 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-contents/</guid>
+      <description>それ用のルールがあるのね。</description>
+    </item><item>
+      <title>Hugo で外部サイトを新しいタブで開きたい。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-alink/</link>
+      <pubDate>Mon, 19 Oct 2020 12:28:18 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-alink/</guid>
+      <description>さっと出来ちゃうよ。</description>
+    </item><item>
+      <title>そうだ Hugo の最新版を使おう！</title>
+      <link>https://k-kaz-git.github.io/post/hugo-new-version/</link>
+      <pubDate>Sun, 18 Oct 2020 20:00:29 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-new-version/</guid>
+      <description>そんなときは大体ハマる。</description>
+    </item><item>
+      <title>GitHub を使ってみる</title>
+      <link>https://k-kaz-git.github.io/post/github-how-to-use/</link>
+      <pubDate>Fri, 22 Feb 2019 15:49:24 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/github-how-to-use/</guid>
+      <description>GitHub を有効活用しようと思います。</description>
+    </item><item>
+      <title>VSCode のスニペットを使ってみる</title>
+      <link>https://k-kaz-git.github.io/post/vscode-snippet/</link>
+      <pubDate>Fri, 22 Feb 2019 08:44:41 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/vscode-snippet/</guid>
+      <description>スニペットを使って、入力速度を劇的にアップするのと、覚えきれない Markdown を調べずに使う。</description>
+    </item><item>
+      <title>Hugo で使える Markdown の記法</title>
+      <link>https://k-kaz-git.github.io/post/hugo-markdown/</link>
+      <pubDate>Thu, 21 Feb 2019 11:43:14 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-markdown/</guid>
+      <description>自分用によく使う Markdown をまとめます。</description>
+    </item>
+  </channel>
+</rss>

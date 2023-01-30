@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>homepage - </title>
+    <link>https://k-kaz-git.github.io/categories/homepage/</link>
+    <description>Recent content in homepage on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Nov 2021 19:07:07 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/categories/homepage/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>タイトルに日本語を入れてみる</title>
+      <link>https://k-kaz-git.github.io/post/hello3/</link>
+      <pubDate>Sat, 16 Feb 2019 17:46:34 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello3/</guid>
+      <description>ちょっとずつ、いくつか検証するのです。</description>
+    </item><item>
+      <title>Oh!</title>
+      <link>https://k-kaz-git.github.io/post/hello2/</link>
+      <pubDate>Sat, 16 Feb 2019 17:31:37 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello2/</guid>
+      <description>とりあえず、いくつか記事をアップする練習</description>
+    </item><item>
+      <title>Hello</title>
+      <link>https://k-kaz-git.github.io/post/hello/</link>
+      <pubDate>Sat, 16 Feb 2019 16:52:50 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello/</guid>
+      <description>1日中、テストを頑張っている私。</description>
+    </item>
+  </channel>
+</rss>

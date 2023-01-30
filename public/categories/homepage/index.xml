@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>homepage - </title>
+    <link>https://k-kaz-git.github.io/categories/homepage/</link>
+    <description>Recent content in homepage on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Nov 2021 19:07:07 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/categories/homepage/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>SVG、それは魔法の画像形式</title>
+      <link>https://k-kaz-git.github.io/post/svg/</link>
+      <pubDate>Tue, 23 Nov 2021 19:07:07 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/svg/</guid>
+      <description>便利な画像形式です。</description>
+    </item><item>
+      <title>Hugo Section</title>
+      <link>https://k-kaz-git.github.io/post/hugo-section/</link>
+      <pubDate>Wed, 11 Nov 2020 09:12:59 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-section/</guid>
+      <description>いまいち分からんセクションの話</description>
+    </item><item>
+      <title>Hugo のタグとかカテゴリとか</title>
+      <link>https://k-kaz-git.github.io/post/hugo-taxonomy/</link>
+      <pubDate>Thu, 05 Nov 2020 12:57:30 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-taxonomy/</guid>
+      <description>タグとかカテゴリとかの一覧を表示したい</description>
+    </item><item>
+      <title>テーマ Pagermod のカスタマイズ</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-theme-pagermod/</link>
+      <pubDate>Wed, 28 Oct 2020 12:32:55 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-theme-pagermod/</guid>
+      <description>Pagermod を自分好みにしていくよ。</description>
+    </item><item>
+      <title>Deploy でエラーが出たんですけど。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-deploy-error/</link>
+      <pubDate>Wed, 14 Oct 2020 18:51:11 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-deploy-error/</guid>
+      <description>1年半振りの Deploy で・・・。</description>
+    </item><item>
+      <title>Hugo の目次について考える</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-tableofcontents/</link>
+      <pubDate>Tue, 02 Apr 2019 19:26:27 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-tableofcontents/</guid>
+      <description>Hugo に目次を入れようと思ったのです。</description>
+    </item><item>
+      <title>Hugo のテーマを作ったよ。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-k-kaz-theme/</link>
+      <pubDate>Mon, 18 Mar 2019 12:31:49 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-k-kaz-theme/</guid>
+      <description>Hugo のテーマを自作してみました。途中で放り投げたけど（笑）</description>
+    </item><item>
+      <title>シンタックスハイライトを自分好みの色にする</title>
+      <link>https://k-kaz-git.github.io/post/code-highlight/</link>
+      <pubDate>Thu, 14 Mar 2019 17:44:58 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/code-highlight/</guid>
+      <description>シンタックスハイライトの色をスタイルシートで変更してみます。</description>
+    </item><item>
+      <title>自作の Hugo用 Shortcodes</title>
+      <link>https://k-kaz-git.github.io/post/hugo-shortcodes-make/</link>
+      <pubDate>Thu, 14 Mar 2019 12:42:21 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-shortcodes-make/</guid>
+      <description>自作の Shortcodes をテストしたり、思い出すための場所</description>
+    </item><item>
+      <title>テーマ Cupper のカスタマイズ</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-theme-cupper/</link>
+      <pubDate>Tue, 12 Mar 2019 16:02:29 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-theme-cupper/</guid>
+      <description>テーマ Cupper のカスタマイズをこちらにまとめます。</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Netlify - </title>
+    <link>https://k-kaz-git.github.io/tags/netlify/</link>
+    <description>Recent content in Netlify on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 14 Oct 2020 18:51:11 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/tags/netlify/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Deploy でエラーが出たんですけど。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-deploy-error/</link>
+      <pubDate>Wed, 14 Oct 2020 18:51:11 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-deploy-error/</guid>
+      <description>1年半振りの Deploy で・・・。</description>
+    </item><item>
+      <title>Hugo を Netlify で動かすよ。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-netlify/</link>
+      <pubDate>Thu, 07 Mar 2019 14:44:55 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-netlify/</guid>
+      <description>Hugo を Netlify で動かしてみたときの記録です。</description>
+    </item>
+  </channel>
+</rss>

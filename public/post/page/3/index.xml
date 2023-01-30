@@ -1,0 +1,84 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts - </title>
+    <link>https://k-kaz-git.github.io/post/</link>
+    <description>Recent content in Posts on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Nov 2021 19:07:07 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo で使える Markdown の記法</title>
+      <link>https://k-kaz-git.github.io/post/hugo-markdown/</link>
+      <pubDate>Thu, 21 Feb 2019 11:43:14 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-markdown/</guid>
+      <description>自分用によく使う Markdown をまとめます。</description>
+    </item><item>
+      <title>Hugo の使い方</title>
+      <link>https://k-kaz-git.github.io/post/hugo-how-to-use/</link>
+      <pubDate>Wed, 20 Feb 2019 16:15:13 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-how-to-use/</guid>
+      <description>Hugo の Tips 的なものをこちらにまとめます。</description>
+    </item><item>
+      <title>テーマ aether のカスタマイズ</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-theme-aether/</link>
+      <pubDate>Mon, 18 Feb 2019 21:30:02 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-theme-aether/</guid>
+      <description>テーマ aether のカスタマイズをこちらにまとめます。</description>
+    </item><item>
+      <title>コメント欄を削除</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-comment/</link>
+      <pubDate>Mon, 18 Feb 2019 12:23:37 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-comment/</guid>
+      <description>使わないので、コメント欄を消しました。</description>
+    </item><item>
+      <title>カスタマイズしてみたいな</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom/</link>
+      <pubDate>Sun, 17 Feb 2019 20:14:15 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom/</guid>
+      <description>欲が出てきて、ホームページのカスタマイズをしたくなってきた。</description>
+    </item><item>
+      <title>Hugo 安定してきたかな</title>
+      <link>https://k-kaz-git.github.io/post/hugo-stable/</link>
+      <pubDate>Sun, 17 Feb 2019 04:50:58 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-stable/</guid>
+      <description>そろそろいい感じかな</description>
+    </item><item>
+      <title>Hello4</title>
+      <link>https://k-kaz-git.github.io/post/hello4/</link>
+      <pubDate>Sat, 16 Feb 2019 19:41:01 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello4/</guid>
+      <description>次はスクリプトで更新だ</description>
+    </item><item>
+      <title>タイトルに日本語を入れてみる</title>
+      <link>https://k-kaz-git.github.io/post/hello3/</link>
+      <pubDate>Sat, 16 Feb 2019 17:46:34 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello3/</guid>
+      <description>ちょっとずつ、いくつか検証するのです。</description>
+    </item><item>
+      <title>Oh!</title>
+      <link>https://k-kaz-git.github.io/post/hello2/</link>
+      <pubDate>Sat, 16 Feb 2019 17:31:37 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello2/</guid>
+      <description>とりあえず、いくつか記事をアップする練習</description>
+    </item><item>
+      <title>Hello</title>
+      <link>https://k-kaz-git.github.io/post/hello/</link>
+      <pubDate>Sat, 16 Feb 2019 16:52:50 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hello/</guid>
+      <description>1日中、テストを頑張っている私。</description>
+    </item>
+  </channel>
+</rss>

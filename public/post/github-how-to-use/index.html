@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>GitHub を使ってみる &middot; </title>
+  <meta name="description" content="GitHub を有効活用しようと思います。" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <link href="https://k-kaz-git.github.io/css/katex.css" rel="stylesheet">
+  
+  
+  
+  
+  <link href="https://k-kaz-git.github.io/css/concated.min.css" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="https://k-kaz-git.github.io/sass/main.fcdea0c4becd73f2e3b2312b85bcd7ba626d441c1cde1e1b8046a6afcc4e22b8.css">
+
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-134722453-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+  
+</head>
+  <body class="single-body">
+    <nav class="nav-bar side-padding">
+  <h1 class="nav-header"><a href="https://k-kaz-git.github.io/" class="nav-text">k-kaz が Hugo で遊ぶサイト</a></h1>
+  <div class="hamburger-menu">
+    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+    <ul id="menu" class="hamburger-menu-overlay">
+      <li><a href="https://k-kaz-git.github.io/" class="hamburger-menu-overlay-link">Home</a></li>
+      <li class="navi-menu">- Categories -</li>
+      <li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/coding" class="hamburger-menu-overlay-link">Coding</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/homepage" class="hamburger-menu-overlay-link">Homepage</a></li><li style="font-size: 0.7em;"><a href="https://k-kaz-git.github.io/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li>
+      <li class="navi-menu">- Tags -</li>
+      <li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/aether" class="hamburger-menu-overlay-link">Aether</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/categories" class="hamburger-menu-overlay-link">Categories</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/css" class="hamburger-menu-overlay-link">Css</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/cupper" class="hamburger-menu-overlay-link">Cupper</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/favicon" class="hamburger-menu-overlay-link">Favicon</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/github" class="hamburger-menu-overlay-link">Github</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/hugo" class="hamburger-menu-overlay-link">Hugo</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/markdown" class="hamburger-menu-overlay-link">Markdown</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/mozc" class="hamburger-menu-overlay-link">Mozc</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/netlify" class="hamburger-menu-overlay-link">Netlify</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/pagermod" class="hamburger-menu-overlay-link">Pagermod</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/saas" class="hamburger-menu-overlay-link">Saas</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/sass" class="hamburger-menu-overlay-link">Sass</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/shortcodes" class="hamburger-menu-overlay-link">Shortcodes</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/snippet" class="hamburger-menu-overlay-link">Snippet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/stylesheet" class="hamburger-menu-overlay-link">Stylesheet</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/svg" class="hamburger-menu-overlay-link">Svg</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tableofcontents" class="hamburger-menu-overlay-link">Tableofcontents</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/tags" class="hamburger-menu-overlay-link">Tags</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/theme" class="hamburger-menu-overlay-link">Theme</a></li><li style="font-size: 0.5em;"><a href="https://k-kaz-git.github.io/tags/vscode" class="hamburger-menu-overlay-link">Vscode</a></li>
+    </ul>
+  </div>
+</nav>
+    <main class="content side-text-padding">
+      <article class="post ">
+        <header class="post-header">
+        	<h1 class="post-title">GitHub を使ってみる</h1>
+          <p class="post-date">
+            Posted <time datetime="2019-02-22">2019-02-22</time>
+             / Update 2019-03-06</p>
+             <div class="card-subtext muted-text li-line">
+               <a class="cat" href="/categories/coding">coding</a>
+               <a class="tag" href="/tags/github">#github</a> 
+             </div>
+        </header>
+        
+        <picture class="post-figure">
+            <source srcset="https://k-kaz-git.github.io/images/network-server_640.webp" type="image/webp">
+            <source srcset="https://k-kaz-git.github.io/images/network-server_640.webp">
+          <img src="https://k-kaz-git.github.io/images/network-server_640.webp" alt="ネットワークとサーバーのイメージ画像">
+        </picture>
+        
+        <aside>
+          <h2>目次</h2>
+            <nav id="TableOfContents">
+  <ul>
+    <li><a href="#せっかくなので">せっかくなので</a></li>
+    <li><a href="#git-コマンドのチートシート2019-03-06">Git コマンドのチートシート［2019-03-06］</a></li>
+    <li><a href="#ssh接続github">ssh接続【GitHub】</a>
+      <ul>
+        <li><a href="#https-接続からssh-接続に切り替える">https 接続から、ssh 接続に切り替える</a></li>
+      </ul>
+    </li>
+    <li><a href="#各種設定ファイルの共通化">各種設定ファイルの共通化</a>
+      <ul>
+        <li><a href="#そこで-github">そこで GitHub</a></li>
+        <li><a href="#やり方">やり方</a></li>
+      </ul>
+    </li>
+    <li><a href="#hugo-で使っているローカルリポジトリの場所を変更">Hugo で使っているローカルリポジトリの場所を変更</a>
+      <ul>
+        <li><a href="#やり方-1">やり方</a></li>
+      </ul>
+    </li>
+    <li><a href="#プッシュしたけど1つ前の内容に戻したい2019-02-25">プッシュしたけど、1つ前の内容に戻したい［2019-02-25］</a>
+      <ul>
+        <li><a href="#やり方-2">やり方</a></li>
+      </ul>
+    </li>
+    <li><a href="#リポジトリから除外したいファイルやフォルダがある2019-02-26">リポジトリから除外したいファイルやフォルダがある［2019-02-26］</a>
+      <ul>
+        <li><a href="#やり方-3">やり方</a></li>
+      </ul>
+    </li>
+    <li><a href="#vscode-の設定ファイルを共通で使う2019-02-28">VSCode の設定ファイルを共通で使う［2019-02-28］</a></li>
+  </ul>
+</nav>
+        </aside>
+        <h2 id="せっかくなので">せっかくなので</h2>
+<p>GitHub をもう少し活用できないかなと思いまして、こちらにやってみたことを書いていこうと思います。</p>
+<p>後日、同じことをやるときに <strong>絶対忘れている</strong> という自信があるので、備忘録的に。</p>
+<h2 id="git-コマンドのチートシート2019-03-06">Git コマンドのチートシート［2019-03-06］</h2>
+<p>良いものを発見！！</p>
+<p>Git コマンドを、イラスト入りで分かりやすく作ってくださった方がいらっしゃいます。<br>
+Git そのものが分かっていない初心者の私には、とてもありがたいです。</p>
+<p><a href="https://qiita.com/kozzy/items/b42ba59a8bac190a16ab" target="_blank">Git でよく使われるコマンドにイラストによる説明を加えて1枚のチートシートにまとめてみた</a>
+</p>
+<p>注意書きに「表現上、簡略化している部分がある」、「誤記による損害発生の責任は負いません」とあります。<br>
+その点をご理解の上で、皆さんもご覧ください。</p>
+<h2 id="ssh接続github">ssh接続【GitHub】</h2>
+<p>ssh接続用に、公開鍵と秘密鍵を作成します。<br>
+出来上がった公開鍵の中身を GitHub に登録しておきます。</p>
+<p>参考：<a href="https://qiita.com/shizuma/items/2b2f873a0034839e47ce" target="_blank">GitHubでssh接続する手順~公開鍵・秘密鍵の生成から~</a>
+</p>
+<h3 id="https-接続からssh-接続に切り替える">https 接続から、ssh 接続に切り替える</h3>
+<p><code>$ git remote -v</code> で表示されたアドレスが <code>https://github.com/</code> の場合は、<code>git@github.com:</code> に変えることで ssh 接続にできます。これで、毎回、ユーザー名とパスワードを聞かれなくなります。</p>
+<p>切替用コマンド <code>$ git remote set-url origin git@github.com:hogehoge.git</code><br>
+確認用コマンド <code>$ ssh -T github</code></p>
+<h2 id="各種設定ファイルの共通化">各種設定ファイルの共通化</h2>
+<p>Linux と Windows で共通して使うアプリが多く、その設定をそれぞれで行うのも面倒だし、間違えることもあるので、設定ファイルを使い回すようにしたいのです。</p>
+<p>GoogleDrive、DropBox、OneDrive 等々に、コピーした設定ファイルを保存して、相手先で取り出して上書きするっていうのがこれまでのやり方なんですが、何度も設定変更を行うようなものだと、嫌になります。</p>
+<h3 id="そこで-github">そこで GitHub</h3>
+<p>GitHub を使えば、push と pull するだけでファイルの行き来ができる。<br>
+さらにバージョン管理まで出来ちゃうじゃないか。</p>
+<h3 id="やり方">やり方</h3>
+<p>いくつか作業が続きます。</p>
+<h4 id="シンボリックリンクの作成">シンボリックリンクの作成</h4>
+<p>フォルダ及びファイルの置き場所を、本来ある場所から、GitHub で管理する場所に変更します。<br>
+これを Linux と Windows 両方やっておけば、いつでも最新で同じ内容の設定ファイルが使えます。<br>
+※<code>push</code> と <code>pull</code> を忘れないように。</p>
+<p>Linux なら <code>ln</code> コマンドで。<br>
+Windows なら <code>mklink</code> コマンドで。</p>
+<p>Windows でちょっとハマった。<br>
+Win10 の PowerShell では、直接 <code>mklink</code> が実行できないんです。<br>
+<code>cmd /c mklink</code> というようにすると動きます。<br>
+※mklink は、cmd の中にあるコマンドのため</p>
+<h4 id="リモートリポジトリの作成">リモートリポジトリの作成</h4>
+<p>GitHub でリモートリポジトリを作成します。
+私は web で行い、Private モードとしておきました。（最近、無料ユーザーでも Private を使えるようになった）</p>
+<h4 id="ローカルリポジトリの作成">ローカルリポジトリの作成</h4>
+<p>ここから先は、私が苦手な（よく分かっていない）ところです。<br>
+まず、リポジトリとするディレクトリに移動しておきます。</p>
+<p><code>git init</code><br>
+<code>git add .</code><br>
+<code>git commit -m &quot;コメント&quot;</code></p>
+<h4 id="リモートリポジトリへプッシュ">リモートリポジトリへプッシュ</h4>
+<p><code>git remote add origin git@github.com:ユーザー名/リモートリポジトリ名.git</code></p>
+<p>※最後の <code>.git</code> を忘れがちなので注意<br>
+※git@github.com にしているのは ssh で接続するため
+<code>git push -u origin master</code></p>
+<h4 id="相手側でリモートリポジトリからのデータ取得">相手側で、リモートリポジトリからのデータ取得</h4>
+<p>初回のみ、クローンで丸々ゲットしてきます。</p>
+<p><code>git clone git@github.com:ユーザー名/リモートリポジトリ名.git 展開するディレクトリ</code></p>
+<p>それ以降は、<code>git pull</code> でOKです。</p>
+<p>よし、いろいろなデータをバージョン管理してみようではないか。</p>
+<h2 id="hugo-で使っているローカルリポジトリの場所を変更">Hugo で使っているローカルリポジトリの場所を変更</h2>
+<p>設定ファイルを1ヶ所にまとめていくうちに、Hugo で作ったサイトのリポジトリも同じところに移動したくなったので、心配もあるけどやってみます。</p>
+<h3 id="やり方-1">やり方</h3>
+<p>リポジトリを起きたい場所に移動して、</p>
+<p><code>git clone git@github.com:ユーザー名/リポジトリ名 変更先ディレクトリ</code></p>
+<p><code>hugo server</code> を実行したときに元の場所を見に行かないか心配しましたが、<code>変更先ディレクトリ</code> の中で実行すれば、Hugo はその中を見に行くようです。</p>
+<p>特に Hugo の設定ファイルを弄るとか必要はありませんでした。</p>
+<p>結果から見れば、超簡単な作業でした。</p>
+<h2 id="プッシュしたけど1つ前の内容に戻したい2019-02-25">プッシュしたけど、1つ前の内容に戻したい［2019-02-25］</h2>
+<p>リモートリポジトリにプッシュしたあと、「あっ、やっぱり前のほうが良かった」と思ったときの手順です。<br>
+ネットで調べたら、間違えたものも履歴として残す方法もありましたが、個人で使う分にはゴミになるだろうと思いまして、シンプルに「先程プッシュしたものは、無かったことにする」という方法を採用します。</p>
+<h3 id="やり方-2">やり方</h3>
+<p>プッシュしたディレクトリに移動して、</p>
+<p><code>git reset --hard HEAD^</code> をして、<br>
+<code>git push -f origin master</code> です。</p>
+<p>上記は、あくまでも個人ユースの場合に使うコマンドのようです。<br>
+<strong>チームで管理しているときは、別の方法をとってください。</strong><br>
+（未熟な私にはまだ分からないけど）</p>
+<h2 id="リポジトリから除外したいファイルやフォルダがある2019-02-26">リポジトリから除外したいファイルやフォルダがある［2019-02-26］</h2>
+<p>VSCode の設定ファイルをリポジトリに入れて共通使用としたんですけど、不要なファイルもあるんですよね。<br>
+タブの状態（何のファイルを開いているか）は要らないし、というか、ファイルの置き場や所有しているファイルも違うし・・・。</p>
+<h3 id="やり方-3">やり方</h3>
+<h4 id="gitignore-に除外するものを書きますよ">.gitignore に除外するものを書きますよ</h4>
+<p><code>git</code> を実行するディレクトリに <code>.gitignore</code> というテキストファイルを用意します。<br>
+この中にリポジトリから除外するファイルやフォルダを書き込むと、そのあたりを考慮してリポジトリを作成してくれます。</p>
+<p>VSCode で不要なディレクトリを書き込みました。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>[.gitignore]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>VSCode/User/globalStorage/
+</span></span><span style="display:flex;"><span>VSCode/User/workspaceStorage/
+</span></span></code></pre></div><h4 id="すでにリポジトリが出来上がっている場合">すでにリポジトリが出来上がっている場合</h4>
+<p>git から情報を消し、改めて add → commit → push します。</p>
+<p><code>git rm -r --cached .</code><br>
+<code>git add .</code><br>
+<code>git commit -m &quot;コメント&quot;</code><br>
+<code>git push origin master</code></p>
+<p>相手側はどうすればいいのかな。</p>
+<p>普通に <code>git pull</code> でやっても怒られたので、ディレクトリ毎、まっさらにして</p>
+<p><code>git clone git@github:ユーザー名/リポジトリ名.git</code></p>
+<p>で、解決したことにしちゃった（笑）</p>
+<h2 id="vscode-の設定ファイルを共通で使う2019-02-28">VSCode の設定ファイルを共通で使う［2019-02-28］</h2>
+<p>上のほうにやり方を長々と書きましたけど、プラグインがあるらしいぞ。</p>
+<p><a href="https://www.karelie.net/vscode-setting-sync/" target="_blank">VSCode(Visual Studio Code)の設定を同期させる拡張機能「Setting Sync」が便利</a>
+</p>
+
+      </article>
+      <hr>
+      <p class="post-date">
+        Posted <time datetime="2019-02-22">2019-02-22</time>
+         / Update 2019-03-06</p>
+         <div class="card-subtext muted-text li-line">
+           <a class="cat" href="/categories/coding">coding</a>
+           <a class="tag" href="/tags/github">#github</a> 
+         </div>
+    </main>
+    <nav class="end-nav side-padding">
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/post/vscode-snippet/" class="card blog-card" rel="bookmark" >
+    
+    <div class="card-img-container">
+      <p class="card-img-overlay">Next Article</p>
+      <picture>
+        <source srcset="https://k-kaz-git.github.io/images/women-jump-happy_640.webp" type="image/webp">
+        <source srcset="https://k-kaz-git.github.io/images/women-jump-happy_640.webp">
+        <img src="https://k-kaz-git.github.io/images/women-jump-happy_640.webp" class="card-img" alt="女性が喜んでジャンプするイメージ画像">
+      </picture>
+    </div>
+    
+  <article class="card-body">
+    <h2 class="card-title">VSCode のスニペットを使ってみる</h2>
+    <p class="card-text">スニペットを使って、入力速度を劇的にアップするのと、覚えきれない Markdown を調べずに使う。</p>
+    <div class="card-subtext muted-text">
+      <p>Posted <time datetime="2019-02-22">2019-02-22</time>
+      / Updated 2019-03-04</p>
+    </div>
+    <div class="card-subtext muted-text li-line">
+      <span class="box-gray">coding</span> 
+      <span class="box-gray">#vscode</span> <span class="box-gray">#snippet</span> 
+    </div>
+  </article>
+</a>
+      
+      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
+  href="https://k-kaz-git.github.io/" class="card home-card" style="background-image: url( https://k-kaz-git.github.io/img/grey-cloud.jpg )" rel="bookmark" >
+  Home
+</a>
+    </nav>
+    <footer>
+    <p style="text-align: center">姉妹サイト<br><a class="btn-link" href="https://k-kaz.net/" target="_blank">k-kaz ブログ</a></p>
+</footer>
+    
+  <script defer src="https://k-kaz-git.github.io/js/katex.js"></script>
+
+
+  <script defer src="https://k-kaz-git.github.io/js/auto-render.js" onload="renderMathInElement(document.body);"></script>
+
+
+<script src="https://k-kaz-git.github.io/js/core.min.js"></script>
+
+  </body>
+</html>

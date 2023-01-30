@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortcodes - </title>
+    <link>https://k-kaz-git.github.io/tags/shortcodes/</link>
+    <description>Recent content in shortcodes on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 14 Mar 2019 12:42:21 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/tags/shortcodes/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>自作の Hugo用 Shortcodes</title>
+      <link>https://k-kaz-git.github.io/post/hugo-shortcodes-make/</link>
+      <pubDate>Thu, 14 Mar 2019 12:42:21 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-shortcodes-make/</guid>
+      <description>自作の Shortcodes をテストしたり、思い出すための場所</description>
+    </item><item>
+      <title>Hugo の Shortcodes を使ってみる。</title>
+      <link>https://k-kaz-git.github.io/post/hugo-shortcodes/</link>
+      <pubDate>Mon, 11 Mar 2019 17:40:19 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-shortcodes/</guid>
+      <description>Shortcodes を使うと便利そうなので、ちょっと勉強します。</description>
+    </item>
+  </channel>
+</rss>

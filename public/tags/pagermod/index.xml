@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>pagermod - </title>
+    <link>https://k-kaz-git.github.io/tags/pagermod/</link>
+    <description>Recent content in pagermod on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Wed, 11 Nov 2020 09:12:59 +0900</lastBuildDate>
+    
+        <atom:link href="https://k-kaz-git.github.io/tags/pagermod/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugo Section</title>
+      <link>https://k-kaz-git.github.io/post/hugo-section/</link>
+      <pubDate>Wed, 11 Nov 2020 09:12:59 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-section/</guid>
+      <description>いまいち分からんセクションの話</description>
+    </item><item>
+      <title>テーマ Pagermod のカスタマイズ</title>
+      <link>https://k-kaz-git.github.io/post/hugo-custom-theme-pagermod/</link>
+      <pubDate>Wed, 28 Oct 2020 12:32:55 +0900</pubDate>
+      
+      <guid>https://k-kaz-git.github.io/post/hugo-custom-theme-pagermod/</guid>
+      <description>Pagermod を自分好みにしていくよ。</description>
+    </item>
+  </channel>
+</rss>
