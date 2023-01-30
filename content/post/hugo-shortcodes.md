@@ -31,14 +31,17 @@ Hugo では、簡潔に Markdown が書けるように、Shortcodes というも
 `/layouts/shortcodes`
 
 ## 使い方
+
 ### 基本形
+
 ごく標準的な書き方。
 
 {{% gist k-kaz-git 83aa5e9919d9bab4fd3d83ee6532af6b %}}
 
-※Markdown でショートコードを書くと、バッククォートで囲んでも実行しちゃう・・・。ということで、gist を利用。この gist 読み込みも Shortcodes で行っています。
+※Markdown でショートコードを書くと、バッククォートで囲んでも実行しちゃう・・・。ということで、gist を利用。この gist 読み込みも Shortcodes で行っています。  
+※`%` のところは、前を `<` で、後ろを `>` でも良いみたいです。  
 
-ショートコード名は、別途用意している HTML のファイル名（.html を除いたもの）になり、これを読み込み、実行します。
+ショートコード名は、別途用意している HTML のファイル名（拡張子の `.html` を除いたもの）になり、これを読み込み、実行します。
 
 例えば、red.html というファイルに下記が記述されていたとします。
 
@@ -136,3 +139,54 @@ Netlify のほうで使っているテーマ Cupper の中に、特定の文字�
 また何かあれば追記します。
 
 ちなみに、Youtube や Instagram の埋め込みについても、Hugo 標準の Shortcodes で、出来るようになっています。
+
+## Shortcodes用のHTMlについて
+
+Shortcodes で利用する html の記述方法は紹介しましたが、ちょっとアレンジしたものを紹介します。  
+
+### if文（条件分岐）
+
+本文から受け取った値によって、1つの html 内で出力方法を変化させる方法です。  
+
+実際に行ったケース。  
+テキストの文字色を変化させる Shortcodes で、内容によって改行するものと、改行しないものを用意したくなりました。  
+
+- 改行するもの → 段落要素（p）
+- 改行しないもの → 行内コンテナ（span）
+
+Shortcodes での記述はこちら。
+{{% gist k-kaz-git 4bcefb1b31bf0e94de53a361846a887b %}}
+上の type="p" が段落で、下の type="s" が行内となります。  
+
+fr という html ファイルを読み込んでいます。その中身はこちらです。
+
+```html
+{{- $han := .Get "type" -}}
+{{ if $han | eq "p"}}
+<p class="fr" style="font-size: {{.Get "size"}}%;">{{.Get "text"}}</p>
+{{ else if $han | eq "s"}}
+<span class="fr" style="font-size: {{.Get "size"}}%;">{{.Get "text"}}</span>
+{{ end }}
+```
+
+ちょっと解説。
+
+```html
+{{- $han := .Get "type" -}}
+```
+
+$han という変数に本文中から引っ張ってきた `type` の中身を代入します。  
+
+```html
+{{ if $han | eq "p"}}
+<p class="fr" style="font-size: {{.Get "size"}}%;">{{.Get "text"}}</p>
+{{ else if $han | eq "s"}}
+<span class="fr" style="font-size: {{.Get "size"}}%;">{{.Get "text"}}</span>
+{{ end }}
+```
+
+$han の中身が "p" だったら、`<p class ...` の行を実行します。  
+$han の中身が "s" だったら、`<span ...` の行を実行します。  
+
+
+`eq` というのは比較したものが `同じ` という意味です。

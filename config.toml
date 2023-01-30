@@ -1,7 +1,7 @@
 baseURL = "https://k-kaz-git.github.io/"
 languageCode = "ja"
 defaultContentLanguage = "ja"
-title = "k-kaz"
+
 theme = "aether"
 googleAnalytics = "UA-134722453-1"
 disqusShortname = "Your shortname for Disqus - optional"
@@ -9,8 +9,7 @@ enableGitInfo = true # 最終更新日をgit履歴から自動取得
 
 [params]
 brand = "k-kaz が Hugo で遊ぶサイト"
-description = "k-kaz が Hugo で静的サイトジェネレーターを勉強するサイト"
-homeimg = "/images/home_640.webp"
+
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
