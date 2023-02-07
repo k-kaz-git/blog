@@ -1,4 +1,5 @@
 baseURL = "https://k-kaz-git.github.io/"
+title = "k-kaz が Hugo で遊ぶサイト"
 languageCode = "ja"
 defaultContentLanguage = "ja"
 
@@ -8,8 +9,7 @@ disqusShortname = "Your shortname for Disqus - optional"
 enableGitInfo = true # 最終更新日をgit履歴から自動取得
 
 [params]
-brand = "k-kaz が Hugo で遊ぶサイト"
-
+brand = "ようこそ"
 
 [frontmatter]
 date = ["date", "publishDate", "lastmod"]
