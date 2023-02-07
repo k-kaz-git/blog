@@ -10,7 +10,7 @@ tags: [
     "hugo",
     "theme"
     ]
-featuredImage: "images/hugo-comment.webp"
+featuredImage: "images/speech-bubbles_640.webp"
 featuredImageDescription: ""
 dropCap: false
 displayInMenu: false
