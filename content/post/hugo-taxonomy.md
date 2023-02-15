@@ -12,6 +12,7 @@ displayInList: true
 draft: false
 ---
 ## Hugo のタグとかカテゴリとか
+
 この前、[k-kaz が自作テーマで遊ぶサイト](k-kaz-0.netlify.app) に [タグとかカテゴリとか](https://k-kaz-0.netlify.app/hugo-tag/) という記事を書きました。
 
 タグとかカテゴリのリンクををクリックしたときに、そのグループだけではなく、**全記事が出てきちゃう！** というものです。  
@@ -20,6 +21,7 @@ draft: false
 以前は正しく動作していたはずなので、Hugo のバージョンを上げたとき、仕様変更によって動作が変わったと思われます。
 
 ## ちょろっと調べた
+
 `\layouts\_default` に `taxonomy.html` と `terms.html` を置くと、良いらしい。  
 中身の書き方はいまいち分かっていないので、ここには書きませんが、とりあえず [k-kaz が自作テーマで遊ぶサイト](k-kaz-0.netlify.app) では、動作しました。
 
