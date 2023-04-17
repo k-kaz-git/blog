@@ -1,6 +1,6 @@
 ---
 title: "Hugoの最新版を入れてみよう"
-date: 2023-04-17T15:58:50+09:00
+date: 2023-04-17T12:58:50+09:00
 description: "基本編"
 categories: ["linux"]
 tags: ["hugo"]
@@ -88,7 +88,7 @@ hugo server
 ### 参考になれば・・・
 
 以前、一気にバージョンを上げたときに問題が出て、四苦八苦した記事がこちら。  
-[そうだ Hugo の最新版を使おう！ · k-kaz が Hugo で遊ぶサイト](./hugo-new-version)  
+[そうだ Hugo の最新版を使おう！ · k-kaz が Hugo で遊ぶサイト](../hugo-new-version)  
 
 最新版では古い機能が使えなくなっていたので、その対応をしました。  
 
