@@ -5,7 +5,7 @@ defaultContentLanguage = "ja"
 
 theme = "aether"
 disqusShortname = "Your shortname for Disqus - optional"
-enableGitInfo = true # 最終更新日をgit履歴から自動取得
+enableGitInfo = "true" # 最終更新日をgit履歴から自動取得
 enableEmoji = "true"
 
 [params]
@@ -22,4 +22,4 @@ category = "categories"
 tag = "tags"
 
 [markup.goldmark.renderer]
-unsafe= true
+unsafe= "true"
