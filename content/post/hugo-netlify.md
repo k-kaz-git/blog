@@ -11,6 +11,20 @@ displayInMenu: false
 displayInList: true
 draft: false
 ---
+## 追記 2024-02-07
+
+もう5年も前の記事なんですね。時が経つのは早いです。  
+
+Hugoのバージョンを上げたので、Netlifyで指定しているHugoのバージョンも変えとかなきゃと設定を見たんですが、項目が無くなっていました。  
+今ではバージョン指定しなくて良いのかもしれません。（試さず書いちゃうけど）  
+
+今は設定のBuild & deployにあるBuild Settingsが該当項目みたいですが、Build commandを「hugo」、Publish directoryを「public」にすれば良いみたい。  
+一応、ドキュメントがありましたので置いておきます。  
+
+[Framework integrations | Netlify Docs](https://docs.netlify.com/integrations/frameworks/#hugo)  
+
+ということで、以下の記事は古いですよということを言いたかった。  
+
 ## Hugo を Netlify で動かす
 ネットでは簡単に出来ると書いてありましたけど、けっこうハマったので、そのあたりも書こうと思います。
 
