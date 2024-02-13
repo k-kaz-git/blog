@@ -9,7 +9,7 @@ featuredImageDescription: "Hugoのイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true
-draft: true
+draft: false
 ---
 ## Hugo v0.122.0
 
