@@ -2,14 +2,8 @@
 title: "Hugoにコメント機能を付ける"
 date: 2023-02-07T12:49:20+09:00
 description: ""
-categories: [
-    "homepage",
-    "coding"
-    ]
-tags: [
-    "hugo",
-    "theme"
-    ]
+categories: ["homepage","coding"]
+tags: ["hugo","theme"]
 featuredImage: "images/speech-bubbles_640.webp"
 featuredImageDescription: ""
 dropCap: false
@@ -155,3 +149,10 @@ Hugo Server でエラーせずにコメント欄が表示されれば大丈夫�
 
 コメントを付けたのはこちらのサイト。  
 [コメント欄を付けてみた | k-kaz が好きなことを書く](https://k-kaz.net/blog2/post/2023/02/07/)  
+
+### 2024/02/20 追記
+
+giscusというコメント機能に変更してみました。  
+
+こちらをご覧ください。  
+[Hugoにコメント機能を付ける（giscus編）](../hugo-comment-giscus)
