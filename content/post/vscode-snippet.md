@@ -4,8 +4,8 @@ date: 2019-02-22T08:44:41+09:00
 description: "スニペットを使って、入力速度を劇的にアップするのと、覚えきれない Markdown を調べずに使う。"
 categories: ["coding"]
 tags: ["vscode","snippet"]
-featuredImage: "/images/women-jump-happy_640.webp"
-featuredImageDescription: "女性が喜んでジャンプするイメージ画像"
+image: "/images/women-jump-happy_640.webp"
+imageDescription: "女性が喜んでジャンプするイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true

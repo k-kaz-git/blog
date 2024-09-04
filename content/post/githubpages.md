@@ -8,8 +8,8 @@ categories: [
 tags: [
     "github pages"
     ]
-featuredImage: "images/k-kaz-black-w.svg"
-featuredImageDescription: "k-kaz SVG"
+image: "images/k-kaz-black-w.svg"
+imageDescription: "k-kaz SVG"
 dropCap: false
 displayInMenu: false
 displayInList: true

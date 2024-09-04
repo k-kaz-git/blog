@@ -4,8 +4,8 @@ date: 2019-04-02T19:26:27+09:00
 description: "Hugo に目次を入れようと思ったのです。"
 categories: ["homepage"]
 tags: ["hugo" , "tableofcontents"]
-featuredImage: "/images/hugo-tableofcontents-menu.webp"
-featuredImageDescription: "メニュー、目次のイメージ画像"
+image: "/images/hugo-tableofcontents-menu.webp"
+imageDescription: "メニュー、目次のイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true

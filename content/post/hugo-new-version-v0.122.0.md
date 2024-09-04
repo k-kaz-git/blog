@@ -4,8 +4,8 @@ date: 2024-02-09T21:22:29+09:00
 description: "Update後の修正"
 categories: ["homepage"]
 tags: ["hugo","theme","pagermod"]
-featuredImage: "images/hugo-logo-wide.svg"
-featuredImageDescription: "Hugoのイメージ画像"
+image: "images/hugo-logo-wide.svg"
+imageDescription: "Hugoのイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true

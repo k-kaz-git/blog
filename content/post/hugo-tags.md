@@ -4,8 +4,8 @@ date: 2024-06-10T21:05:42+09:00
 description: ""
 categories: ["homepage"    ]
 tags: ["hugo","theme"]
-featuredImage: "/images/tag_720.webp"
-featuredImageDescription: "タグのイメージ"
+image: "/images/tag_720.webp"
+imageDescription: "タグのイメージ"
 dropCap: false
 displayInMenu: false
 displayInList: true

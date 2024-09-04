@@ -4,8 +4,8 @@ date: 2023-02-07T12:49:20+09:00
 description: ""
 categories: ["homepage","coding"]
 tags: ["hugo","theme"]
-featuredImage: "images/speech-bubbles_640.webp"
-featuredImageDescription: ""
+image: "images/speech-bubbles_640.webp"
+imageDescription: ""
 dropCap: false
 displayInMenu: false
 displayInList: true

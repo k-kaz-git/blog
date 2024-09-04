@@ -4,8 +4,8 @@ date: 2023-04-17T12:55:42+09:00
 description: "少しの設定で利用可能です。"
 categories: ["homepage"]
 tags: ["hugo","theme","mermaid"]
-featuredImage: "images/mermaid.webp"
-featuredImageDescription: ""
+image: "images/mermaid.webp"
+imageDescription: ""
 dropCap: false
 displayInMenu: false
 displayInList: true

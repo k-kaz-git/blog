@@ -4,8 +4,8 @@ date: 2020-10-28T12:32:55+09:00
 description: "Pagermod を自分好みにしていくよ。"
 categories: ["homepage"]
 tags: ["hugo" , "theme" , "pagermod"]
-featuredImage: "/images/hugo-custom-theme-pagermod.webp"
-featuredImageDescription: "雑誌とコーヒー"
+image: "/images/hugo-custom-theme-pagermod.webp"
+imageDescription: "雑誌とコーヒー"
 dropCap: false
 displayInMenu: false
 displayInList: true

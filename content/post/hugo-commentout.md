@@ -4,8 +4,8 @@ date: 2024-06-26T12:55:18+09:00
 description: "表に出したくないものってありますよね"
 categories: ["homepage","coding"]
 tags: ["hugo","theme"]
-featuredImage: "/images/hugo-commentout.webp"
-featuredImageDescription: "コメントアウト"
+image: "/images/hugo-commentout.webp"
+imageDescription: "コメントアウト"
 dropCap: false
 displayInMenu: false
 displayInList: true

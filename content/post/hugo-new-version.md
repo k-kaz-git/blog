@@ -4,8 +4,8 @@ date: 2020-10-18T20:00:29+09:00
 description: "そんなときは大体ハマる。"
 categories: ["coding"]
 tags: ["hugo"]
-featuredImage: "/images/man-1394395_1920.webp"
-featuredImageDescription: "孤独な考える人"
+image: "/images/man-1394395_1920.webp"
+imageDescription: "孤独な考える人"
 dropCap: false
 displayInMenu: false
 displayInList: true

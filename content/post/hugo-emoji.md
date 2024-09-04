@@ -10,8 +10,8 @@ tags: [
     "hugo",
     "theme"
     ]
-featuredImage: "images/hugo-emoji.webp"
-featuredImageDescription: "emoji"
+image: "images/hugo-emoji.webp"
+imageDescription: "emoji"
 dropCap: false
 displayInMenu: false
 displayInList: true

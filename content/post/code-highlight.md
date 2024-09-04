@@ -4,8 +4,8 @@ date: 2019-03-14T17:44:58+09:00
 description: "シンタックスハイライトの色をスタイルシートで変更してみます。"
 categories: ["homepage"]
 tags: ["css" , "saas" , "aether"]
-featuredImage: "/images/colorful-balloons-640.webp"
-featuredImageDescription: "カラフルな風船"
+image: "/images/colorful-balloons-640.webp"
+imageDescription: "カラフルな風船"
 dropCap: false
 displayInMenu: false
 displayInList: true

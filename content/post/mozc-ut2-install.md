@@ -4,8 +4,8 @@ date: 2019-03-31T17:45:32+09:00
 description: "Linux Mint に Mozc Ut2 をインストールしました。"
 categories: ["linux"]
 tags: ["mozc"]
-featuredImage: "/images/origami-japan_640.webp"
-featuredImageDescription: "鶴の折り紙"
+image: "/images/origami-japan_640.webp"
+imageDescription: "鶴の折り紙"
 dropCap: false
 displayInMenu: false
 displayInList: true

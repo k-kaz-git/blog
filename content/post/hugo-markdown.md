@@ -4,8 +4,8 @@ date: 2019-02-21T11:43:14+09:00
 description: "自分用によく使う Markdown をまとめます。"
 categories: ["coding"]
 tags: ["hugo","markdown"]
-featuredImage: "/images/computer-Programming_640.webp"
-featuredImageDescription: "Programming Markdown"
+image: "/images/computer-Programming_640.webp"
+imageDescription: "Programming Markdown"
 dropCap: false
 displayInMenu: false
 displayInList: true

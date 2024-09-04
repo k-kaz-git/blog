@@ -8,8 +8,8 @@ categories: [
 tags: [
     "vscode"
     ]
-featuredImage: "/images/vscode.webp"
-featuredImageDescription: "vscode"
+image: "/images/vscode.webp"
+imageDescription: "vscode"
 dropCap: false
 displayInMenu: false
 displayInList: true

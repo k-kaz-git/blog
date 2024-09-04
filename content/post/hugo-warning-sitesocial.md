@@ -4,8 +4,8 @@ date: 2024-08-07T08:44:45+09:00
 description: "全然気付いていなかった・・・"
 categories: ["homepage"]
 tags: ["hugo","theme"]
-featuredImage: "/images/hugo-warning-sitesocial.webp"
-featuredImageDescription: "WARNING"
+image: "/images/hugo-warning-sitesocial.webp"
+imageDescription: "WARNING"
 dropCap: false
 displayInMenu: false
 displayInList: true

@@ -4,8 +4,8 @@ date: 2024-02-20T08:43:46+09:00
 description: "giscusにしてみました。"
 categories: ["homepage","coding",]
 tags: ["hugo","theme"]
-featuredImage: "images/speech-bubbles_640.webp"
-featuredImageDescription: ""
+image: "images/speech-bubbles_640.webp"
+imageDescription: ""
 dropCap: false
 displayInMenu: false
 displayInList: true

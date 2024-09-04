@@ -4,8 +4,8 @@ date: 2019-02-20T16:15:13+09:00
 description: "Hugo の Tips 的なものをこちらにまとめます。"
 categories: ["homepage"]
 tags: ["hugo"]
-featuredImage: "/images/writing-memo-note-pen_640.webp"
-featuredImageDescription: "ノートにメモメモ"
+image: "/images/writing-memo-note-pen_640.webp"
+imageDescription: "ノートにメモメモ"
 dropCap: false
 displayInMenu: false
 displayInList: true

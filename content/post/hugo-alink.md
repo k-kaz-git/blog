@@ -4,8 +4,8 @@ date: 2020-10-19T12:28:18+09:00
 description: "さっと出来ちゃうよ。"
 categories: ["coding"]
 tags: ["hugo"]
-featuredImage: "images/eagle-1753002_1280.webp"
-featuredImageDescription: "リンク先へ飛ぶ"
+image: "images/eagle-1753002_1280.webp"
+imageDescription: "リンク先へ飛ぶ"
 dropCap: false
 displayInMenu: false
 displayInList: true

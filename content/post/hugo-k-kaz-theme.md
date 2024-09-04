@@ -4,8 +4,8 @@ date: 2019-03-18T12:31:49+09:00
 description: "Hugo のテーマを自作してみました。途中で放り投げたけど（笑）"
 categories: ["homepage"]
 tags: ["hugo" , "theme" , "aether" , "cupper"]
-featuredImage: "/images/horse-colorful_640.webp"
-featuredImageDescription: "カラフルな馬"
+image: "/images/horse-colorful_640.webp"
+imageDescription: "カラフルな馬"
 dropCap: false
 displayInMenu: false
 displayInList: true

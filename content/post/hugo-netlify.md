@@ -4,8 +4,8 @@ date: 2019-03-07T14:44:55+09:00
 description: "Hugo を Netlify で動かしてみたときの記録です。"
 categories: ["homepage"]
 tags: ["hugo","netlify"]
-featuredImage: "/images/hugo-netlify-network_640.webp"
-featuredImageDescription: "地球とネットワークのイメージ画像"
+image: "/images/hugo-netlify-network_640.webp"
+imageDescription: "地球とネットワークのイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true

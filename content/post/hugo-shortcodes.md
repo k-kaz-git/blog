@@ -4,8 +4,8 @@ date: 2019-03-11T17:40:19+09:00
 description: "Shortcodes を使うと便利そうなので、ちょっと勉強します。"
 categories: ["homepage"]
 tags: ["hugo" , "Shortcodes"]
-featuredImage: "/images/computer-Programming_640.webp"
-featuredImageDescription: "Shortcodes を覚えよう。"
+image: "/images/computer-Programming_640.webp"
+imageDescription: "Shortcodes を覚えよう。"
 dropCap: false
 displayInMenu: false
 displayInList: true

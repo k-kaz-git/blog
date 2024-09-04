@@ -4,8 +4,8 @@ date: 2020-10-21T12:45:27+09:00
 description: "それ用のルールがあるのね。"
 categories: ["coding"]
 tags: ["hugo" , "theme"]
-featuredImage: "images/hugo-contents.webp"
-featuredImageDescription: "絵を描くよ！"
+image: "images/hugo-contents.webp"
+imageDescription: "絵を描くよ！"
 dropCap: false
 displayInMenu: false
 displayInList: true
@@ -66,8 +66,8 @@ url: "hoge"
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 description: ""
-featuredImage: "/images/k-kaz.webp"
-featuredImageDescription: "k-kaz のサイトイメージ画像"
+image: "/images/k-kaz.webp"
+imageDescription: "k-kaz のサイトイメージ画像"
 url: ""
 categories: [""]
 tags: [""]

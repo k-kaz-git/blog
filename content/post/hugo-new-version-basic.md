@@ -4,8 +4,8 @@ date: 2023-04-17T12:58:50+09:00
 description: "基本編"
 categories: ["linux"]
 tags: ["hugo"]
-featuredImage: "images/hugo-logo-wide.svg"
-featuredImageDescription: "Hugoのイメージ画像"
+image: "images/hugo-logo-wide.svg"
+imageDescription: "Hugoのイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true

@@ -4,8 +4,8 @@ date: 2019-03-04T10:05:17+09:00
 description: "Hugo で Sass を利用するのに少し設定が必要ですので、こちらにまとめます。"
 categories: ["homepage"]
 tags: ["stylesheet","css","sass"]
-featuredImage: "/images/computer-Programming_640.webp"
-featuredImageDescription: "プログラミングをするイメージ画像"
+image: "/images/computer-Programming_640.webp"
+imageDescription: "プログラミングをするイメージ画像"
 dropCap: false
 displayInMenu: false
 displayInList: true

@@ -4,8 +4,8 @@ date: 2019-03-14T12:42:21+09:00
 description: "自作の Shortcodes をテストしたり、思い出すための場所"
 categories: ["homepage"]
 tags: ["hugo" , "shortcodes"]
-featuredImage: "/images/shortcodes-vegetables-make_640.webp"
-featuredImageDescription: "収穫したものをいただきましょう"
+image: "/images/shortcodes-vegetables-make_640.webp"
+imageDescription: "収穫したものをいただきましょう"
 dropCap: false
 displayInMenu: false
 displayInList: true

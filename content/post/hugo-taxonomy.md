@@ -4,8 +4,8 @@ date: 2020-11-05T12:57:30+09:00
 description: "タグとかカテゴリとかの一覧を表示したい"
 categories: ["Homepage"]
 tags: ["Hugo" , "tags" , "categories"]
-featuredImage: "images/labels-4924676_800.webp"
-featuredImageDescription: "tags"
+image: "images/labels-4924676_800.webp"
+imageDescription: "tags"
 dropCap: false
 displayInMenu: false
 displayInList: true

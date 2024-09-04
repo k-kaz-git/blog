@@ -9,8 +9,8 @@ tags: [
     "hugo",
     "theme"
     ]
-featuredImage: "/images/hugo-related.webp"
-featuredImageDescription: "related"
+image: "/images/hugo-related.webp"
+imageDescription: "related"
 dropCap: false
 displayInMenu: false
 displayInList: true

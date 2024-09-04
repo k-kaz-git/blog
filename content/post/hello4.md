@@ -4,8 +4,8 @@ date: 2019-02-16T19:41:01+09:00
 description: "次はスクリプトで更新だ"
 categories: ["homepage"]
 tags: ["hugo"]
-featuredImage: "/images/lighthouse-sea_640.webp"
-featuredImageDescription: "灯台下暗し"
+image: "/images/lighthouse-sea_640.webp"
+imageDescription: "灯台下暗し"
 dropCap: false
 displayInMenu: false
 displayInList: true

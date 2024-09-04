@@ -4,8 +4,8 @@ date: 2019-03-10T06:37:26+09:00
 description: "Favicon Generator を使って、ファビコンを作りましょう。"
 categories: ["homepage"]
 tags: ["favicon"]
-featuredImage: "/images/icon-sns_640.webp"
-featuredImageDescription: "ファビコンを作ります。"
+image: "/images/icon-sns_640.webp"
+imageDescription: "ファビコンを作ります。"
 dropCap: false
 displayInMenu: false
 displayInList: true
