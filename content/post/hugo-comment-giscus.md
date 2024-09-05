@@ -48,7 +48,8 @@ giscusは、GitHubのDiscussions機能を使います。
 - リポジトリの方は、公開設定（Public）にしておくことをお忘れなく。  
 - [utterances](https://utteranc.es/) 等ですでにリポジトリを作ってあれば流用可能です。  
 - Issuesに入っているコメントをDiscussionsへ移行する方法もあります。  
-[Moderating discussions - GitHub Docs](https://docs.github.com/en/discussions/managing-discussions-for-your-community/moderating-discussions#converting-an-issue-to-a-discussion)
+[Moderating discussions - GitHub Docs](https://docs.github.com/en/discussions/managing-discussions-for-your-community/moderating-discussions#converting-an-issue-to-a-discussion)  
+- 設置するサイトが複数ある場合は、リポジトリも同じ数だけ用意します。  
 
 #### Discussionsを有効にする
 
@@ -58,6 +59,8 @@ giscusは、GitHubのDiscussions機能を使います。
 1. General内のFeaturesにあるDiscussionsを有効
 
 ### giscusアプリ
+
+リポジトリ毎にインストールする必要がありますので、複数設置する場合はご注意を。  
 
 #### インストール
 

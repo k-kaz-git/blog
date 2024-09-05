@@ -1,6 +1,6 @@
 baseURL: 'https://k-kaz-git.github.io'
 languageCode: ja-JP
-paginate: 3
+paginate: 3         # トップページにいくつ記事を出すか
 theme: stack
 copyright: k-kaz
 
@@ -65,7 +65,7 @@ params:
 
     comments:
         enabled: true
-        provider: disqus
+        provider: giscus
 
         disqusjs:
             shortname:
@@ -126,13 +126,13 @@ params:
             siteName: "" # You must insert a unique identifier here matching the one you registered (See https://cactus.chat/docs/getting-started/quick-start/#register-your-site)
 
         giscus:
-            repo:
-            repoID:
-            category:
-            categoryID:
-            mapping:
-            lightTheme:
-            darkTheme:
+            repo: k-kaz-git/cmt-blog
+            repoID: R_kgDOMtD8bg
+            category: General
+            categoryID: DIC_kwDOMtD8bs4CiNkp
+            mapping: title
+            lightTheme: preferred_color_scheme
+            darkTheme: preferred_color_scheme
             reactionsEnabled: 1
             emitMetadata: 0
 
@@ -162,12 +162,12 @@ params:
             - type: toc
 
     opengraph:
-        twitter:
+        twitter: 
             # Your Twitter username
-            site:
+            site: 
 
             # Available values: summary, summary_large_image
-            card: summary_large_image
+            card: 
 
     defaultImage:
         opengraph:
@@ -194,18 +194,12 @@ params:
 menu:
     main: []
 
-    social:
-        - identifier: 
-          name: 
-          url: 
-          params:
-              icon: 
-
-        - identifier: 
-          name: 
-          url: 
-          params:
-              icon: 
+    social: []
+#        - identifier: hp
+#          name: k-kaz
+#          url: https://gohugo.io/methods/page/paginate/
+#          params: 
+#              icon: brand-github
 
 related:
     includeNewer: true
