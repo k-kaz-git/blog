@@ -26,7 +26,7 @@ services:
         shortname: "hugo-theme-stack"
     # GA Tracking ID
     googleAnalytics:
-        id: G-F2VVCH7PDL
+        id: GTM-K8B8MR2Z	
 
 permalinks:
     post: /p/:slug/
