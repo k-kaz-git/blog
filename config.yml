@@ -133,6 +133,7 @@ params:
             mapping: title
             lightTheme: preferred_color_scheme
             darkTheme: preferred_color_scheme
+            lang: ja                            # 項目がなかったので自分で追加。メッセージ等が日本語になる。
             reactionsEnabled: 1
             emitMetadata: 0
 

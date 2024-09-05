@@ -74,9 +74,9 @@ giscusは、GitHubのDiscussions機能を使います。
 1. 自分好みに設定
 1. 出来上がったコードを控える
 
-### Hugo
+### Hugo（テーマ）
 
-#### コード挿入
+#### PaperMod の場合
 
 1. コメント機能を表示したい場所へ先程のコードを挿入
 
@@ -106,12 +106,40 @@ giscusは、GitHubのDiscussions機能を使います。
 
 コメントで説明を入れてみましたが、違っていたらすいません。  
 
-先程取得したコードをそのまま使っています。  
+先ほど取得したコードをそのまま使っています。  
 修正など不要で利用できています。ありがたや。  
+
+#### Stack の場合
+
+コメント機能は標準で付いているので、configを触るだけで大丈夫でした。  
+
+```js
+// config.yml
+params:
+    comments:
+        enabled: true     // コメント機能を有効に
+        provider: giscus  // どのコメント機能を使うか選択
+        giscus:           // providerで選択する機能名
+            repo: hoge/hoge-repo                // ユーザー名と保管用リポジトリ名
+            repoID: hoge-repo-ID                // 自動発行されるリポジトリのID
+            category: General                   // Discussions内でどのカテゴリに保管するか
+            categoryID: hoge-cat-ID             // カテゴリのID
+            mapping: title                      // 保管時の表題となるもの（タイトル、URL等）
+            lightTheme: preferred_color_scheme  // ライトモードのときのテーマカラー（ここではモードで自動調整？）
+            darkTheme: preferred_color_scheme   // ダークモードのときのテーマカラー（ここではモードで自動調整？）
+            lang: ja                            // 項目がなかったので自分で追加し、メッセージ等を日本語に
+            reactionsEnabled: 1
+            emitMetadata: 0
+```
+
 
 ## 所感
 
 難しいことは何もなく、簡単にコメント機能の設置ができました。  
 
 今回設置したのは下記サイトになります。  
-[k-kaz が好きなことを書く](https://k-kaz.net/blog2/)
+
+- PagerMod
+  - [k-kaz が好きなことを書く](https://k-kaz.net/blog2/)  
+- Stack
+  - [k-kaz が Hugo で遊ぶサイト](https://k-kaz-git.github.io/)
