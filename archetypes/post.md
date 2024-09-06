@@ -1,21 +1,11 @@
 ---
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
+title: "{{ replace .Name "-" " " | title }}"
+description: 
 date: {{ .Date }}
-description: ""
-categories: [
-    "homepage",
-    "coding",
-    "linux"
-    ]
-tags: [
-    "hugo",
-    "theme",
-    "css",
-    ]
-featuredImage: ""
-featuredImageDescription: ""
-dropCap: false
-displayInMenu: false
-displayInList: true
+image: 
+math: 
+license: 
+hidden: false
+comments: true
 draft: true
 ---

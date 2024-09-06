@@ -1,6 +1,6 @@
 baseURL: 'https://k-kaz-git.github.io'
 languageCode: ja-JP
-paginate: 3         # トップページにいくつ記事を出すか
+# paginate: 3         # Hugo v0.128.0以降で非推奨？ Paginationで代替
 theme: stack
 copyright: k-kaz
 
@@ -12,18 +12,25 @@ DefaultContentLanguage: ja
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: true
 
+enableEmoji: true
+
+pagination:                 # 1画面に表示させる記事の件数
+  disableAliases: false
+  pagerSize: 3
+  path: page
+
 languages:
     ja:
         languageName: 日本語
         title: k-kaz が Hugo で遊ぶサイト
         weight: 1
         params:
-            description: 説明
+            description: 
 
 services:
     # Change it to your Disqus shortname before using
-    disqus:
-        shortname: "hugo-theme-stack"
+    # disqus:
+    #    shortname: "hugo-theme-stack"
     # GA Tracking ID
     googleAnalytics:
         id: GTM-K8B8MR2Z	
