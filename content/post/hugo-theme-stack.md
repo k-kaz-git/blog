@@ -29,7 +29,7 @@ draft: false
 初期設定で行った内容を書き終わったタイミングで、同じ趣旨の内容を書かれているサイトを発見。  
 めっちゃ真似したみたいになってしまった。ごめんなさい・・・。  
 
-:link: [Hugo Stackテーマのカスタマイズ](https://notes.nakurei.com/post/customize-stack-theme/#%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AE%E5%A4%89%E6%9B%B4)
+:link: [Hugo Stackテーマのカスタマイズ](https://notes.nakurei.com/post/customize-stack-theme/)
 
 ↑ まずはこちらのサイトをご覧いただくほうがよろしいかと。  
 
