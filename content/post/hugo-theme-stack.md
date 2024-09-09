@@ -209,7 +209,7 @@ SassをCSSにするための機能らしい。
 |---|---|
 |/themes/stack/layouts/partials/head/style.html|/layouts/partials/head|
 
-```html {name="/themes/stack/layouts/partials/head/style.html"}
+```html {name="/themes/stack/layouts/partials/head/style.html" linenos=true}
 {{ $sass := resources.Get "scss/style.scss" }}
 {{ $style := $sass | resources.ToCSS | minify | resources.Fingerprint "sha256" }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
@@ -217,7 +217,7 @@ SassをCSSにするための機能らしい。
 
 2行目の `resources.ToCSS` を `css.Sass` に修正しました。  
 
-```html {name="/layouts/partials/head/style.html"}
+```html {name="/layouts/partials/head/style.html" linenos=true}
 {{ $sass := resources.Get "scss/style.scss" }}
 {{ $style := $sass | css.Sass | minify | resources.Fingerprint "sha256" }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
@@ -229,7 +229,7 @@ SassをCSSにするための機能らしい。
 |---|---|
 |/themes/stack/layouts/partials/comments/provider/disqusjs.html|/layouts/partials/comments/provider|
 
-```html {name="/themes/stack/layouts/partials/comments/provider/disqusjs.html"}
+```html {name="/themes/stack/layouts/partials/comments/provider/disqusjs.html" linenos=true}
 {{- $pc := .Site.Config.Privacy.Disqus -}}
 {{- $disqusjs := .Site.Params.Comments.disqusjs -}}
 {{- if and (not $pc.Disable) (and $disqusjs.Shortname $disqusjs.ApiKey) -}}
@@ -239,7 +239,7 @@ SassをCSSにするための機能らしい。
 
 5行目の `resources.ToCSS` を `css.Sass` に修正しました。  
 
-```html {name="/layouts/partials/comments/provider/disqusjs.html"}
+```html {name="/layouts/partials/comments/provider/disqusjs.html" linenos=true}
 {{- $pc := .Site.Config.Privacy.Disqus -}}
 {{- $disqusjs := .Site.Params.Comments.disqusjs -}}
 {{- if and (not $pc.Disable) (and $disqusjs.Shortname $disqusjs.ApiKey) -}}
