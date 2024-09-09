@@ -3,7 +3,7 @@ title: "テーマ aether のカスタマイズ"
 date: 2019-02-18T21:30:02+09:00
 description: "テーマ aether のカスタマイズをこちらにまとめます。"
 categories: ["homepage"]
-tags: ["hugo","theme","aether"]
+tags: ["Hugo","Theme","aether"]
 image: "/images/pair-love_640.webp"
 imageDescription: "カップル"
 dropCap: false

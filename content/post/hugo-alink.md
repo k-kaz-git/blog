@@ -3,7 +3,7 @@ title: "Hugo で外部サイトを新しいタブで開きたい。"
 date: 2020-10-19T12:28:18+09:00
 description: "さっと出来ちゃうよ。"
 categories: ["coding"]
-tags: ["hugo"]
+tags: ["Hugo"]
 image: "images/eagle-1753002_1280.webp"
 imageDescription: "リンク先へ飛ぶ"
 dropCap: false

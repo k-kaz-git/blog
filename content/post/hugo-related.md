@@ -6,8 +6,8 @@ categories: [
     "homepage"
     ]
 tags: [
-    "hugo",
-    "theme"
+    "Hugo",
+    "Theme"
     ]
 image: "/images/hugo-related.webp"
 imageDescription: "related"

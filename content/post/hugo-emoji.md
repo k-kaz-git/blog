@@ -7,8 +7,8 @@ categories: [
     "coding"
     ]
 tags: [
-    "hugo",
-    "theme"
+    "Hugo",
+    "Theme"
     ]
 image: "images/hugo-emoji.webp"
 imageDescription: "emoji"

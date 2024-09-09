@@ -3,7 +3,7 @@ title: "テーマ Pagermod のカスタマイズ"
 date: 2020-10-28T12:32:55+09:00
 description: "Pagermod を自分好みにしていくよ。"
 categories: ["homepage"]
-tags: ["hugo" , "theme" , "pagermod"]
+tags: ["Hugo" , "Theme" , "pagermod"]
 image: "/images/hugo-custom-theme-pagermod.webp"
 imageDescription: "雑誌とコーヒー"
 dropCap: false

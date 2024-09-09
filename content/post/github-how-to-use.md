@@ -3,7 +3,7 @@ title: "GitとGitHubを使ってみる"
 date: 2019-02-22T15:49:24+09:00
 description: "GitとGitHubを有効活用しようと思います。"
 categories: ["coding"]
-tags: ["github"]
+tags: ["GitHub"]
 image: "/images/network-server_640.webp"
 imageDescription: "ネットワークとサーバーのイメージ画像"
 dropCap: false

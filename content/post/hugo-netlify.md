@@ -3,7 +3,7 @@ title: "Hugo を Netlify で動かすよ。"
 date: 2019-03-07T14:44:55+09:00
 description: "Hugo を Netlify で動かしてみたときの記録です。"
 categories: ["homepage"]
-tags: ["hugo","netlify"]
+tags: ["Hugo","netlify"]
 image: "/images/hugo-netlify-network_640.webp"
 imageDescription: "地球とネットワークのイメージ画像"
 dropCap: false

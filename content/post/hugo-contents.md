@@ -3,7 +3,7 @@ title: "コンテンツ（画像とか）を同一フォルダにする場合"
 date: 2020-10-21T12:45:27+09:00
 description: "それ用のルールがあるのね。"
 categories: ["coding"]
-tags: ["hugo" , "theme"]
+tags: ["Hugo" , "Theme"]
 image: "images/hugo-contents.webp"
 imageDescription: "絵を描くよ！"
 dropCap: false

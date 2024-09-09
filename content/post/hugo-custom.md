@@ -3,7 +3,7 @@ title: "カスタマイズしてみたいな"
 date: 2019-02-17T20:14:15+09:00
 description: "欲が出てきて、ホームページのカスタマイズをしたくなってきた。"
 categories: ["homepage"]
-tags: ["hugo"]
+tags: ["Hugo"]
 image: "/images/people-custom_640.webp"
 imageDescription: "溶接している人"
 dropCap: false

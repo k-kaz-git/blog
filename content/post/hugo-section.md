@@ -3,7 +3,7 @@ title: "Hugo Section"
 date: 2020-11-11T09:12:59+09:00
 description: "いまいち分からんセクションの話"
 categories: ["homepage"]
-tags: ["hugo" , "theme" , "pagermod"]
+tags: ["Hugo" , "Theme" , "pagermod"]
 image: "images/divider-800.webp"
 imageDescription: "セクション"
 dropCap: false

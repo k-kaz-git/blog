@@ -3,7 +3,7 @@ title: "リスト表示とシングル表示にタグを付ける"
 date: 2024-06-10T21:05:42+09:00
 description: ""
 categories: ["homepage"    ]
-tags: ["hugo","theme"]
+tags: ["Hugo","Theme"]
 image: "/images/tag_720.webp"
 imageDescription: "タグのイメージ"
 dropCap: false

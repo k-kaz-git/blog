@@ -3,7 +3,7 @@ title: "Hugoにコメント機能を付ける"
 date: 2023-02-07T12:49:20+09:00
 description: ""
 categories: ["homepage","coding"]
-tags: ["hugo","theme"]
+tags: ["Hugo","Theme"]
 image: "images/speech-bubbles_640.webp"
 imageDescription: ""
 dropCap: false

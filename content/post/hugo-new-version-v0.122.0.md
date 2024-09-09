@@ -3,7 +3,7 @@ title: "Hugo Update V0.122.0"
 date: 2024-02-09T21:22:29+09:00
 description: "Update後の修正"
 categories: ["homepage"]
-tags: ["hugo","theme","pagermod"]
+tags: ["Hugo","Theme","pagermod"]
 image: "images/hugo-logo-wide.svg"
 imageDescription: "Hugoのイメージ画像"
 dropCap: false

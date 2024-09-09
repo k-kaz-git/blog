@@ -3,7 +3,7 @@ title: "Hugoの最新版を入れてみよう"
 date: 2023-04-17T12:58:50+09:00
 description: "基本編"
 categories: ["linux"]
-tags: ["hugo"]
+tags: ["Hugo"]
 image: "images/hugo-logo-wide.svg"
 imageDescription: "Hugoのイメージ画像"
 dropCap: false

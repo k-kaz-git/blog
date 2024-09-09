@@ -3,7 +3,7 @@ title: "コメント欄を削除"
 date: 2019-02-18T12:23:37+09:00
 description: "使わないので、コメント欄を消しました。"
 categories: ["homepage"]
-tags: ["hugo"]
+tags: ["Hugo"]
 image: "/images/speech-bubbles_640.webp"
 imageDescription: "会話のイメージ"
 dropCap: false

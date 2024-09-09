@@ -3,7 +3,7 @@ title: "さくらインターネットでHugoを使いたい"
 date: 2023-10-27T12:44:27+09:00
 description: "苦労したのよ"
 categories: ["homepage"]
-tags: ["hugo"]
+tags: ["Hugo"]
 image: "/images/hugo-sakura.webp"
 imageDescription: ""
 dropCap: false

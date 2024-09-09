@@ -3,7 +3,7 @@ title: "Deploy でエラーが出たんですけど。"
 date: 2020-10-14T18:51:11+09:00
 description: "1年半振りの Deploy で・・・。"
 categories: ["homepage"]
-tags: ["hugo" , "github" , "Netlify"]
+tags: ["Hugo" , "GitHub" , "Netlify"]
 image: "/images/hugo-deploy-error.webp"
 imageDescription: "厳重な扉"
 dropCap: false

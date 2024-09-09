@@ -3,7 +3,7 @@ title: "自作の Hugo用 Shortcodes"
 date: 2019-03-14T12:42:21+09:00
 description: "自作の Shortcodes をテストしたり、思い出すための場所"
 categories: ["homepage"]
-tags: ["hugo" , "shortcodes"]
+tags: ["Hugo" , "shortcodes"]
 image: "/images/shortcodes-vegetables-make_640.webp"
 imageDescription: "収穫したものをいただきましょう"
 dropCap: false

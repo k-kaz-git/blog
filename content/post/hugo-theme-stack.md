@@ -2,28 +2,39 @@
 title: "Hugoのテーマ Stack について"
 description: 触り始めたのでまとめていく
 date: 2024-09-05T12:48:18+09:00
+categories: ["homepage"]
+tags: ["Hugo","Theme"]
 image: /images/hugo-theme-stack.avif
+imageDescription: かわうそ
 math: 
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
 ---
 ## はじめに
 
-当サイトで新しいテーマを採用したので、動作させるために行った内容をメモします。  
+当サイトで新しいテーマを採用しました。  
+時間が経つときれいに忘れ去るため、修正した内容を自分用にメモしておこうと思います。  
+
 正しい内容かどうか定かではないため、ご覧になる方はご注意ください。  
+
+### 採用したテーマ
+
+:link: [Stack | Hugo Themes](https://themes.gohugo.io/themes/hugo-theme-stack/)  
+:link: [CaiJimmy/hugo-theme-stack: Card-style Hugo theme designed for bloggers](https://github.com/CaiJimmy/hugo-theme-stack)
 
 ### 追記 2024-09-06
 
-ほぼ書き終わったかなというタイミングで、同じ趣旨の内容を書かれているサイトを発見。  
+初期設定で行った内容を書き終わったタイミングで、同じ趣旨の内容を書かれているサイトを発見。  
 めっちゃ真似したみたいになってしまった。ごめんなさい・・・。  
 
 :link: [Hugo Stackテーマのカスタマイズ](https://notes.nakurei.com/post/customize-stack-theme/#%E3%82%B5%E3%82%A4%E3%83%88%E3%81%AE%E3%83%AA%E3%83%B3%E3%82%AF%E3%81%AE%E5%A4%89%E6%9B%B4)
 
 ↑ まずはこちらのサイトをご覧いただくほうがよろしいかと。  
 
-コードブロックにファイル名を表示させる方法、参考にさせていただきました 🙇‍♂️  
+良いもの見付けた！  
+と思って、コードブロックにファイル名を表示させる方法、参考にさせていただきました 🙇‍♂️  
 
 ### カスタマイズの基本
 
@@ -52,9 +63,20 @@ Hugoが動作するとき、テーマフォルダーの中身を読み込んで�
 全部書くと大変なので、引っかかりやすいものとか。  
 ここに未掲載のもので重要なのは、サイトのURLとか言語設定とか。  
 
+### Google Analytics
+
+Analyticsのコードを貼り付けます。  
+
+```yaml {name="config.yaml"}
+services:
+    # GA Tracking ID
+    googleAnalytics:
+        id: hoge-ID     # 自身のタグ
+```
+
 ### パーマリンク
 
-初期値のままですが変えるかも。  
+初期値のままですが、あとで変えるかも。  
 
 ```yaml {name="config.yaml"}
 permalinks:
@@ -64,7 +86,7 @@ permalinks:
 
 ### ページタイトル
 
-`languages:` セクションの中には、英語、中国語、アラビア語があり、訪問者が切り替えできるようになっていました。  
+`languages:` セクションの中には、英語、中国語、アラビア語？があり、訪問者が切り替えできるようになっていました。  
 このサイトは日本人向けなので、元の言語はすべて削除して、日本語を追加しています。  
 
 ```yaml {name="config.yaml"}
@@ -163,13 +185,15 @@ params:
 
 ## レイアウト
 
+未着手。  
+
 ## 不具合修正
 
-### resources.ToCSS → css.Sass
+### resources.ToCSS はもう古い
 
 Hugo Serverを起動すると下記のWarningが出ます。  
 
-*WARN  deprecated: resources.ToCSS was deprecated in Hugo v0.128.0 and will be removed in a future release. Use css.Sass instead.*  
+***WARN  deprecated: resources.ToCSS was deprecated in Hugo v0.128.0 and will be removed in a future release. Use css.Sass instead.***  
 
 `resources.ToCSS` じゃなくて、 `css.Sass` を使えと言っています。  
 SassをCSSにするための機能らしい。  
@@ -177,13 +201,13 @@ SassをCSSにするための機能らしい。
 - [ToCSS | Hugo](https://gohugo.io/hugo-pipes/transpile-sass-to-css/) ← 古い
 - [css.Sass | Hugo](https://gohugo.io/functions/css/sass/) ← 新しい
 
-フォルダー内を検索して2つのファイルで発見しましたので修正。  
+フォルダー内を検索して2つのファイル `style.html`、`disqusjs.html` で該当箇所を発見しましたので修正。  
 
 #### style.html
 
-/themes/stack/layouts/partials/head/style.html → /layouts/partials/head/ へコピー。  
-
-オリジナル  
+|オリジナル|複写先|
+|---|---|
+|/themes/stack/layouts/partials/head/style.html|/layouts/partials/head|
 
 ```html {name="/themes/stack/layouts/partials/head/style.html"}
 {{ $sass := resources.Get "scss/style.scss" }}
@@ -191,7 +215,7 @@ SassをCSSにするための機能らしい。
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 ```
 
-修正（2行目の `resources.ToCSS` を `css.Sass` に修正しました。）  
+2行目の `resources.ToCSS` を `css.Sass` に修正しました。  
 
 ```html {name="/layouts/partials/head/style.html"}
 {{ $sass := resources.Get "scss/style.scss" }}
@@ -201,9 +225,9 @@ SassをCSSにするための機能らしい。
 
 #### disqusjs.html
 
-/themes/stack/layouts/partials/comments/provider/disqusjs.html → /layouts/partials/comments/provider/ へコピー。  
-
-オリジナル  
+|オリジナル|複写先|
+|---|---|
+|/themes/stack/layouts/partials/comments/provider/disqusjs.html|/layouts/partials/comments/provider|
 
 ```html {name="/themes/stack/layouts/partials/comments/provider/disqusjs.html"}
 {{- $pc := .Site.Config.Privacy.Disqus -}}
@@ -213,7 +237,7 @@ SassをCSSにするための機能らしい。
 {{- $style := resources.Get "scss/partials/comments/disqusjs.scss" | resources.ToCSS | minify -}}
 ```
 
-修正（5行目の `resources.ToCSS` を `css.Sass` に修正しました。）  
+5行目の `resources.ToCSS` を `css.Sass` に修正しました。  
 
 ```html {name="/layouts/partials/comments/provider/disqusjs.html"}
 {{- $pc := .Site.Config.Privacy.Disqus -}}
@@ -223,11 +247,11 @@ SassをCSSにするための機能らしい。
 {{- $style := resources.Get "scss/partials/comments/disqusjs.scss" | css.Scss | minify -}}
 ```
 
-### paginate → pagination.pagerSize
+### paginate はもう古い
 
 Hugo Serverを起動すると下記のWarningが出ます。  
 
-*WARN  deprecated: site config key paginate was deprecated in Hugo v0.128.0 and will be removed in a future release. Use pagination.pagerSize instead.*  
+***WARN  deprecated: site config key paginate was deprecated in Hugo v0.128.0 and will be removed in a future release. Use pagination.pagerSize instead.***  
 
 1画面に表示する記事の数を指定する機能です。  
 `paginate` は古いので `pagination.pagerSize` に変えなさいというものです。  

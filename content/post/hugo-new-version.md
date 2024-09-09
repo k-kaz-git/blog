@@ -3,7 +3,7 @@ title: "そうだ Hugo の最新版を使おう！"
 date: 2020-10-18T20:00:29+09:00
 description: "そんなときは大体ハマる。"
 categories: ["coding"]
-tags: ["hugo"]
+tags: ["Hugo"]
 image: "/images/man-1394395_1920.webp"
 imageDescription: "孤独な考える人"
 dropCap: false

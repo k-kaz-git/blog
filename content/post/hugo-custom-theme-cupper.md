@@ -3,7 +3,7 @@ title: "テーマ Cupper のカスタマイズ"
 date: 2019-03-12T16:02:29+09:00
 description: "テーマ Cupper のカスタマイズをこちらにまとめます。"
 categories: ["homepage"]
-tags: ["hugo" , "theme" , "cupper"]
+tags: ["Hugo" , "Theme" , "cupper"]
 image: "/images/cupper-org-logo.png"
 imageDescription: "cupper のオリジナルロゴ画像"
 dropCap: false

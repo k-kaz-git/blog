@@ -3,7 +3,7 @@ title: "Hugo コメントアウト"
 date: 2024-06-26T12:55:18+09:00
 description: "表に出したくないものってありますよね"
 categories: ["homepage","coding"]
-tags: ["hugo","theme"]
+tags: ["Hugo","Theme"]
 image: "/images/hugo-commentout.webp"
 imageDescription: "コメントアウト"
 dropCap: false

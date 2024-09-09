@@ -3,7 +3,7 @@ title: "Hugoにコメント機能を付ける（giscus編）"
 date: 2024-02-20T08:43:46+09:00
 description: "giscusにしてみました。"
 categories: ["homepage","coding",]
-tags: ["hugo","theme"]
+tags: ["Hugo","Theme"]
 image: "images/speech-bubbles_640.webp"
 imageDescription: ""
 dropCap: false

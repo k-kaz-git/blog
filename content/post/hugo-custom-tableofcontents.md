@@ -3,7 +3,7 @@ title: "Hugo の目次について考える"
 date: 2019-04-02T19:26:27+09:00
 description: "Hugo に目次を入れようと思ったのです。"
 categories: ["homepage"]
-tags: ["hugo" , "tableofcontents"]
+tags: ["Hugo" , "tableofcontents"]
 image: "/images/hugo-tableofcontents-menu.webp"
 imageDescription: "メニュー、目次のイメージ画像"
 dropCap: false

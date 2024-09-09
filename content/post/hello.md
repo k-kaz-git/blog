@@ -3,7 +3,7 @@ title: "Hello"
 date: 2019-02-16T16:52:50+09:00
 description: "1日中、テストを頑張っている私。"
 categories: ["homepage"]
-tags: ["hugo"]
+tags: ["Hugo"]
 image: "/images/heart-shape-tree_640.webp"
 imageDescription: "ハートの木です。"
 dropCap: false

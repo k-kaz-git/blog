@@ -3,7 +3,7 @@ title: "HugoでMermaid記法を利用する"
 date: 2023-04-17T12:55:42+09:00
 description: "少しの設定で利用可能です。"
 categories: ["homepage"]
-tags: ["hugo","theme","mermaid"]
+tags: ["Hugo","Theme","mermaid"]
 image: "images/mermaid.webp"
 imageDescription: ""
 dropCap: false

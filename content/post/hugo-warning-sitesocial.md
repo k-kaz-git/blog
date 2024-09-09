@@ -3,7 +3,7 @@ title: "Hugo Warning .Site.Social"
 date: 2024-08-07T08:44:45+09:00
 description: "全然気付いていなかった・・・"
 categories: ["homepage"]
-tags: ["hugo","theme"]
+tags: ["Hugo","Theme"]
 image: "/images/hugo-warning-sitesocial.webp"
 imageDescription: "WARNING"
 dropCap: false
