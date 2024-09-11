@@ -1,0 +1,86 @@
+/* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+
+/* scss/variables.scss ここから */
+/* Global font family 日本語フォント */
+:root {
+  --base-font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Oxygen,Ubuntu,Cantarell,open sans,helvetica neue,sans-serif, var(--sys-font-family), var(--zh-font-family), sans-serif;
+  }
+/* scss/variables.scss ここまで */
+
+
+/* scss/partials/layout/article.scss ここから */
+
+/* コードブロックにファイル名を表示 */
+.code-block-filename {
+    --code-filename-fontsize: calc(0.96em * 0.9);
+    display: table;
+    max-width: 100%;
+    background: var(--body-background);
+    color: var(--body-text-color);
+    font-size: var(--code-filename-fontsize);
+    line-height: 1;
+    padding-top: calc(var(--code-filename-fontsize) * 0.5);
+    padding-left: calc(var(--code-filename-fontsize) * 0.7);
+    padding-right: calc(var(--code-filename-fontsize) * 0.7);
+    padding-bottom: calc(var(--code-filename-fontsize) * 0.7);
+    border-radius: calc(var(--code-filename-fontsize) * 0.5)
+      calc(var(--code-filename-fontsize) * 0.5) 0 0;
+  }
+.code-block-content {
+    padding-top: 0px;
+  }
+
+/* scss/partials/layout/article.scss ここまで */
+
+
+/* scss/variables.scss */
+.article-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      margin-inline-start: calc((var(--card-padding)) * -1);
+      padding-inline-start: calc(var(--card-padding) - var(--heading-border-size));
+      border-inline-start: none;
+      position: relative;
+  }
+}
+
+
+/* scss/article.scss */
+.article-content h2 {
+  background-color: var(--tr-even-background-color); 
+}
+
+.article-title a {
+  font-size: 3rem;
+}
+
+.article-content h3:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 90%;
+  background: -webkit-linear-gradient(to right, var(--accent-color-darker), transparent);
+  background: linear-gradient(to right,  var(--accent-color-darker), transparent);
+}
+
+.article-content h4:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 60%;
+  background: -webkit-linear-gradient(to right, var(--accent-color-darker), transparent);
+  background: linear-gradient(to right,  var(--accent-color-darker), transparent);
+}
+
+.article-content h5:after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 30%;
+  background: -webkit-linear-gradient(to right, var(--accent-color-darker), transparent);
+  background: linear-gradient(to right,  var(--accent-color-darker), transparent);
+}

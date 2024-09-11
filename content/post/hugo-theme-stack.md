@@ -160,21 +160,32 @@ params:
 
 ## スタイルシート
 
+スタイルシートは各ファイルを持ってくるのではなく、カスタム用のファイルにまとめて記述するようです。  
+1ファイルにまとまっているとあとで直したところを確認したくなったときに楽ですね。  
+
 |オリジナル|複写先|
 |---|---|
-|/themes/stack/assets/scss|/assets/scss|
+|/themes/stack/assets/scss/custom.scss|/assets/scss/custom.scss|
+
+`custom.scss`にはこのコメントのみ記述されていました。  
+
+```css {name="custom.scss"}
+/* Place your custom SCSS in HUGO_SITE_FOLDER/assets/scss/custom.scss */
+
+```
+
+**スタイルシートの修正後、Hugo Serverを再起動しないと反映されない**ので注意です。  
+これでちょっとハマってた・・・。  
 
 ### フォントを変える
 
 中国製のためか、フォントに違和感があるので変えました。  
 
-/themes/stack/assets/scss/variables.scss → /assets/scss/ へコピー。  
+/themes/stack/assets/scss/variables.scss の該当部分を`custom.scss`にコピペして編集します。  
 4行目にある `--base-font-family` の行を変更しています。  
 
-3行目は中国系かな？
-いらないと思いますが今は残してあります。  
 
-```scss {name="/assets/scss/variables.scss"}
+```scss {name="/assets/scss/custom.scss"}
 :root {
     --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
     --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
