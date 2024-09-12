@@ -19,6 +19,7 @@
     color: var(--body-text-color);
     font-size: var(--code-filename-fontsize);
     line-height: 1;
+    margin-top: 10px;
     padding-top: calc(var(--code-filename-fontsize) * 0.5);
     padding-left: calc(var(--code-filename-fontsize) * 0.7);
     padding-right: calc(var(--code-filename-fontsize) * 0.7);

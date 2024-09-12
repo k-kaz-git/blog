@@ -74,6 +74,46 @@ services:
         id: hoge-ID     # 自身のタグ
 ```
 
+#### Google Analytics 後日変更
+
+Googleタグマネージャーを使っているのでそちらのIDを貼り付けていたんですが、動作しているのかしていないのか微妙な感じ。  
+Googleタグマネージャーのプレビュー画面でも黄色マーク（要注意）が出ているので、ここを使うのはやめました。  
+そもそもAnalytics用のIDっぽいしね。  
+
+`config.yaml`は空にして、`/layouts/partials/head/custom.html`と`/layouts/_default/baseof.html`にタグマネージャーで指示されたものを貼り付けました。  
+
+```yaml {name="config.yaml"}
+services:
+    # GA Tracking ID
+    googleAnalytics:
+        id:          # 空にしました
+```
+
+```html {name="/layouts/partials/head/custom.html"}
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','hoge-ID');</script> <!-- hoge-IDは自分のもので -->
+<!-- End Google Tag Manager -->
+```
+
+```html {name="/layouts/_default/baseof.html"}
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}" dir="{{ default `ltr` .Language.LanguageDirection }}">
+    <head>
+        {{- partial "head/head.html" . -}}
+        {{- block "head" . -}}{{ end }}
+    </head>
+    <body class="{{ block `body-class` . }}{{ end }}">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=hoge-ID"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <!-- hoge-IDは自分のもので -->
+    <!-- End Google Tag Manager (noscript) -->
+        {{- partial "head/colorScheme" . -}}
+```
+
 ### パーマリンク
 
 初期値のままですが、あとで変えるかも。  
@@ -149,11 +189,12 @@ params:
 
 ## ウィジェット（ページ）
 
+検索とかアーカイブとかの機能です。  
+
 |オリジナル|複写先|
 |---|---|
 |/themes/stack/exampleSite/content/page|/content/page|
 
-検索とかアーカイブとかの機能です。  
 `config.yaml` の中で設定がありますが、そこで有効にしてもページがないと画面に出てきません。  
 /themes/stack/exampleSite/content/page 内にあるものを、/content/pageへコピーすることで画面に表示できます。  
 最初、機能を有効にしても出ない理由が不明で途方に暮れました。  
@@ -174,8 +215,10 @@ params:
 
 ```
 
-**スタイルシートの修正後、Hugo Serverを再起動しないと反映されない**ので注意です。  
-これでちょっとハマってた・・・。  
+**スタイルシートの修正後、Hugo Serverを再起動しないと反映されないことがある**ので注意です。  
+ページの再読み込みでいけるものもありますが、違いがよくわかっておらず。  
+
+これでちょっとハマったので、意図した通りに変更されない場合は再起動を試してみましょう。  
 
 ### フォントを変える
 
