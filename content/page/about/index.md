@@ -31,4 +31,4 @@ menu:
 
 ### hugo-theme-stack
 
-[CaiJimmy/hugo-theme-stack: Card-style Hugo theme designed for bloggers](https://github.com/CaiJimmy/hugo-theme-stack/tree/master)
+:link: [CaiJimmy/hugo-theme-stack: Card-style Hugo theme designed for bloggers](https://github.com/CaiJimmy/hugo-theme-stack/tree/master)
