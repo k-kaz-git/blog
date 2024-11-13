@@ -80,10 +80,13 @@ giscusは、GitHubのDiscussions機能を使います。
 
 1. コメント機能を表示したい場所へ先程のコードを挿入
 
-私の場合は、記事の下に入れるため `single.html` の最後に入れました。  
+私の場合は、記事の下に入れるため ~~`single.html`~~ の最後に入れました。  
+
+**2024/11/13 追記**  
+PagerMod v8.0から、コメント用のパーツ`/layout/partials/comments.html`ができたので、そちらに入れるほうがスマートですね。  
 
 ```js
-// single.html
+// domments.html
 {{- if (.Param "comments") }}
   <script src="https://giscus.app/client.js"
     data-repo="hoge/hoge-repo" //ユーザー名と保管用リポジトリ名
