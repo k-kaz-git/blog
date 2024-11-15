@@ -1,3 +1,7 @@
 [submodule "public"]
 	path = public
 	url = git@github.com:k-kaz-git/k-kaz-git.github.io.git
+
+[submodule "aether"]
+	path = themes/aether
+	url = git@github.com:k-kaz-git/aether.git
