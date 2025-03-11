@@ -2,10 +2,13 @@
 title: "{{ replace .Name "-" " " | title }}"
 description: 
 date: {{ .Date }}
-image: 
-math: 
-license: 
-hidden: false
+categories: ["homepage"]
+tags: ["Hugo","Theme"]
+image: ""
+imageDescription: ""
+dropCap: false
+displayInMenu: false
+displayInList: true
 comments: true
 draft: true
 ---

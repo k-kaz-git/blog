@@ -9,6 +9,7 @@ imageDescription: "WARNING"
 dropCap: false
 displayInMenu: false
 displayInList: true
+comments: true
 draft: false
 ---
 ## 気付くのが遅い
