@@ -85,3 +85,40 @@
   background: -webkit-linear-gradient(to right, var(--accent-color-darker), transparent);
   background: linear-gradient(to right,  var(--accent-color-darker), transparent);
 }
+
+/* ========================================
+    k-kaz 用
+======================================== */
+
+/* スニペット */
+.memo {
+    position: relative;
+    margin: 2em 1em;
+    padding: 0.5em 1em;
+    border: solid 1px #a9a9a9;
+    background: #f1efef;
+    max-width: 70%;
+    border-radius: 0 5px 5px 5px;
+}
+
+.memo-title {
+    position: absolute;
+    display: inline-block;
+    top: -20px;
+    left: -1px;
+    padding: 0 9px;
+    height: 20px;
+    line-height: 20px;
+    vertical-align: middle;
+    font-size: 0.8em;
+    background: #a9a9a9;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    ;
+}
+
+.memo p {
+    margin: 0;
+    font-size: 0.8em;
+    color:rgb(48, 47, 47);
+}
